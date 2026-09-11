@@ -31,9 +31,6 @@ data/processed/*.csv
 !data/processed/sample_*.csv
 
 # Models (allow specific production model files)
-models/*.pkl
-models/*.joblib
-!models/*.txt
 !models/classifier.joblib
 !models/label_encoder.joblib
 !models/vectorizer.joblib
@@ -41,6 +38,9 @@ models/*.joblib
 !models/tfidf_vectorizer.joblib
 !models/tfidf_matrix.joblib
 !models/retrieval_config.pkl
+models/*.pkl
+models/*.joblib
+!models/*.txt
 
 # Jupyter
 .ipynb_checkpoints

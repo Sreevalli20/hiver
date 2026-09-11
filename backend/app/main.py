@@ -130,11 +130,23 @@ async def startup_event():
 @app.get("/health")
 async def health_check():
     """Health check endpoint."""
+    model_dir = Path("models")
+    model_files = {
+        "models_dir_exists": model_dir.exists(),
+        "classifier_joblib": (model_dir / 'classifier.joblib').exists(),
+        "label_encoder_joblib": (model_dir / 'label_encoder.joblib').exists(),
+        "vectorizer_joblib": (model_dir / 'vectorizer.joblib').exists(),
+        "retrieval_corpus_csv": (model_dir / 'retrieval_corpus.csv').exists(),
+        "tfidf_vectorizer_joblib": (model_dir / 'tfidf_vectorizer.joblib').exists(),
+        "tfidf_matrix_joblib": (model_dir / 'tfidf_matrix.joblib').exists(),
+        "retrieval_config_pkl": (model_dir / 'retrieval_config.pkl').exists(),
+    }
     return {
         "status": "healthy",
         "models_loaded": models_loaded,
         "classifier_loaded": classifier is not None,
-        "retrieval_loaded": retrieval_system is not None
+        "retrieval_loaded": retrieval_system is not None,
+        "model_files": model_files
     }
 
 @app.post("/predict", response_model=PredictResponse)
