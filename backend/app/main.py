@@ -141,12 +141,22 @@ async def health_check():
         "tfidf_matrix_joblib": (model_dir / 'tfidf_matrix.joblib').exists(),
         "retrieval_config_pkl": (model_dir / 'retrieval_config.pkl').exists(),
     }
+    # List all files in models directory if it exists
+    models_dir_contents = []
+    if model_dir.exists():
+        for item in model_dir.iterdir():
+            models_dir_contents.append({
+                "name": item.name,
+                "is_file": item.is_file(),
+                "size": item.stat().st_size if item.is_file() else 0
+            })
     return {
         "status": "healthy",
         "models_loaded": models_loaded,
         "classifier_loaded": classifier is not None,
         "retrieval_loaded": retrieval_system is not None,
-        "model_files": model_files
+        "model_files": model_files,
+        "models_dir_contents": models_dir_contents
     }
 
 @app.post("/predict", response_model=PredictResponse)
