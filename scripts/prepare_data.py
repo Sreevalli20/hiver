@@ -8,7 +8,6 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 import json
-from sklearn.model_selection import train_test_split
 import re
 
 def load_data():
@@ -111,18 +110,25 @@ def select_brand_data(df, brand_id=None):
     return brand_tweets, brand_id
 
 def build_conversations(df, brand_id):
-    """Build conversation threads."""
+    """Build conversation threads for a specific brand."""
     
     print("Building conversations...")
     
-    # Get all tweets that are responses to brand
+    # Get all brand tweets
+    brand_tweets = df[df['author_id'] == brand_id]
+    
+    # Get all customer tweets that are responses to this brand
     customer_tweets = df[df['in_response_to_tweet_id'].notna()]
+    
+    # Filter customer tweets that respond to this brand
+    brand_tweet_ids = set(brand_tweets['tweet_id'].tolist())
+    customer_responses = customer_tweets[customer_tweets['in_response_to_tweet_id'].isin(brand_tweet_ids)]
     
     # Build conversation mapping
     conversations = []
     
     # Group by response tweet ID to find brand responses
-    for idx, row in customer_tweets.iterrows():
+    for idx, row in customer_responses.iterrows():
         response_to = row['in_response_to_tweet_id']
         
         # Find the brand's response
@@ -138,7 +144,7 @@ def build_conversations(df, brand_id):
             }
             conversations.append(conv)
     
-    print(f"Built {len(conversations)} conversations")
+    print(f"Built {len(conversations)} conversations for {brand_id}")
     
     return pd.DataFrame(conversations)
 
@@ -147,9 +153,17 @@ def create_splits(conversations_df):
     
     print("Creating train/dev/test splits...")
     
-    # Split: 70% train, 15% dev, 15% test
-    train, temp = train_test_split(conversations_df, test_size=0.3, random_state=42)
-    dev, test = train_test_split(temp, test_size=0.5, random_state=42)
+    # Manual split: 70% train, 15% dev, 15% test
+    np.random.seed(42)
+    shuffled = conversations_df.sample(frac=1).reset_index(drop=True)
+    
+    n = len(shuffled)
+    train_end = int(n * 0.7)
+    dev_end = int(n * 0.85)
+    
+    train = shuffled.iloc[:train_end]
+    dev = shuffled.iloc[train_end:dev_end]
+    test = shuffled.iloc[dev_end:]
     
     print(f"Train: {len(train)}, Dev: {len(dev)}, Test: {len(test)}")
     

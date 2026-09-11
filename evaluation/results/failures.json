@@ -1,0 +1,752 @@
+[
+  {
+    "type": "escalation_mismatch",
+    "input": "I\u2019ve waited til past 8 o\u2019clock now-here are the references: 67303131113645 &amp; 73303231558729 EVERY Hermes delivery gets delayed. No fun!",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.47811335376727515,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "They shipped yesterday (Wednesday) and won\u2019t be here until Monday. I think our ideas of two day shipping is a bit different.",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.46528410414067034,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I can spend my time with this because you haven't kept to your delivery, or I can just change to buying more from eBay; I'm going to choose the latter",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.5263678603804404,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "It did not say on the tracking who was carrying it. I did get contacted from Amazon and now they promised first thing in the morning.",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.4492417128691346,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I am not going to do anything more. If package not recd by nov 8,2017 then I will revert",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.45396825546476044,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Your website says if in stock it\u2019ll be dispatched that same day and delivered the next day. Nothing about just transit time. You\u2019re making it up.",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.4860784696544856,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "YES paid an extra $10 for delivery today. Assuming that will be refunded.",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.7120847322009058,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "it wouldn't bother me as much if we lived in the middle of nowhere but considering we are only 35 minutes away from the dispatch centre and the item was supposedly out for delivery at 10.30am yesterday morning. I think it might be a great idea to use Sat Navs",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.5022143239811472,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "This is not going to help! I understand how you people work. Your delivery team don\u2019t deliver and they say that customer not available! Lier",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.41922017398113304,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "It was Amazon UK, with delivery for Republic of Ireland",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.5530422333635435,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Yes, reported every one of the above. Multiple times &amp;requested a reason for 'failed to deliver'. Had 2 products re-ordered twice, but most just get a 'refund' notice- no further action, usually a week or two later after being PROMISED it will be delivered 24-48 hours later...",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.3618388014688777,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Done long time back. Almost a month back. No status change",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.41042256114162884,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "And the ritual continues. Once again a call now asking for pick up while pick up slot is 1-4.Iam sure the pick up will be rescheduled again",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.41678085900738515,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Was delivered by Amazon Logistics! Don\u2019t have time to inspect it thoroughly now. Box clearly shows it\u2019s a telescope and has a \u2018This way up\u2019 label in it. Mad beyond belief about this!",
+    "predicted_intent": "order_status",
+    "expected_intent": "order_status",
+    "confidence": 0.4800312423812942,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Salve purtroppo nessuno sa niente! Non so veramente come fare...",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.4143152544924385,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "no me dieron mi numero guia porque me pidieron una info de la direccion de facturacion y no me han dado respuesta de eso.",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.43099859514986855,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "intent_misclassification",
+    "input": "Thats why you're not leading.. bcoz you not paying for your fault.. you just leaving customers at their end &amp; be yourself remain in comfort zone.. My Pay Balance amount transfer in my bank account. You are earning i terest on my money so far.",
+    "predicted_intent": "billing_issue",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.14289067218843646,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "Classifier predicted billing_issue instead of general_inquiry"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Thats why you're not leading.. bcoz you not paying for your fault.. you just leaving customers at their end &amp; be yourself remain in comfort zone.. My Pay Balance amount transfer in my bank account. You are earning i terest on my money so far.",
+    "predicted_intent": "billing_issue",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.14289067218843646,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I contacted customer support by chat&amp;was told to wait for 72 hrs while investigating.:/ This has happened to others for over a week though",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.2997802528049604,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Are you guys nuts? How can u ask me to wait... bloddy idiots from past three days I am waiting...what r u guys? Stupid assholes? U don't have integrity",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.2728995786920565,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "They're stupid USB C cables worth less than $10 and I don't need them right away. The point is the type of stuff is happening more and more to my deliveries. I can't justify renewing Prime as long as this continues.",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.31900316608305573,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "yeah its on that episode of cheers but I tried another episode and it didn't appear to be there, maybe it's just that episode?",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.3778291443765239,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Many times..Always got them saying well deliver it by deadline...I hate your service now",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.1928817704015182,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Creo que es un vendedor externo, ErgodeBooks. Los ped\u00ed el 23 de octubre y el pedido llegaba entre 2-5 semana.",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.45463678616427083,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Sounds like an elaborate excuse for incompetency to me.",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.35082824820706204,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Siii\ud83d\ude0d\ud83d\ude0duno dei primi di Babbo Natale,che ne ha gi\u00e0 scovati altri ...domani si saccheggia! Grazie ancora",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.46395253390747154,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I wuld lyk 2 knw jus 1 simpl&amp; straight answer. Hw mny times u ppl wl ask d same qstn again&amp;again.Coz m juss sick of answring over&amp;over again",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.2964515602753584,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I did.",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.3133394596549591,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Already did that and they keep telling me to wait and that has been 4wks. CS keeps telling me it is due to a system error. What error?",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.27171214502211094,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "J\u00e1 comprei",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.4589247713927027,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Too late. It's smashed to bits and in the bin. Ta for replying",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.3777985773924696,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "i know but i call all courier serviece they people cant home pick up so please arrange from your hand.",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.29572038947683815,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I did for the first chat with Ashish and left positive feedback. \ud83d\udc4d\ud83c\udffb Chat with Shruti did not give me the feedback option.",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.4113531183128327,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I\u2019ve already done that once last week &amp; still not heard back",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "general_inquiry",
+    "confidence": 0.27529216464740947,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Yeah it happens with you! Stuff that is marked amazon prime and says I'll get it in two days and then at 8pm on the second day changes ETA.",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.36484877692732715,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "He wasn\u2019t able to contact . Twice. I tried by myself. A voicemail said that if I\u2019ve not received today by 1pm (which happens to be the case), I should tomorrow.",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.44117812267687356,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "What email? Which resolution? You mean looking into it and \"investigating\" is the resolution you are talking about?",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5637533643319825,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Oui il s'agit du colis pr\u00e9vu mardi. Le probl\u00e8me est que je ne peux pas changer le cr\u00e9neau et je ne vois pas pourquoi je devrais en plus perdre une heure a aller le r\u00e9cup\u00e9rer au entre chronopost de Strasbourg",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.3778989050202116,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I've contacted my bank as you asked to do so in email but my bank said Amazon need to raise complain",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5037295799867795,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Yes, I just did. Not helping. Provide an email ID I can write to.",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5838354041391196,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "No, but I emailed to offer a copy of my rights reversion letter and \"in review\" just changed to \"publishing\" on my KDP page. Appears ok.",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.6146067481038674,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Aucune id\u00e9e, je n'ai pas mon pc \u00e0 disposition pour v\u00e9rifier, j'ai pr\u00e9f\u00e9r\u00e9 demander un \u00e9change via le site et retourner l'article.",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.4181163575143766,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "9990776470 __email__",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.583534962273233,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "How can I reach out to you guys via phone or chat?",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5913894368246996,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "The other one has actually just changed to being in stock but it hasn't been on Prime for 2 days as I was trying to get it.",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.44342520952464093,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Already contacted customer care but they said they doesn't know anything It's 2017 update urself guys, still cheques",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5164806756239617,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Got text from service. It'd been 2 days have not received any update from Amazon service boy.",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.45482944669806513,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Oh my word, can you not treat people as humans?!?! I\u2019ve had the 6th identical automated email following a telephone conversation and still no-one has answered a single question?! It beggars belief? Just don\u2019t know where to turn now. Utterly disgusted now \ud83d\ude21",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5088355299288799,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Hi! Any updates?",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5613300045103956,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Are pre release codes being emailed ?",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5399088135877389,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Why did it change? That page only tells me it will be 3-5 days.",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5801050799849686,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "yes it was due today by 8pm and now its changed to tomorrow or the next couple days... but isn;t there a guarantee?",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5117835612790521,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "It say's \"Could not set your address. Please ensure you have correctly entered a complete address\" when I am entering my India address",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.5640024588688095,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I reply two time this email , As usual there is no response #UNINSTALLAMAZON",
+    "predicted_intent": "account_issue",
+    "expected_intent": "account_issue",
+    "confidence": 0.6446941137781003,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "intent_misclassification",
+    "input": "n\u00e3o funciona! j\u00e1 tentei cancelar e n\u00e3o consigo. a p\u00e1gina diz que cancelou, mas a compra continua l\u00e1!!!!",
+    "predicted_intent": "general_inquiry",
+    "expected_intent": "refund_request",
+    "confidence": 0.3111414862186926,
+    "decision": "ESCALATE",
+    "expected_action": "ESCALATE",
+    "explanation": "Classifier predicted general_inquiry instead of refund_request"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I\u2019ve checked. There\u2019s nothing there. I\u2019m very alarmed that Hub website won\u2019t allow more than 10 characters in the login box",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7777253597769517,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Error message telling me \"wrong password\", but I am 100% sure my password was right. This happens to everyone around me ...",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7883357094992521,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "You have to log in. I don't remember the email address I used. Can you look up the account by my bank information?",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7638058984372917,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "The thing is - I don\u2019t have access to the email address my amazon account was linked to, the address was desactivated. So there\u2019s nothing I can do from my end. Thats why I don\u2019t understand why i was debited for a membership for an account suspended by you guys!",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.8074883235410236,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "AHHHH IM FRRAKING OUT I CLICK EVERY EMAIL THAT SAYS AMAZON! IVE CHANGED MY PASSWORD BUT \ud83d\ude2d",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7225391604204032,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "This is not a answer ,for my question ..Why my number is blocked ..Give me a valid reason",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.6641005088031725,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Sir waiting for your early action. huge amount is blocked",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.6931955952820472,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "That is the problem! I cant access on my account because still on hold! I dont know why! Have a chat for customer service?",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.8028703212626012,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "And with origin instant access came a error message that I should check my internet connection even tho it\u2019s fine and wouldn\u2019t let me buy it",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7358296658063285,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Hola, es que cuando hago login me manda a una p\u00e1gina que ya le\u00ed, pero necesito hablar con un asesor",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7325374777020895,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I\u2019ve changed my password another 3x using the link you sent, which is the same way I\u2019ve been changing it. I\u2019ll just shop elsewhere this weekend.",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.653936363178983,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I can\u2019t log in because it\u2019s locked.",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.8633800464468206,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I\u2019ve already done this and changed my password and it still won\u2019t log me in \ud83e\udd37\ud83c\udffc\u200d\u2640\ufe0f",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.8982081535840796,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Interesting - to clarify I'm not asking for a pay out - I get that - but the value should be back in my account no? But for that reason it needs to be unlocked - by sharing information that I do not want (and in fact not able to) share.",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7254165859698151,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Cannot contact as my access blocks site.",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.871129611896169,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "My orders are fine. I also still have access to you by way of my old Email. I just can't change my new Email address for the old one..",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7417774034642411,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I am also having the same predicament! I got a confirmation message and email but am unable to access the presale!",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.8008773918206575,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "I cant get to this link bcoz it is saying to login amaozn aocunt.but my acount is on hold.plz unhold my account",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.8222452615667619,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Incredible! I shouldn\u2019t post my details here Coz it\u2019s public. While you can\u2019t access it being in Amazon! Are you kidding me ?",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.697929773521537,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  },
+  {
+    "type": "escalation_mismatch",
+    "input": "Sir already reported to the support team and also talk with the costumer service help line nos several times and answer is enquiry is going on. since last 54 days I am very much harrassing becz of a huge amount is blocked. kindly help",
+    "predicted_intent": "account_access",
+    "expected_intent": "account_access",
+    "confidence": 0.7420440647691411,
+    "decision": "ESCALATE",
+    "expected_action": "AUTO_HANDLE",
+    "explanation": "System decided ESCALATE instead of AUTO_HANDLE"
+  }
+]

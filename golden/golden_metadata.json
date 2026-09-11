@@ -1,0 +1,8 @@
+{
+  "source": "Real AmazonHelp conversations from Customer Support on Twitter dataset",
+  "size": 200,
+  "labeling_method": "Heuristic keyword-based labeling (not manually labeled)",
+  "sampling_method": "Random sample from processed conversations",
+  "date": "2024-09-11",
+  "note": "This is a heuristically labeled set for evaluation. For production, manual human labeling is recommended."
+}

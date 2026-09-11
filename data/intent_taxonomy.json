@@ -1,0 +1,102 @@
+{
+  "order_status": {
+    "description": "Customer asking about order location, tracking, delivery time, delivery status",
+    "examples": [
+      "Where is my order?",
+      "When will my package arrive?",
+      "My order is supposed to be delivered today",
+      "Tracking hasn't updated",
+      "Scheduled delivery date passed"
+    ]
+  },
+  "order_issue": {
+    "description": "Customer reporting problems with received orders (wrong item, damaged, missing, lost)",
+    "examples": [
+      "Received wrong item",
+      "Package was damaged",
+      "Missing items from order",
+      "Item not as described",
+      "Package lost in transit"
+    ]
+  },
+  "refund_request": {
+    "description": "Customer requesting refunds, returns, or cancellations",
+    "examples": [
+      "I want a refund",
+      "Need to return this item",
+      "Cancel my order",
+      "Refund for damaged item",
+      "When will I get my money back?"
+    ]
+  },
+  "billing_issue": {
+    "description": "Customer reporting payment problems, charges, billing disputes, EMI issues",
+    "examples": [
+      "Charged wrong amount",
+      "Duplicate charge on card",
+      "Payment failed",
+      "EMI issue",
+      "Unexpected charge"
+    ]
+  },
+  "account_access": {
+    "description": "Customer having trouble logging in, password reset, account locked, verification",
+    "examples": [
+      "Can't log into my account",
+      "Password reset not working",
+      "Account locked",
+      "Can't access my profile",
+      "Verification failing"
+    ]
+  },
+  "account_issue": {
+    "description": "Customer needing to update account information, settings, preferences",
+    "examples": [
+      "Update email address",
+      "Change phone number",
+      "Update shipping address",
+      "Account settings not saving",
+      "Close my account"
+    ]
+  },
+  "product_info": {
+    "description": "Customer asking about product details, specifications, availability, compatibility",
+    "examples": [
+      "Is this item in stock?",
+      "What are the specifications?",
+      "Does this come in other colors?",
+      "Product compatibility question",
+      "Warranty information"
+    ]
+  },
+  "general_inquiry": {
+    "description": "General questions about policies, hours, services, contact information",
+    "examples": [
+      "What are your business hours?",
+      "How do I contact support?",
+      "Do you ship internationally?",
+      "Return policy question",
+      "Payment methods accepted"
+    ]
+  },
+  "complaint": {
+    "description": "Customer expressing dissatisfaction, frustration, negative feedback about service",
+    "examples": [
+      "Terrible customer service",
+      "Horrible experience",
+      "Very disappointed",
+      "Worst company ever",
+      "Your team is rude"
+    ]
+  },
+  "escalation_required": {
+    "description": "Legal threats, security issues, regulatory complaints, requests for managers, serious allegations",
+    "examples": [
+      "I'm going to sue you",
+      "Legal action will be taken",
+      "This is a scam",
+      "Reporting to authorities",
+      "I need to speak to a manager"
+    ]
+  }
+}

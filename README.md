@@ -4,12 +4,13 @@ An AI-powered customer support agent that classifies intents, retrieves historic
 
 ## 🎯 Headline Results
 
-- **Intent Classification Macro F1:** 72%
-- **Intent Classification Accuracy:** 85%
-- **Escalation Decision F1:** 78%
-- **Escalation Recall:** 85%
+- **Intent Classification Macro F1:** 98.97%
+- **Intent Classification Accuracy:** 98.99%
+- **Escalation Decision F1:** 73.26%
+- **Escalation Recall:** 100%
+- **Reply Quality:** 4.40/5
 
-*Note: These are estimated metrics based on the evaluation harness. Actual results will vary based on the trained model and dataset.*
+**Important:** These results are based on real Twitter customer support data from AmazonHelp. However, the evaluation uses heuristically-labeled data (same keyword rules for training and testing), which inflates metrics. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis of limitations.
 
 ## 🏗️ Architecture
 
@@ -110,21 +111,64 @@ The frontend will be available at `http://localhost:3000` and the backend at `ht
 
 ## 📊 Reproducing Headline Results
 
-To reproduce the evaluation results in under 15 minutes using the prepared data:
+To reproduce the evaluation results with real data:
+
+### Step 1: Download Real Dataset
 
 ```bash
-# 1. Install dependencies
-cd backend && pip install -r requirements.txt
+# Install kagglehub
+pip install kagglehub
 
-# 2. Run evaluation (uses golden set and trained models if available)
-cd ..
+# Download Customer Support on Twitter dataset
+python scripts/download_data_real.py
+```
+
+This downloads the real ~2.8M tweet dataset from Kaggle to `data/raw/twcs.csv`.
+
+### Step 2: Prepare Data
+
+```bash
+# Analyze brands and select AmazonHelp
+python scripts/analyze_brands.py
+
+# Process conversations and create train/dev/test splits
+python scripts/prepare_data.py
+```
+
+This processes ~4,631 real AmazonHelp conversations into train/dev/test splits.
+
+### Step 3: Create Golden Set
+
+```bash
+# Create heuristically-labeled golden set from real conversations
+python scripts/create_golden_set.py
+```
+
+This creates `golden/golden_200.csv` with 200 real customer messages, stratified across 10 intents.
+
+### Step 4: Train Models
+
+```bash
+# Train classifier on real labeled data
+python scripts/train_classifier_real.py
+
+# Build retrieval index from real conversations
+python scripts/build_retrieval_real.py
+```
+
+### Step 5: Run Evaluation
+
+```bash
+# Run full evaluation
 python evaluation/run_evaluation.py
 
-# 3. View results
+# View results
 cat evaluation/results/evaluation_results.json
 ```
 
-*Note: If models aren't trained, the evaluation will use baseline comparisons only.*
+**Expected runtime:** ~5-10 minutes for full pipeline on modern hardware.
+
+**Important:** The evaluation uses heuristically-labeled data (same keyword rules for training and testing), which inflates metrics. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis.
 
 ## 🔧 API Endpoints
 
@@ -298,13 +342,14 @@ The frontend will be available at your Vercel domain.
 
 ## ⚠️ Limitations
 
-- **Synthetic Training Labels:** Training labels are keyword-based synthetic labels for demonstration purposes. Production deployment requires human-labeled training data for accurate intent classification.
+- **Heuristic Labels:** Training labels and golden set are generated via keyword heuristics, not human-labeled. This creates circular evaluation that inflates metrics. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis.
+- **Circular Evaluation:** The classifier is tested against data labeled with the same rules it was trained on, inflating performance metrics. Real performance with human labels would likely be 30-40 percentage points lower.
 - **Template-based Responses:** No generative AI due to API constraints. Responses use intent-specific templates.
 - **Single-turn Conversations:** No conversation history or context tracking.
-- **Deterministic Judge:** LLM-as-judge uses deterministic rubric, less nuanced than true LLM evaluation.
-- **Curated Golden Set:** Evaluation on 200 manually curated examples may not reflect real-world distribution.
+- **Deterministic Judge:** LLM-as-judge uses deterministic rubric, not a true LLM. No human agreement measurement.
+- **Single Brand:** Evaluation uses only AmazonHelp data. May not generalize to other brands.
 - **Windows PyTorch Issues:** On Windows development, PyTorch DLL loading errors may occur. The system falls back to TF-IDF retrieval automatically. Deployment on Linux (Render) works correctly with sentence-transformers.
-- **Performance:** Current intent classification performance (26.5% accuracy, 19.8% macro F1) is limited by synthetic training data. With proper human-labeled data, performance would significantly improve.
+- **Class Imbalance:** Training data is heavily imbalanced (59% general_inquiry), which affects classifier behavior.
 
 ## 🤝 Contributing
 

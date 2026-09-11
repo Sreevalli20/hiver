@@ -293,7 +293,9 @@ class Evaluator:
             return None
         
         golden_df = pd.read_csv(golden_file)
-        print(f"Loaded {len(golden_df)} golden examples")
+        # Filter out NaN messages
+        golden_df = golden_df.dropna(subset=['message'])
+        print(f"Loaded {len(golden_df)} golden examples (after filtering NaN)")
         
         # Run evaluations
         results = {}

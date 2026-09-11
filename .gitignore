@@ -25,6 +25,8 @@ ENV/
 .venv
 
 # Data
+data/raw/*.csv
+!data/raw/sample.csv
 data/processed/*.csv
 !data/processed/sample_*.csv
 
