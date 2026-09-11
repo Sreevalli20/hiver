@@ -110,6 +110,7 @@ def load_models():
         
         # Only set models_loaded to true if both classifier and retrieval are loaded
         models_loaded = classifier is not None and retrieval_system is not None
+        print(f"Final state: models_loaded={models_loaded}, classifier={classifier is not None}, retrieval={retrieval_system is not None}")
         if models_loaded:
             print("All models loaded successfully")
         else:
