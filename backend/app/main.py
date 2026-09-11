@@ -74,6 +74,57 @@ class MetadataResponse(BaseModel):
     model_version: str
     dataset_size: Optional[int] = None
 
+def train_models_if_needed(model_dir):
+    """Train models if they don't exist."""
+    import subprocess
+    import sys
+    
+    print("Models not found, training...")
+    
+    # Change to repository root to run training script
+    original_cwd = Path.cwd()
+    if model_dir.name == 'models':
+        repo_root = model_dir.parent
+    else:
+        repo_root = model_dir.parent.parent
+    
+    print(f"Changing to repository root: {repo_root}")
+    import os
+    os.chdir(repo_root)
+    
+    try:
+        # Run training script
+        result = subprocess.run(
+            [sys.executable, "scripts/train_models.py"],
+            capture_output=True,
+            text=True,
+            timeout=300  # 5 minute timeout
+        )
+        
+        print("Training script output:")
+        print(result.stdout)
+        if result.stderr:
+            print("Training script errors:")
+            print(result.stderr)
+        
+        if result.returncode != 0:
+            print(f"Training script failed with return code {result.returncode}")
+            return False
+        
+        print("Training completed successfully")
+        return True
+    except subprocess.TimeoutExpired:
+        print("Training script timed out")
+        return False
+    except Exception as e:
+        print(f"Error running training script: {e}")
+        import traceback
+        traceback.print_exc()
+        return False
+    finally:
+        # Change back to original directory
+        os.chdir(original_cwd)
+
 def load_models():
     """Load all models on startup."""
     global classifier, retrieval_system, response_generator, escalation_policy, models_loaded
@@ -94,6 +145,12 @@ def load_models():
         print(f"Looking for models in: {model_dir}")
         print(f"Model directory exists: {model_dir.exists()}")
         print(f"Current working directory: {cwd}")
+        
+        # Train models if they don't exist
+        if not model_dir.exists() or not (model_dir / 'training_data.csv').exists():
+            print("Models not found, attempting to train...")
+            if not train_models_if_needed(model_dir):
+                print("Failed to train models, continuing without them")
         
         # Load classifier
         if (model_dir / 'training_data.csv').exists():
