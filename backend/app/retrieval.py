@@ -92,7 +92,7 @@ class RetrievalSystem:
             stop_words='english'
         )
         
-        texts = self.corpus_df['customer_text'].tolist()
+        texts = self.corpus_df['customer_text'].fillna('').tolist()
         self.tfidf_matrix = self.tfidf_vectorizer.fit_transform(texts)
         
         print(f"TF-IDF index built with {self.tfidf_matrix.shape[0]} documents")
@@ -143,6 +143,11 @@ class RetrievalSystem:
     
     def _retrieve_tfidf(self, query, k):
         """Retrieve using TF-IDF cosine similarity."""
+        # Ensure vectorizer is fitted
+        if not hasattr(self.tfidf_vectorizer, 'idf_'):
+            print("Vectorizer not fitted, refitting...")
+            self._build_tfidf_index()
+        
         # Transform query
         query_tfidf = self.tfidf_vectorizer.transform([query])
         
@@ -218,8 +223,9 @@ class RetrievalSystem:
             self.index = faiss.read_index(str(model_dir / 'faiss.index'))
             self.model = SentenceTransformer('all-MiniLM-L6-v2')
         else:
-            self.tfidf_vectorizer = joblib.load(model_dir / 'tfidf_vectorizer.joblib')
-            self.tfidf_matrix = joblib.load(model_dir / 'tfidf_matrix.joblib')
+            # Always rebuild TF-IDF index to avoid sklearn version compatibility issues
+            print("Rebuilding TF-IDF index from corpus to ensure compatibility...")
+            self._build_tfidf_index()
         
         self.is_loaded = True
         print(f"Retrieval models loaded from {model_dir}")

@@ -86,19 +86,38 @@ def load_models():
         print(f"Current working directory: {Path.cwd()}")
         
         # Load classifier
-        if (model_dir / 'classifier.joblib').exists():
+        if (model_dir / 'training_data.csv').exists():
+            print("Found training_data.csv, retraining classifier to ensure compatibility...")
+            classifier = IntentClassifier()
+            classifier.load_and_retrain(model_dir)
+            if not classifier.is_trained:
+                print("Classifier failed to retrain, will not be available")
+                classifier = None
+            else:
+                print("Classifier retrained successfully")
+        elif (model_dir / 'classifier.joblib').exists():
             print("Found classifier.joblib, loading...")
             classifier = IntentClassifier(model_dir)
-            print("Classifier loaded successfully")
+            # Check if classifier is actually trained
+            if not classifier.is_trained:
+                print("Classifier failed to load properly, will not be available")
+                classifier = None
+            else:
+                print("Classifier loaded successfully")
         else:
             print(f"Warning: Classifier not found at {model_dir / 'classifier.joblib'}. Models need to be trained.")
         
         # Load retrieval system
         if (model_dir / 'retrieval_corpus.csv').exists():
             print("Found retrieval_corpus.csv, loading...")
-            retrieval_system = RetrievalSystem()
+            retrieval_system = RetrievalSystem(use_semantic=False)
             retrieval_system.load(model_dir)
-            print("Retrieval system loaded successfully")
+            # Verify retrieval is actually loaded
+            if not retrieval_system.is_loaded:
+                print("Retrieval system failed to load properly, will not be available")
+                retrieval_system = None
+            else:
+                print("Retrieval system loaded successfully")
         else:
             print(f"Warning: Retrieval system not found at {model_dir / 'retrieval_corpus.csv'}. Models need to be trained.")
         
@@ -109,7 +128,7 @@ def load_models():
         escalation_policy = EscalationPolicy()
         
         # Only set models_loaded to true if both classifier and retrieval are loaded
-        models_loaded = classifier is not None and retrieval_system is not None
+        models_loaded = classifier is not None and retrieval_system is not None and classifier.is_trained and retrieval_system.is_loaded
         print(f"Final state: models_loaded={models_loaded}, classifier={classifier is not None}, retrieval={retrieval_system is not None}")
         if models_loaded:
             print("All models loaded successfully")

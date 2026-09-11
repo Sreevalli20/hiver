@@ -159,9 +159,44 @@ class IntentClassifier:
         """
         model_dir = Path(model_dir)
         
-        self.vectorizer = joblib.load(model_dir / 'vectorizer.joblib')
-        self.classifier = joblib.load(model_dir / 'classifier.joblib')
-        self.label_encoder = joblib.load(model_dir / 'label_encoder.joblib')
+        try:
+            self.vectorizer = joblib.load(model_dir / 'vectorizer.joblib')
+            self.classifier = joblib.load(model_dir / 'classifier.joblib')
+            self.label_encoder = joblib.load(model_dir / 'label_encoder.joblib')
+            self.is_trained = True
+            print(f"Model loaded from {model_dir}")
+        except Exception as e:
+            print(f"Error loading classifier: {e}")
+            print("Classifier not loaded - will need to be trained")
+            self.is_trained = False
+    
+    def load_and_retrain(self, model_dir):
+        """
+        Load training data and retrain to avoid sklearn version compatibility issues.
         
-        self.is_trained = True
-        print(f"Model loaded from {model_dir}")
+        Args:
+            model_dir: Directory containing model files and training data
+        """
+        model_dir = Path(model_dir)
+        
+        # Check if training data exists
+        training_data_file = model_dir / 'training_data.csv'
+        if not training_data_file.exists():
+            print("Training data not found, cannot retrain")
+            self.is_trained = False
+            return
+        
+        # Load training data
+        import pandas as pd
+        train_df = pd.read_csv(training_data_file)
+        print(f"Loaded {len(train_df)} training examples for retraining")
+        
+        # Extract texts and labels
+        train_df = train_df.dropna(subset=['text'])
+        texts = train_df['text'].tolist()
+        labels = train_df['label'].tolist()
+        
+        # Retrain
+        self.train(texts, labels)
+        
+        print(f"Classifier retrained from training data")
