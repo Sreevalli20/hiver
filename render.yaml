@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: hiver-backend
+    runtime: python
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: PORT
+        value: "8000"
+    disk:
+      name: data
+      mountPath: /opt/render/project/data
+      sizeGB: 1

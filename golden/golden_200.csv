@@ -1,0 +1,201 @@
+id,message,intent,expected_action,difficulty,notes
+1,Where is my order?,order_status,AUTO_HANDLE,Easy,Standard order status inquiry
+2,I received the wrong item,order_issue,ESCALATE,Medium,Requires investigation and resolution
+3,I want a refund,refund_request,ESCALATE,Medium,Requires account verification
+4,My payment was declined,billing_issue,ESCALATE,Medium,Payment processing issue
+5,I can't log into my account,account_access,AUTO_HANDLE,Easy,Standard password reset
+6,My address is wrong in my profile,account_issue,AUTO_HANDLE,Easy,Account update
+7,Is this product in stock?,product_info,AUTO_HANDLE,Easy,Informational query
+8,What are your business hours?,general_inquiry,AUTO_HANDLE,Easy,General information
+9,Terrible service,complaint,ESCALATE,Medium,Requires human attention
+10,I'm going to sue you,escalation_required,ESCALATE,Hard,Legal threat - must escalate
+11,Has my package shipped yet?,order_status,AUTO_HANDLE,Easy,Standard status check
+12,My package arrived damaged,order_issue,ESCALATE,Medium,Requires replacement process
+13,Can I get my money back?,refund_request,ESCALATE,Medium,Refund processing
+14,I was charged the wrong amount,billing_issue,ESCALATE,Medium,Billing correction needed
+15,Account locked,account_access,AUTO_HANDLE,Easy,Standard unlock process
+16,Can't update my payment method,account_issue,AUTO_HANDLE,Easy,Account setting update
+17,What are the specifications?,product_info,AUTO_HANDLE,Easy,Product information
+18,Do you ship internationally?,general_inquiry,AUTO_HANDLE,Easy,Policy question
+19,Very disappointed with my experience,complaint,ESCALATE,Medium,Customer dissatisfaction
+20,This is a security issue,escalation_required,ESCALATE,Hard,Security concern - must escalate
+21,Can you check the status of order #12345?,order_status,AUTO_HANDLE,Easy,Specific order inquiry
+22,Missing items from my order,order_issue,ESCALATE,Medium,Requires investigation
+23,Please refund my order,refund_request,ESCALATE,Medium,Refund request
+24,Charge appeared twice on my card,billing_issue,ESCALATE,Medium,Duplicate charge
+25,Forgot my password,account_access,AUTO_HANDLE,Easy,Password reset
+26,Account settings not saving,account_issue,ESCALATE,Medium,Technical issue
+27,Does this come in other colors?,product_info,AUTO_HANDLE,Easy,Product variant question
+28,What's your return policy?,general_inquiry,AUTO_HANDLE,Easy,Policy information
+29,Your customer service is awful,complaint,ESCALATE,Medium,Strong complaint
+30,I need to speak to a manager,escalation_required,ESCALATE,Hard,Request for escalation
+31,When will my order arrive?,order_status,AUTO_HANDLE,Easy,Delivery estimate
+32,Order never arrived but tracking says delivered,order_issue,ESCALATE,Hard,Delivery dispute
+33,I need to return this for a refund,refund_request,ESCALATE,Medium,Return process
+34,Payment failed but I have funds,billing_issue,ESCALATE,Medium,Payment technical issue
+35,Can't access my profile,account_access,AUTO_HANDLE,Easy,Access issue
+36,Profile information is incorrect,account_issue,AUTO_HANDLE,Easy,Data correction
+37,Is this compatible with X?,product_info,AUTO_HANDLE,Easy,Compatibility question
+38,How do I contact support?,general_inquiry,AUTO_HANDLE,Easy,Contact information
+39,I'm very unhappy with this,complaint,ESCALATE,Medium,Expressed dissatisfaction
+40,Legal action will be taken,escalation_required,ESCALATE,Hard,Legal threat
+41,Can you track my package?,order_status,AUTO_HANDLE,Easy,Tracking request
+42,Received defective product,order_issue,ESCALATE,Medium,Quality issue
+43,Why was I charged twice?,billing_issue,ESCALATE,Medium,Duplicate charge inquiry
+44,Billing statement doesn't match my order,billing_issue,ESCALATE,Medium,Discrepancy
+45,Need to reset my credentials,account_access,AUTO_HANDLE,Easy,Credential reset
+46,Need to change account details,account_issue,AUTO_HANDLE,Easy,Account modification
+47,Can you tell me more about this product?,product_info,AUTO_HANDLE,Easy,Product details
+48,General question about your service,general_inquiry,AUTO_HANDLE,Easy,General inquiry
+49,This is unacceptable,complaint,ESCALATE,Medium,Strong negative feedback
+50,This involves my personal data security,escalation_required,ESCALATE,Hard,Privacy/security concern
+51,Where is my delivery?,order_status,AUTO_HANDLE,Easy,Delivery status
+52,Wrong size received,order_issue,ESCALATE,Medium,Wrong item variant
+53,Refund for cancelled order,refund_request,ESCALATE,Medium,Cancellation refund
+54,Unexpected charge on card,billing_issue,ESCALATE,Medium,Unauthorized charge
+45,Login page not working,account_access,AUTO_HANDLE,Easy,Technical access issue
+56,Email address needs updating,account_issue,AUTO_HANDLE,Easy,Email change
+57,Is this item available?,product_info,AUTO_HANDLE,Easy,Availability check
+58,What payment methods do you accept?,general_inquiry,AUTO_HANDLE,Easy,Payment policy
+59,Worst experience ever,complaint,ESCALATE,Medium,Extreme dissatisfaction
+60,I'm reporting this to authorities,escalation_required,ESCALATE,Hard,External escalation threat
+61,Shipping delay status,order_status,AUTO_HANDLE,Easy,Delay inquiry
+62,Item arrived broken,order_issue,ESCALATE,Medium,Damaged goods
+63,Partial refund requested,refund_request,ESCALATE,Medium,Partial refund
+64,Recurring charge I didn't authorize,billing_issue,ESCALATE,Medium,Unauthorized recurring
+65,Two-factor authentication not working,account_access,ESCALATE,Medium,Security feature issue
+66,Phone number needs update,account_issue,AUTO_HANDLE,Easy,Contact info update
+67,Product dimensions please,product_info,AUTO_HANDLE,Easy,Spec inquiry
+68,Do you have physical stores?,general_inquiry,AUTO_HANDLE,Easy,Business question
+69,Absolutely ridiculous service,complaint,ESCALATE,Medium,Strong complaint
+70,I have a lawyer,escalation_required,ESCALATE,Hard,Legal representation mentioned
+71,Estimated delivery time?,order_status,AUTO_HANDLE,Easy,Time estimate
+72,Missing part from order,order_issue,ESCALATE,Medium,Incomplete order
+73,Refund processing time?,refund_request,AUTO_HANDLE,Easy,Process inquiry
+74,Tax amount seems wrong,billing_issue,ESCALATE,Medium,Tax discrepancy
+75,Username not recognized,account_access,AUTO_HANDLE,Easy,Login issue
+76,Shipping address incorrect,account_issue,AUTO_HANDLE,Easy,Address correction
+77,Material composition?,product_info,AUTO_HANDLE,Easy,Material question
+78,Weekend delivery available?,general_inquiry,AUTO_HANDLE,Easy,Delivery policy
+79,Zero stars for this,complaint,ESCALATE,Medium,Negative rating
+80,Fraudulent activity on my account,escalation_required,ESCALATE,Hard,Security/fraud report
+81,Order still processing,order_status,AUTO_HANDLE,Easy,Processing status
+82,Item looks different from photo,order_issue,ESCALATE,Medium,Expectation mismatch
+83,Store credit instead of refund?,refund_request,ESCALATE,Medium,Alternative refund
+84,Discount not applied,billing_issue,ESCALATE,Medium,Pricing issue
+85,Session keeps timing out,account_access,ESCALATE,Medium,Technical issue
+86,Name spelling correction,account_issue,AUTO_HANDLE,Easy,Name update
+87,Warranty information?,product_info,AUTO_HANDLE,Easy,Warranty question
+88,Free shipping threshold?,general_inquiry,AUTO_HANDLE,Easy,Shipping policy
+89,Never ordering again,complaint,ESCALATE,Medium,Churn threat
+90,This is identity theft,escalation_required,ESCALATE,Hard,Identity theft claim
+91,Out for delivery status,order_status,AUTO_HANDLE,Easy,Delivery phase
+92,Expired item received,order_issue,ESCALATE,Medium,Quality issue
+93,Refund to original payment method,refund_request,ESCALATE,Medium,Refund method
+94,Currency conversion wrong,billing_issue,ESCALATE,Medium,Currency issue
+95,Can't create new account,account_access,ESCALATE,Medium,Registration issue
+96,Delete my account,account_issue,ESCALATE,Medium,Account deletion request
+97,Product weight?,product_info,AUTO_HANDLE,Easy,Spec inquiry
+98,Gift wrapping available?,general_inquiry,AUTO_HANDLE,Easy,Service question
+99,Shameful service,complaint,ESCALATE,Medium,Strong negative
+100,Reporting to BBB,escalation_required,ESCALATE,Hard,External escalation
+101,Package at local facility,order_status,AUTO_HANDLE,Easy,Location status
+102,Used item sold as new,order_issue,ESCALATE,Medium,Misrepresentation
+103,Refund for shipping cost,refund_request,ESCALATE,Medium,Shipping refund
+104,Service fee unexpected,billing_issue,ESCALATE,Medium,Fee dispute
+105,OAuth login failing,account_access,ESCALATE,Medium,Third-party login
+106,Privacy settings change,account_issue,AUTO_HANDLE,Easy,Settings update
+107,Product origin/country?,product_info,AUTO_HANDLE,Easy,Origin question
+108,Order cancellation policy?,general_inquiry,AUTO_HANDLE,Easy,Policy question
+109,Disgraceful experience,complaint,ESCALATE,Medium,Strong complaint
+110,FTC complaint filed,escalation_required,ESCALATE,Hard,Regulatory threat
+111,Customs clearance status,order_status,AUTO_HANDLE,Easy,International shipping
+112,Wrong quantity shipped,order_issue,ESCALATE,Medium,Quantity error
+113,Gift refund to giver,refund_request,ESCALATE,Medium,Special refund case
+114,Subscription charge unwanted,billing_issue,ESCALATE,Medium,Subscription issue
+115,MFA codes not received,account_access,ESCALATE,Medium,Security feature
+116,Close my account permanently,account_issue,ESCALATE,Medium,Account closure
+117,Product lifespan/durability?,product_info,AUTO_HANDLE,Easy,Quality question
+118,Expedited shipping cost?,general_inquiry,AUTO_HANDLE,Easy,Shipping cost
+119,Worst company ever,complaint,ESCALATE,Medium,Extreme complaint
+120,This violates my rights,escalation_required,ESCALATE,Hard,Legal claim
+121,Delivery attempted failed,order_status,AUTO_HANDLE,Easy,Delivery attempt
+122,Assembly instructions missing,order_issue,ESCALATE,Medium,Documentation issue
+123,Refund eligibility expired?,refund_request,ESCALATE,Medium,Policy question
+124,Price changed in cart,billing_issue,ESCALATE,Medium,Pricing discrepancy
+125,Account compromised,account_access,ESCALATE,Hard,Security incident
+126,Download purchase history,account_issue,AUTO_HANDLE,Easy,Data export
+127,Product reviews?,product_info,AUTO_HANDLE,Easy,Social proof
+128,Holiday shipping schedule?,general_inquiry,AUTO_HANDLE,Easy,Schedule inquiry
+129,Complete incompetence,complaint,ESCALATE,Medium,Strong criticism
+130,Consumer rights violation,escalation_required,ESCALATE,Hard,Legal claim
+131,Label created status,order_status,AUTO_HANDLE,Easy,Shipping phase
+132,Item doesn't work,order_issue,ESCALATE,Medium,Functional issue
+133,Refund to gift card,refund_request,ESCALATE,Medium,Alternative refund
+134,Tip added unexpectedly,billing_issue,ESCALATE,Medium,Unexpected charge
+135,Password reset email not coming,account_access,ESCALATE,Medium,Email delivery
+136,Marketing preferences,account_issue,AUTO_HANDLE,Easy,Preference update
+137,Compare with competitor,product_info,AUTO_HANDLE,Easy,Comparison
+138,Backorder notification?,general_inquiry,AUTO_HANDLE,Easy,Stock status
+139,Unbelievably bad,complaint,ESCALATE,Medium,Strong negative
+140,Contacting my bank,escalation_required,ESCALATE,Hard,Financial escalation
+141,In transit to you,order_status,AUTO_HANDLE,Easy,Transit status
+142,Missing accessories,order_issue,ESCALATE,Medium,Incomplete order
+143,Exchange instead of refund?,refund_request,ESCALATE,Medium,Alternative resolution
+144,Foreign transaction fee,billing_issue,ESCALATE,Medium,Banking fee
+145,Bio login not working,account_access,ESCALATE,Medium,Biometric issue
+146,Linked accounts management,account_issue,AUTO_HANDLE,Easy,Account linking
+147,Product safety certifications?,product_info,AUTO_HANDLE,Easy,Safety info
+148,Order minimum for free shipping?,general_inquiry,AUTO_HANDLE,Easy,Policy
+149,Horrible customer service,complaint,ESCALATE,Medium,Service complaint
+150,Filing chargeback,escalation_required,ESCALATE,Hard,Payment dispute
+151,Delivered to wrong address,order_issue,ESCALATE,Hard,Delivery error
+152,Refund for damaged item,refund_request,ESCALATE,Medium,Damage refund
+153,Hold on my card,billing_issue,ESCALATE,Medium,Authorization hold
+154,Can't verify phone number,account_access,ESCALATE,Medium,Verification issue
+155,Notification settings,account_issue,AUTO_HANDLE,Easy,Preferences
+156,Product care instructions,product_info,AUTO_HANDLE,Easy,Care info
+157,Do you price match?,general_inquiry,AUTO_HANDLE,Easy,Policy question
+158,Angry customer here,complaint,ESCALATE,Medium,Emotional state
+159,This is false advertising,escalation_required,ESCALATE,Hard,Legal claim
+160,Signature required status,order_status,AUTO_HANDLE,Easy,Delivery requirement
+161,Late delivery compensation,order_issue,ESCALATE,Medium,Compensation request
+162,Refund timeline,refund_request,AUTO_HANDLE,Easy,Process timeline
+163,Invoice not received,billing_issue,ESCALATE,Medium,Documentation
+164,Account suspended,account_access,ESCALATE,Hard,Account status
+165,Two accounts merged,account_issue,ESCALATE,Medium,Account management
+166,Product assembly required?,product_info,AUTO_HANDLE,Easy,Assembly question
+167,Do you have loyalty program?,general_inquiry,AUTO_HANDLE,Easy,Program info
+168,Frustrated with delays,complaint,ESCALATE,Medium,Delay complaint
+169,This is a scam,escalation_required,ESCALATE,Hard,Fraud accusation
+170,Package intercepted,order_status,AUTO_HANDLE,Easy,Shipping issue
+171,Item quality poor,order_issue,ESCALATE,Medium,Quality complaint
+172,Refund method change,refund_request,ESCALATE,Medium,Refund logistics
+173,Payment plan options?,billing_issue,AUTO_HANDLE,Easy,Payment options
+174,Email verification failing,account_access,ESCALATE,Medium,Verification
+175,Account recovery,account_access,ESCALATE,Hard,Recovery process
+176,Product return window?,product_info,AUTO_HANDLE,Easy,Return policy
+177,Corporate contact info?,general_inquiry,AUTO_HANDLE,Easy,Contact
+178,Done with this company,complaint,ESCALATE,Medium,Churn intent
+179,Reporting to attorney general,escalation_required,ESCALATE,Hard,Regulatory
+180,Address correction needed,order_status,AUTO_HANDLE,Easy,Address update
+181,Item not as described,order_issue,ESCALATE,Medium,Misrepresentation
+182,Gift exchange,refund_request,ESCALATE,Medium,Special case
+183,Senior discount available?,billing_issue,AUTO_HANDLE,Easy,Discount inquiry
+184,Linked social accounts,account_issue,AUTO_HANDLE,Easy,Account linking
+185,Product power requirements?,product_info,AUTO_HANDLE,Easy,Spec question
+186,Wholesale inquiries?,general_inquiry,AUTO_HANDLE,Easy,Business inquiry
+187,Never buying again,complaint,ESCALATE,Medium,Churn threat
+188,Class action lawsuit,escalation_required,ESCALATE,Hard,Legal action
+189,Shipping label printed,order_status,AUTO_HANDLE,Easy,Shipping phase
+190,Counterfeit item received,order_issue,ESCALATE,Hard,Quality/fraud
+191,Bonus refund requested,refund_request,ESCALATE,Medium,Extra request
+192,Currency accepted?,billing_issue,AUTO_HANDLE,Easy,Currency question
+193,Deactivate account,account_issue,ESCALATE,Medium,Account closure
+194,Language preferences,account_issue,AUTO_HANDLE,Easy,Preference
+195,Product age range?,product_info,AUTO_HANDLE,Easy,Target demographic
+196,Press contact?,general_inquiry,AUTO_HANDLE,Easy,Media inquiry
+197,Worst support ever,complaint,ESCALATE,Medium,Service complaint
+198,This is illegal,escalation_required,ESCALATE,Hard,Legal claim
+199,Out for delivery,order_status,AUTO_HANDLE,Easy,Delivery status
+200,Refund denied appeal,refund_request,ESCALATE,Hard,Appeal process

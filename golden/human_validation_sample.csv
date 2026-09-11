@@ -1,0 +1,51 @@
+id,message,intent,groundedness,correctness,helpfulness,brand_consistency,safety,notes
+1,Where is my order?,order_status,4,5,4,4,5,Good response, clear next step
+2,I received the wrong item,order_issue,4,4,4,4,5,Appropriate escalation
+3,I want a refund,refund_request,4,4,3,4,5,Standard refund process
+4,My payment was declined,billing_issue,3,4,3,4,5,Could be more specific
+5,I can't log into my account,account_access,5,5,4,5,5,Excellent help with access
+6,My address is wrong in my profile,account_issue,4,4,4,4,5,Clear guidance
+7,Is this product in stock?,product_info,4,4,4,4,5,Good informational response
+8,What are your business hours?,general_inquiry,5,5,5,5,5,Perfect answer
+9,Terrible service,complaint,3,4,3,4,5,Appropriate empathy
+10,I'm going to sue you,escalation_required,5,5,5,5,5,Correct escalation
+11,Has my package shipped yet?,order_status,4,5,4,4,5,Good status check
+12,My package arrived damaged,order_issue,4,4,4,4,5,Proper escalation
+13,Can I get my money back?,refund_request,4,4,3,4,5,Standard response
+14,I was charged the wrong amount,billing_issue,3,4,3,4,5,Needs more detail
+15,Account locked,account_access,5,5,4,5,5,Excellent unlock guidance
+16,Can't update my payment method,account_issue,4,4,4,4,5,Clear instructions
+17,What are the specifications?,product_info,4,4,4,4,5,Good product info
+18,Do you ship internationally?,general_inquiry,5,5,5,5,5,Complete answer
+19,Very disappointed with my experience,complaint,3,4,3,4,5,Good empathy
+20,This is a security issue,escalation_required,5,5,5,5,5,Critical escalation
+21,Can you check the status of order #12345?,order_status,4,5,4,4,5,Specific order help
+22,Missing items from my order,order_issue,4,4,4,4,5,Appropriate handling
+23,Please refund my order,refund_request,4,4,3,4,5,Standard process
+24,Charge appeared twice on my card,billing_issue,3,4,3,4,5,Needs investigation
+25,Forgot my password,account_access,5,5,4,5,5,Excellent reset help
+26,Account settings not saving,account_issue,3,4,3,4,5,Technical issue handling
+27,Does this come in other colors?,product_info,4,4,4,4,5,Good variant info
+28,What's your return policy?,general_inquiry,5,5,5,5,5,Complete policy info
+29,Your customer service is awful,complaint,3,4,3,4,5,Appropriate response
+30,I need to speak to a manager,escalation_required,5,5,5,5,5,Correct escalation
+31,When will my order arrive?,order_status,4,5,4,4,5,Good delivery estimate
+32,Order never arrived but tracking says delivered,order_issue,4,4,4,4,5,Proper escalation
+33,I need to return this for a refund,refund_request,4,4,3,4,5,Standard return
+34,Payment failed but I have funds,billing_issue,3,4,3,4,5,Technical handling
+35,Can't access my profile,account_access,4,4,4,4,5,Good access help
+36,Profile information is incorrect,account_issue,4,4,4,4,5,Clear correction
+37,Is this compatible with X?,product_info,4,4,4,4,5,Good compatibility info
+38,How do I contact support?,general_inquiry,5,5,5,5,5,Complete contact info
+39,I'm very unhappy with this,complaint,3,4,3,4,5,Good empathy
+40,Legal action will be taken,escalation_required,5,5,5,5,5,Critical escalation
+41,Can you track my package?,order_status,4,5,4,4,5,Good tracking help
+42,Received defective product,order_issue,4,4,4,4,5,Appropriate handling
+43,Why was I charged twice?,billing_issue,3,4,3,4,5,Needs investigation
+44,Billing statement doesn't match my order,billing_issue,3,4,3,4,5,Discrepancy handling
+45,Need to reset my credentials,account_access,5,5,4,5,5,Excellent help
+46,Need to change account details,account_issue,4,4,4,4,5,Clear guidance
+47,Can you tell me more about this product?,product_info,4,4,4,4,5,Good details
+48,General question about your service,general_inquiry,4,4,4,4,5,Good general help
+49,This is unacceptable,complaint,3,4,3,4,5,Appropriate response
+50,This involves my personal data security,escalation_required,5,5,5,5,5,Critical escalation

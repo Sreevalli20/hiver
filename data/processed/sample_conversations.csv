@@ -1,0 +1,1001 @@
+customer_tweet_id,customer_text,brand_tweet_id,brand_text,conversation_id
+tweet_1501_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1501,Is this product in stock?,conv_750
+tweet_2586_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2586,I can't log into my account,conv_1293
+tweet_2653_resp,I apologize for the delay. Let me check the status for you.,tweet_2653,Where is my order?,conv_1326
+tweet_1055_resp,This product is currently in stock and available for shipping.,tweet_1055,I was charged twice,conv_527
+tweet_705_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_705,Is this product in stock?,conv_352
+tweet_106_resp,Your order is expected to arrive in 2-3 business days.,tweet_106,I need a refund,conv_53
+tweet_589_resp,I can process your refund. Please confirm the order details.,tweet_589,How do I change my password?,conv_294
+tweet_2468_resp,Your order is expected to arrive in 2-3 business days.,tweet_2468,How do I change my password?,conv_1234
+tweet_2413_resp,This product is currently in stock and available for shipping.,tweet_2413,The delivery is late,conv_1206
+tweet_1600_resp,I'll help you track your order. Please provide your order number.,tweet_1600,I can't log into my account,conv_800
+tweet_2464_resp,I can process your refund. Please confirm the order details.,tweet_2464,How do I change my password?,conv_1232
+tweet_228_resp,I'll help you track your order. Please provide your order number.,tweet_228,My package is damaged,conv_114
+tweet_915_resp,Let me help you reset your password. Please click the link I'll send.,tweet_915,I need a refund,conv_457
+tweet_794_resp,Your order is expected to arrive in 2-3 business days.,tweet_794,What are your business hours?,conv_397
+tweet_3021_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3021,When will my order arrive?,conv_1510
+tweet_3543_resp,You can change your password in your account settings.,tweet_3543,I received the wrong item,conv_1771
+tweet_1073_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1073,Is this product in stock?,conv_536
+tweet_3351_resp,Your order is expected to arrive in 2-3 business days.,tweet_3351,I received the wrong item,conv_1675
+tweet_1744_resp,I'll help you track your order. Please provide your order number.,tweet_1744,I need a refund,conv_872
+tweet_1084_resp,I can process your refund. Please confirm the order details.,tweet_1084,What are your business hours?,conv_542
+tweet_926_resp,I'll investigate the duplicate charge and issue a refund.,tweet_926,I was charged twice,conv_463
+tweet_3049_resp,I'll help you track your order. Please provide your order number.,tweet_3049,My package is damaged,conv_1524
+tweet_1117_resp,I'll help you track your order. Please provide your order number.,tweet_1117,Is this product in stock?,conv_558
+tweet_642_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_642,What are your business hours?,conv_321
+tweet_4767_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4767,What are your business hours?,conv_2383
+tweet_501_resp,Let me help you reset your password. Please click the link I'll send.,tweet_501,I need a refund,conv_250
+tweet_4066_resp,You can change your password in your account settings.,tweet_4066,I need a refund,conv_2033
+tweet_333_resp,You can change your password in your account settings.,tweet_333,When will my order arrive?,conv_166
+tweet_4684_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4684,The delivery is late,conv_2342
+tweet_486_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_486,How do I change my password?,conv_243
+tweet_1962_resp,I apologize for the delay. Let me check the status for you.,tweet_1962,I was charged twice,conv_981
+tweet_393_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_393,Where is my order?,conv_196
+tweet_4842_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4842,I can't log into my account,conv_2421
+tweet_4866_resp,Your order is expected to arrive in 2-3 business days.,tweet_4866,When will my order arrive?,conv_2433
+tweet_1755_resp,Your order is expected to arrive in 2-3 business days.,tweet_1755,I received the wrong item,conv_877
+tweet_2515_resp,You can change your password in your account settings.,tweet_2515,How do I change my password?,conv_1257
+tweet_3585_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3585,What are your business hours?,conv_1792
+tweet_4315_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4315,I need a refund,conv_2157
+tweet_4966_resp,Your order is expected to arrive in 2-3 business days.,tweet_4966,I want to cancel my order,conv_2483
+tweet_2099_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2099,I want to cancel my order,conv_1049
+tweet_3599_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3599,My package is damaged,conv_1799
+tweet_4121_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4121,How do I change my password?,conv_2060
+tweet_29_resp,I apologize for the delay. Let me check the status for you.,tweet_29,Is this product in stock?,conv_14
+tweet_65_resp,Let me help you reset your password. Please click the link I'll send.,tweet_65,I received the wrong item,conv_32
+tweet_838_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_838,I need a refund,conv_419
+tweet_3906_resp,I apologize for the delay. Let me check the status for you.,tweet_3906,I can't log into my account,conv_1953
+tweet_3773_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3773,I can't log into my account,conv_1886
+tweet_4635_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4635,Where is my order?,conv_2317
+tweet_3161_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3161,How do I change my password?,conv_1580
+tweet_2659_resp,Your order is expected to arrive in 2-3 business days.,tweet_2659,The delivery is late,conv_1329
+tweet_4615_resp,You can change your password in your account settings.,tweet_4615,What are your business hours?,conv_2307
+tweet_4628_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4628,I need a refund,conv_2314
+tweet_2451_resp,I'll help you track your order. Please provide your order number.,tweet_2451,The delivery is late,conv_1225
+tweet_2846_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2846,What are your business hours?,conv_1423
+tweet_1144_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1144,I can't log into my account,conv_572
+tweet_3078_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3078,I can't log into my account,conv_1539
+tweet_1103_resp,I apologize for the delay. Let me check the status for you.,tweet_1103,Where is my order?,conv_551
+tweet_168_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_168,Is this product in stock?,conv_84
+tweet_1670_resp,You can change your password in your account settings.,tweet_1670,Where is my order?,conv_835
+tweet_2570_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2570,Where is my order?,conv_1285
+tweet_2377_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2377,How do I change my password?,conv_1188
+tweet_4395_resp,I apologize for the delay. Let me check the status for you.,tweet_4395,Is this product in stock?,conv_2197
+tweet_4257_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4257,I want to cancel my order,conv_2128
+tweet_3862_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3862,I need a refund,conv_1931
+tweet_23_resp,I'll investigate the duplicate charge and issue a refund.,tweet_23,My package is damaged,conv_11
+tweet_2633_resp,This product is currently in stock and available for shipping.,tweet_2633,Is this product in stock?,conv_1316
+tweet_3340_resp,I apologize for the delay. Let me check the status for you.,tweet_3340,What are your business hours?,conv_1670
+tweet_2215_resp,I can process your refund. Please confirm the order details.,tweet_2215,I can't log into my account,conv_1107
+tweet_3682_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3682,I can't log into my account,conv_1841
+tweet_4724_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4724,I want to cancel my order,conv_2362
+tweet_1907_resp,I apologize for the delay. Let me check the status for you.,tweet_1907,I need a refund,conv_953
+tweet_84_resp,I can process your refund. Please confirm the order details.,tweet_84,Is this product in stock?,conv_42
+tweet_227_resp,This product is currently in stock and available for shipping.,tweet_227,I want to cancel my order,conv_113
+tweet_296_resp,Your order is expected to arrive in 2-3 business days.,tweet_296,I need a refund,conv_148
+tweet_1001_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1001,I was charged twice,conv_500
+tweet_2138_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2138,I received the wrong item,conv_1069
+tweet_711_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_711,I was charged twice,conv_355
+tweet_2801_resp,I can process your refund. Please confirm the order details.,tweet_2801,Where is my order?,conv_1400
+tweet_2527_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2527,I can't log into my account,conv_1263
+tweet_3752_resp,I'll help you track your order. Please provide your order number.,tweet_3752,When will my order arrive?,conv_1876
+tweet_3321_resp,I'll help you track your order. Please provide your order number.,tweet_3321,The delivery is late,conv_1660
+tweet_3181_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3181,I received the wrong item,conv_1590
+tweet_4183_resp,This product is currently in stock and available for shipping.,tweet_4183,I received the wrong item,conv_2091
+tweet_1615_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1615,I can't log into my account,conv_807
+tweet_3024_resp,Your order is expected to arrive in 2-3 business days.,tweet_3024,Is this product in stock?,conv_1512
+tweet_1413_resp,You can change your password in your account settings.,tweet_1413,My package is damaged,conv_706
+tweet_763_resp,I can process your refund. Please confirm the order details.,tweet_763,The delivery is late,conv_381
+tweet_655_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_655,I can't log into my account,conv_327
+tweet_4797_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4797,The delivery is late,conv_2398
+tweet_3849_resp,I can process your refund. Please confirm the order details.,tweet_3849,I received the wrong item,conv_1924
+tweet_4153_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4153,The delivery is late,conv_2076
+tweet_468_resp,You can change your password in your account settings.,tweet_468,My package is damaged,conv_234
+tweet_157_resp,Your order is expected to arrive in 2-3 business days.,tweet_157,I was charged twice,conv_78
+tweet_1295_resp,Your order is expected to arrive in 2-3 business days.,tweet_1295,When will my order arrive?,conv_647
+tweet_497_resp,Let me help you reset your password. Please click the link I'll send.,tweet_497,Is this product in stock?,conv_248
+tweet_4740_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4740,When will my order arrive?,conv_2370
+tweet_2940_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2940,The delivery is late,conv_1470
+tweet_3456_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3456,What are your business hours?,conv_1728
+tweet_373_resp,This product is currently in stock and available for shipping.,tweet_373,I was charged twice,conv_186
+tweet_79_resp,I apologize for the delay. Let me check the status for you.,tweet_79,I want to cancel my order,conv_39
+tweet_1553_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1553,When will my order arrive?,conv_776
+tweet_1669_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1669,How do I change my password?,conv_834
+tweet_2131_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2131,How do I change my password?,conv_1065
+tweet_4439_resp,I can process your refund. Please confirm the order details.,tweet_4439,I received the wrong item,conv_2219
+tweet_465_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_465,Where is my order?,conv_232
+tweet_248_resp,I'll help you track your order. Please provide your order number.,tweet_248,The delivery is late,conv_124
+tweet_931_resp,I'll help you track your order. Please provide your order number.,tweet_931,I received the wrong item,conv_465
+tweet_1335_resp,I apologize for the delay. Let me check the status for you.,tweet_1335,My package is damaged,conv_667
+tweet_4524_resp,You can change your password in your account settings.,tweet_4524,What are your business hours?,conv_2262
+tweet_1338_resp,You can change your password in your account settings.,tweet_1338,I was charged twice,conv_669
+tweet_1406_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1406,When will my order arrive?,conv_703
+tweet_1090_resp,This product is currently in stock and available for shipping.,tweet_1090,I want to cancel my order,conv_545
+tweet_4209_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4209,When will my order arrive?,conv_2104
+tweet_742_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_742,When will my order arrive?,conv_371
+tweet_2323_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2323,Where is my order?,conv_1161
+tweet_3601_resp,I apologize for the delay. Let me check the status for you.,tweet_3601,The delivery is late,conv_1800
+tweet_2123_resp,This product is currently in stock and available for shipping.,tweet_2123,I want to cancel my order,conv_1061
+tweet_2094_resp,I apologize for the delay. Let me check the status for you.,tweet_2094,My package is damaged,conv_1047
+tweet_240_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_240,How do I change my password?,conv_120
+tweet_2351_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2351,I was charged twice,conv_1175
+tweet_1370_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1370,What are your business hours?,conv_685
+tweet_1057_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1057,I can't log into my account,conv_528
+tweet_4816_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4816,Is this product in stock?,conv_2408
+tweet_199_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_199,What are your business hours?,conv_99
+tweet_2280_resp,This product is currently in stock and available for shipping.,tweet_2280,I want to cancel my order,conv_1140
+tweet_4749_resp,This product is currently in stock and available for shipping.,tweet_4749,Where is my order?,conv_2374
+tweet_2220_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2220,My package is damaged,conv_1110
+tweet_4771_resp,I apologize for the delay. Let me check the status for you.,tweet_4771,I received the wrong item,conv_2385
+tweet_2819_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2819,The delivery is late,conv_1409
+tweet_3150_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3150,Is this product in stock?,conv_1575
+tweet_4256_resp,You can change your password in your account settings.,tweet_4256,Where is my order?,conv_2128
+tweet_3107_resp,This product is currently in stock and available for shipping.,tweet_3107,How do I change my password?,conv_1553
+tweet_1973_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1973,I was charged twice,conv_986
+tweet_1375_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1375,I need a refund,conv_687
+tweet_3968_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3968,I need a refund,conv_1984
+tweet_4062_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4062,I was charged twice,conv_2031
+tweet_4445_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4445,I need a refund,conv_2222
+tweet_3557_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3557,The delivery is late,conv_1778
+tweet_964_resp,I'll investigate the duplicate charge and issue a refund.,tweet_964,How do I change my password?,conv_482
+tweet_179_resp,I apologize for the delay. Let me check the status for you.,tweet_179,I can't log into my account,conv_89
+tweet_3698_resp,You can change your password in your account settings.,tweet_3698,The delivery is late,conv_1849
+tweet_3821_resp,You can change your password in your account settings.,tweet_3821,Where is my order?,conv_1910
+tweet_4878_resp,This product is currently in stock and available for shipping.,tweet_4878,Where is my order?,conv_2439
+tweet_3899_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3899,When will my order arrive?,conv_1949
+tweet_4487_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4487,My package is damaged,conv_2243
+tweet_3238_resp,Your order is expected to arrive in 2-3 business days.,tweet_3238,I received the wrong item,conv_1619
+tweet_2974_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2974,I received the wrong item,conv_1487
+tweet_3580_resp,I apologize for the delay. Let me check the status for you.,tweet_3580,The delivery is late,conv_1790
+tweet_2887_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2887,I was charged twice,conv_1443
+tweet_2575_resp,Your order is expected to arrive in 2-3 business days.,tweet_2575,I was charged twice,conv_1287
+tweet_1419_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1419,When will my order arrive?,conv_709
+tweet_3907_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3907,What are your business hours?,conv_1953
+tweet_4673_resp,Your order is expected to arrive in 2-3 business days.,tweet_4673,When will my order arrive?,conv_2336
+tweet_4902_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4902,I can't log into my account,conv_2451
+tweet_1860_resp,I can process your refund. Please confirm the order details.,tweet_1860,What are your business hours?,conv_930
+tweet_8_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_8,I received the wrong item,conv_4
+tweet_2894_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2894,I received the wrong item,conv_1447
+tweet_2847_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2847,I need a refund,conv_1423
+tweet_3664_resp,I apologize for the delay. Let me check the status for you.,tweet_3664,I received the wrong item,conv_1832
+tweet_144_resp,Let me help you reset your password. Please click the link I'll send.,tweet_144,I need a refund,conv_72
+tweet_2104_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2104,I was charged twice,conv_1052
+tweet_3143_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3143,When will my order arrive?,conv_1571
+tweet_841_resp,I apologize for the delay. Let me check the status for you.,tweet_841,Is this product in stock?,conv_420
+tweet_1128_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1128,I can't log into my account,conv_564
+tweet_151_resp,I can process your refund. Please confirm the order details.,tweet_151,I want to cancel my order,conv_75
+tweet_3591_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3591,My package is damaged,conv_1795
+tweet_1052_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1052,How do I change my password?,conv_526
+tweet_1590_resp,Your order is expected to arrive in 2-3 business days.,tweet_1590,The delivery is late,conv_795
+tweet_3008_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3008,The delivery is late,conv_1504
+tweet_2029_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2029,The delivery is late,conv_1014
+tweet_3418_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3418,I want to cancel my order,conv_1709
+tweet_1807_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1807,When will my order arrive?,conv_903
+tweet_2696_resp,I apologize for the delay. Let me check the status for you.,tweet_2696,I was charged twice,conv_1348
+tweet_3039_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3039,I need a refund,conv_1519
+tweet_472_resp,I apologize for the delay. Let me check the status for you.,tweet_472,What are your business hours?,conv_236
+tweet_3289_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3289,I was charged twice,conv_1644
+tweet_4074_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4074,I need a refund,conv_2037
+tweet_3496_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3496,What are your business hours?,conv_1748
+tweet_279_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_279,The delivery is late,conv_139
+tweet_1741_resp,I apologize for the delay. Let me check the status for you.,tweet_1741,Where is my order?,conv_870
+tweet_4624_resp,I can process your refund. Please confirm the order details.,tweet_4624,When will my order arrive?,conv_2312
+tweet_2886_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2886,I received the wrong item,conv_1443
+tweet_1941_resp,I can process your refund. Please confirm the order details.,tweet_1941,The delivery is late,conv_970
+tweet_100_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_100,Where is my order?,conv_50
+tweet_2804_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2804,My package is damaged,conv_1402
+tweet_3570_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3570,I need a refund,conv_1785
+tweet_3684_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3684,The delivery is late,conv_1842
+tweet_3661_resp,Your order is expected to arrive in 2-3 business days.,tweet_3661,How do I change my password?,conv_1830
+tweet_530_resp,Your order is expected to arrive in 2-3 business days.,tweet_530,Where is my order?,conv_265
+tweet_1886_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1886,The delivery is late,conv_943
+tweet_681_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_681,I was charged twice,conv_340
+tweet_3794_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3794,What are your business hours?,conv_1897
+tweet_3944_resp,You can change your password in your account settings.,tweet_3944,My package is damaged,conv_1972
+tweet_4666_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4666,The delivery is late,conv_2333
+tweet_2018_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2018,What are your business hours?,conv_1009
+tweet_1096_resp,This product is currently in stock and available for shipping.,tweet_1096,I need a refund,conv_548
+tweet_829_resp,Your order is expected to arrive in 2-3 business days.,tweet_829,Is this product in stock?,conv_414
+tweet_2805_resp,I'll help you track your order. Please provide your order number.,tweet_2805,What are your business hours?,conv_1402
+tweet_3829_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3829,I was charged twice,conv_1914
+tweet_4381_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4381,I can't log into my account,conv_2190
+tweet_3891_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3891,I can't log into my account,conv_1945
+tweet_764_resp,I'll investigate the duplicate charge and issue a refund.,tweet_764,What are your business hours?,conv_382
+tweet_2767_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2767,Where is my order?,conv_1383
+tweet_4328_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4328,Is this product in stock?,conv_2164
+tweet_3295_resp,This product is currently in stock and available for shipping.,tweet_3295,Is this product in stock?,conv_1647
+tweet_2194_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2194,I need a refund,conv_1097
+tweet_2357_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2357,Where is my order?,conv_1178
+tweet_3425_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3425,I want to cancel my order,conv_1712
+tweet_3979_resp,This product is currently in stock and available for shipping.,tweet_3979,The delivery is late,conv_1989
+tweet_911_resp,I'll investigate the duplicate charge and issue a refund.,tweet_911,Is this product in stock?,conv_455
+tweet_3145_resp,I'll help you track your order. Please provide your order number.,tweet_3145,My package is damaged,conv_1572
+tweet_999_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_999,Is this product in stock?,conv_499
+tweet_3653_resp,I'll help you track your order. Please provide your order number.,tweet_3653,When will my order arrive?,conv_1826
+tweet_2483_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2483,I can't log into my account,conv_1241
+tweet_4076_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4076,I can't log into my account,conv_2038
+tweet_2370_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2370,I want to cancel my order,conv_1185
+tweet_4838_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4838,Is this product in stock?,conv_2419
+tweet_33_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_33,The delivery is late,conv_16
+tweet_3789_resp,I can process your refund. Please confirm the order details.,tweet_3789,I was charged twice,conv_1894
+tweet_1020_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1020,I can't log into my account,conv_510
+tweet_1647_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1647,I received the wrong item,conv_823
+tweet_733_resp,You can change your password in your account settings.,tweet_733,I need a refund,conv_366
+tweet_4582_resp,You can change your password in your account settings.,tweet_4582,What are your business hours?,conv_2291
+tweet_3274_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3274,Where is my order?,conv_1637
+tweet_1620_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1620,Where is my order?,conv_810
+tweet_3135_resp,Your order is expected to arrive in 2-3 business days.,tweet_3135,What are your business hours?,conv_1567
+tweet_2689_resp,I'll help you track your order. Please provide your order number.,tweet_2689,When will my order arrive?,conv_1344
+tweet_2707_resp,Your order is expected to arrive in 2-3 business days.,tweet_2707,I need a refund,conv_1353
+tweet_297_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_297,I need a refund,conv_148
+tweet_2339_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2339,The delivery is late,conv_1169
+tweet_653_resp,You can change your password in your account settings.,tweet_653,I want to cancel my order,conv_326
+tweet_3774_resp,This product is currently in stock and available for shipping.,tweet_3774,When will my order arrive?,conv_1887
+tweet_1255_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1255,My package is damaged,conv_627
+tweet_4520_resp,I'll help you track your order. Please provide your order number.,tweet_4520,What are your business hours?,conv_2260
+tweet_230_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_230,I was charged twice,conv_115
+tweet_3276_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3276,Is this product in stock?,conv_1638
+tweet_3230_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3230,Where is my order?,conv_1615
+tweet_691_resp,I can process your refund. Please confirm the order details.,tweet_691,I need a refund,conv_345
+tweet_2754_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2754,I received the wrong item,conv_1377
+tweet_4863_resp,Your order is expected to arrive in 2-3 business days.,tweet_4863,I received the wrong item,conv_2431
+tweet_969_resp,I can cancel your order. Please confirm you want to proceed.,tweet_969,I can't log into my account,conv_484
+tweet_633_resp,This product is currently in stock and available for shipping.,tweet_633,Where is my order?,conv_316
+tweet_4092_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4092,I was charged twice,conv_2046
+tweet_4077_resp,This product is currently in stock and available for shipping.,tweet_4077,I received the wrong item,conv_2038
+tweet_1321_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1321,How do I change my password?,conv_660
+tweet_1831_resp,I'll help you track your order. Please provide your order number.,tweet_1831,Is this product in stock?,conv_915
+tweet_2178_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2178,What are your business hours?,conv_1089
+tweet_1417_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1417,I need a refund,conv_708
+tweet_1782_resp,I apologize for the delay. Let me check the status for you.,tweet_1782,How do I change my password?,conv_891
+tweet_4715_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4715,How do I change my password?,conv_2357
+tweet_4701_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4701,I can't log into my account,conv_2350
+tweet_4118_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4118,Where is my order?,conv_2059
+tweet_1652_resp,You can change your password in your account settings.,tweet_1652,Where is my order?,conv_826
+tweet_1483_resp,This product is currently in stock and available for shipping.,tweet_1483,I was charged twice,conv_741
+tweet_2275_resp,I can process your refund. Please confirm the order details.,tweet_2275,I received the wrong item,conv_1137
+tweet_877_resp,I'll investigate the duplicate charge and issue a refund.,tweet_877,I can't log into my account,conv_438
+tweet_3525_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3525,I want to cancel my order,conv_1762
+tweet_2016_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2016,Is this product in stock?,conv_1008
+tweet_426_resp,This product is currently in stock and available for shipping.,tweet_426,Where is my order?,conv_213
+tweet_626_resp,You can change your password in your account settings.,tweet_626,How do I change my password?,conv_313
+tweet_1589_resp,I'll help you track your order. Please provide your order number.,tweet_1589,I can't log into my account,conv_794
+tweet_2223_resp,This product is currently in stock and available for shipping.,tweet_2223,I need a refund,conv_1111
+tweet_2217_resp,I'll help you track your order. Please provide your order number.,tweet_2217,When will my order arrive?,conv_1108
+tweet_4483_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4483,How do I change my password?,conv_2241
+tweet_1485_resp,Your order is expected to arrive in 2-3 business days.,tweet_1485,The delivery is late,conv_742
+tweet_1739_resp,I apologize for the delay. Let me check the status for you.,tweet_1739,I want to cancel my order,conv_869
+tweet_2480_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2480,What are your business hours?,conv_1240
+tweet_2584_resp,I'll help you track your order. Please provide your order number.,tweet_2584,I need a refund,conv_1292
+tweet_2893_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2893,How do I change my password?,conv_1446
+tweet_149_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_149,When will my order arrive?,conv_74
+tweet_676_resp,I can cancel your order. Please confirm you want to proceed.,tweet_676,I need a refund,conv_338
+tweet_1261_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1261,How do I change my password?,conv_630
+tweet_4917_resp,I apologize for the delay. Let me check the status for you.,tweet_4917,I can't log into my account,conv_2458
+tweet_12_resp,Let me help you reset your password. Please click the link I'll send.,tweet_12,What are your business hours?,conv_6
+tweet_1833_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1833,Where is my order?,conv_916
+tweet_3248_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3248,Where is my order?,conv_1624
+tweet_1491_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1491,I need a refund,conv_745
+tweet_2727_resp,I'll help you track your order. Please provide your order number.,tweet_2727,I was charged twice,conv_1363
+tweet_3686_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3686,I need a refund,conv_1843
+tweet_1424_resp,I can process your refund. Please confirm the order details.,tweet_1424,Is this product in stock?,conv_712
+tweet_4605_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4605,How do I change my password?,conv_2302
+tweet_4595_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4595,I received the wrong item,conv_2297
+tweet_731_resp,I can cancel your order. Please confirm you want to proceed.,tweet_731,What are your business hours?,conv_365
+tweet_1231_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1231,Where is my order?,conv_615
+tweet_1634_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1634,When will my order arrive?,conv_817
+tweet_3936_resp,This product is currently in stock and available for shipping.,tweet_3936,Where is my order?,conv_1968
+tweet_1210_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1210,How do I change my password?,conv_605
+tweet_3268_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3268,How do I change my password?,conv_1634
+tweet_1934_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1934,Where is my order?,conv_967
+tweet_553_resp,I can process your refund. Please confirm the order details.,tweet_553,When will my order arrive?,conv_276
+tweet_491_resp,You can change your password in your account settings.,tweet_491,The delivery is late,conv_245
+tweet_2962_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2962,My package is damaged,conv_1481
+tweet_2329_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2329,The delivery is late,conv_1164
+tweet_2195_resp,I apologize for the delay. Let me check the status for you.,tweet_2195,My package is damaged,conv_1097
+tweet_3064_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3064,The delivery is late,conv_1532
+tweet_657_resp,I apologize for the delay. Let me check the status for you.,tweet_657,Is this product in stock?,conv_328
+tweet_2374_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2374,My package is damaged,conv_1187
+tweet_2225_resp,I can process your refund. Please confirm the order details.,tweet_2225,I received the wrong item,conv_1112
+tweet_4264_resp,I apologize for the delay. Let me check the status for you.,tweet_4264,What are your business hours?,conv_2132
+tweet_1170_resp,Your order is expected to arrive in 2-3 business days.,tweet_1170,I received the wrong item,conv_585
+tweet_132_resp,I apologize for the delay. Let me check the status for you.,tweet_132,I want to cancel my order,conv_66
+tweet_471_resp,I can process your refund. Please confirm the order details.,tweet_471,I received the wrong item,conv_235
+tweet_3225_resp,This product is currently in stock and available for shipping.,tweet_3225,Where is my order?,conv_1612
+tweet_1405_resp,You can change your password in your account settings.,tweet_1405,How do I change my password?,conv_702
+tweet_2876_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2876,The delivery is late,conv_1438
+tweet_4504_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4504,The delivery is late,conv_2252
+tweet_4692_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4692,I was charged twice,conv_2346
+tweet_2826_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2826,When will my order arrive?,conv_1413
+tweet_287_resp,Let me help you reset your password. Please click the link I'll send.,tweet_287,The delivery is late,conv_143
+tweet_1869_resp,I apologize for the delay. Let me check the status for you.,tweet_1869,My package is damaged,conv_934
+tweet_3114_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3114,The delivery is late,conv_1557
+tweet_3625_resp,I can process your refund. Please confirm the order details.,tweet_3625,My package is damaged,conv_1812
+tweet_2312_resp,I can process your refund. Please confirm the order details.,tweet_2312,I received the wrong item,conv_1156
+tweet_4923_resp,This product is currently in stock and available for shipping.,tweet_4923,What are your business hours?,conv_2461
+tweet_1618_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1618,Is this product in stock?,conv_809
+tweet_994_resp,This product is currently in stock and available for shipping.,tweet_994,How do I change my password?,conv_497
+tweet_1803_resp,You can change your password in your account settings.,tweet_1803,Where is my order?,conv_901
+tweet_2642_resp,You can change your password in your account settings.,tweet_2642,When will my order arrive?,conv_1321
+tweet_4802_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4802,I need a refund,conv_2401
+tweet_3535_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3535,The delivery is late,conv_1767
+tweet_4831_resp,This product is currently in stock and available for shipping.,tweet_4831,My package is damaged,conv_2415
+tweet_3911_resp,You can change your password in your account settings.,tweet_3911,I received the wrong item,conv_1955
+tweet_2107_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2107,The delivery is late,conv_1053
+tweet_3044_resp,I apologize for the delay. Let me check the status for you.,tweet_3044,What are your business hours?,conv_1522
+tweet_416_resp,I'll investigate the duplicate charge and issue a refund.,tweet_416,The delivery is late,conv_208
+tweet_977_resp,Your order is expected to arrive in 2-3 business days.,tweet_977,I want to cancel my order,conv_488
+tweet_2417_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2417,I can't log into my account,conv_1208
+tweet_505_resp,You can change your password in your account settings.,tweet_505,I want to cancel my order,conv_252
+tweet_4152_resp,I can process your refund. Please confirm the order details.,tweet_4152,I can't log into my account,conv_2076
+tweet_4255_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4255,My package is damaged,conv_2127
+tweet_3941_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3941,Is this product in stock?,conv_1970
+tweet_414_resp,Your order is expected to arrive in 2-3 business days.,tweet_414,I was charged twice,conv_207
+tweet_4148_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4148,I want to cancel my order,conv_2074
+tweet_1183_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1183,What are your business hours?,conv_591
+tweet_485_resp,I'll help you track your order. Please provide your order number.,tweet_485,I need a refund,conv_242
+tweet_893_resp,You can change your password in your account settings.,tweet_893,I received the wrong item,conv_446
+tweet_805_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_805,My package is damaged,conv_402
+tweet_555_resp,I can process your refund. Please confirm the order details.,tweet_555,When will my order arrive?,conv_277
+tweet_3825_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3825,How do I change my password?,conv_1912
+tweet_1197_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1197,I received the wrong item,conv_598
+tweet_4253_resp,I can process your refund. Please confirm the order details.,tweet_4253,I received the wrong item,conv_2126
+tweet_4058_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4058,I was charged twice,conv_2029
+tweet_1293_resp,I can process your refund. Please confirm the order details.,tweet_1293,I can't log into my account,conv_646
+tweet_2221_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2221,Is this product in stock?,conv_1110
+tweet_3504_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3504,What are your business hours?,conv_1752
+tweet_3654_resp,This product is currently in stock and available for shipping.,tweet_3654,My package is damaged,conv_1827
+tweet_4758_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4758,I was charged twice,conv_2379
+tweet_3006_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3006,The delivery is late,conv_1503
+tweet_2093_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2093,I received the wrong item,conv_1046
+tweet_2187_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2187,I can't log into my account,conv_1093
+tweet_3036_resp,You can change your password in your account settings.,tweet_3036,I need a refund,conv_1518
+tweet_3918_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3918,My package is damaged,conv_1959
+tweet_1272_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1272,I want to cancel my order,conv_636
+tweet_290_resp,I can process your refund. Please confirm the order details.,tweet_290,Where is my order?,conv_145
+tweet_4827_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4827,I need a refund,conv_2413
+tweet_252_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_252,My package is damaged,conv_126
+tweet_3245_resp,Your order is expected to arrive in 2-3 business days.,tweet_3245,I want to cancel my order,conv_1622
+tweet_350_resp,I apologize for the delay. Let me check the status for you.,tweet_350,The delivery is late,conv_175
+tweet_1187_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1187,I want to cancel my order,conv_593
+tweet_1961_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1961,My package is damaged,conv_980
+tweet_422_resp,I apologize for the delay. Let me check the status for you.,tweet_422,I can't log into my account,conv_211
+tweet_90_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_90,The delivery is late,conv_45
+tweet_3729_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3729,What are your business hours?,conv_1864
+tweet_2236_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2236,I received the wrong item,conv_1118
+tweet_670_resp,This product is currently in stock and available for shipping.,tweet_670,I can't log into my account,conv_335
+tweet_3040_resp,I'll help you track your order. Please provide your order number.,tweet_3040,My package is damaged,conv_1520
+tweet_26_resp,This product is currently in stock and available for shipping.,tweet_26,I need a refund,conv_13
+tweet_429_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_429,I want to cancel my order,conv_214
+tweet_683_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_683,I can't log into my account,conv_341
+tweet_4463_resp,I can process your refund. Please confirm the order details.,tweet_4463,How do I change my password?,conv_2231
+tweet_3945_resp,I apologize for the delay. Let me check the status for you.,tweet_3945,What are your business hours?,conv_1972
+tweet_3523_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3523,I need a refund,conv_1761
+tweet_1541_resp,I apologize for the delay. Let me check the status for you.,tweet_1541,When will my order arrive?,conv_770
+tweet_2031_resp,You can change your password in your account settings.,tweet_2031,Where is my order?,conv_1015
+tweet_2232_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2232,When will my order arrive?,conv_1116
+tweet_4120_resp,Your order is expected to arrive in 2-3 business days.,tweet_4120,I received the wrong item,conv_2060
+tweet_3235_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3235,How do I change my password?,conv_1617
+tweet_254_resp,Your order is expected to arrive in 2-3 business days.,tweet_254,I was charged twice,conv_127
+tweet_1029_resp,I apologize for the delay. Let me check the status for you.,tweet_1029,Where is my order?,conv_514
+tweet_4392_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4392,I need a refund,conv_2196
+tweet_3800_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3800,When will my order arrive?,conv_1900
+tweet_4310_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4310,I was charged twice,conv_2155
+tweet_2509_resp,I can process your refund. Please confirm the order details.,tweet_2509,What are your business hours?,conv_1254
+tweet_2292_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2292,When will my order arrive?,conv_1146
+tweet_1323_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1323,I need a refund,conv_661
+tweet_1550_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1550,Is this product in stock?,conv_775
+tweet_4647_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4647,I received the wrong item,conv_2323
+tweet_315_resp,Your order is expected to arrive in 2-3 business days.,tweet_315,When will my order arrive?,conv_157
+tweet_1242_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1242,The delivery is late,conv_621
+tweet_2450_resp,I'll help you track your order. Please provide your order number.,tweet_2450,I want to cancel my order,conv_1225
+tweet_1578_resp,I can process your refund. Please confirm the order details.,tweet_1578,I can't log into my account,conv_789
+tweet_4625_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4625,Is this product in stock?,conv_2312
+tweet_3116_resp,I apologize for the delay. Let me check the status for you.,tweet_3116,My package is damaged,conv_1558
+tweet_69_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_69,Is this product in stock?,conv_34
+tweet_859_resp,I can process your refund. Please confirm the order details.,tweet_859,Is this product in stock?,conv_429
+tweet_2753_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2753,Where is my order?,conv_1376
+tweet_1632_resp,I apologize for the delay. Let me check the status for you.,tweet_1632,Where is my order?,conv_816
+tweet_1650_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1650,I was charged twice,conv_825
+tweet_3860_resp,I'll help you track your order. Please provide your order number.,tweet_3860,I was charged twice,conv_1930
+tweet_3106_resp,Your order is expected to arrive in 2-3 business days.,tweet_3106,The delivery is late,conv_1553
+tweet_1074_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1074,I can't log into my account,conv_537
+tweet_4001_resp,This product is currently in stock and available for shipping.,tweet_4001,Where is my order?,conv_2000
+tweet_787_resp,I'll help you track your order. Please provide your order number.,tweet_787,I can't log into my account,conv_393
+tweet_2605_resp,I can process your refund. Please confirm the order details.,tweet_2605,I want to cancel my order,conv_1302
+tweet_3630_resp,This product is currently in stock and available for shipping.,tweet_3630,I need a refund,conv_1815
+tweet_2121_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2121,The delivery is late,conv_1060
+tweet_1874_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1874,When will my order arrive?,conv_937
+tweet_811_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_811,I need a refund,conv_405
+tweet_387_resp,Let me help you reset your password. Please click the link I'll send.,tweet_387,I need a refund,conv_193
+tweet_2882_resp,I'll help you track your order. Please provide your order number.,tweet_2882,The delivery is late,conv_1441
+tweet_1175_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1175,How do I change my password?,conv_587
+tweet_3197_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3197,I received the wrong item,conv_1598
+tweet_2623_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2623,What are your business hours?,conv_1311
+tweet_1351_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1351,I received the wrong item,conv_675
+tweet_410_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_410,What are your business hours?,conv_205
+tweet_4212_resp,You can change your password in your account settings.,tweet_4212,I want to cancel my order,conv_2106
+tweet_109_resp,This product is currently in stock and available for shipping.,tweet_109,Where is my order?,conv_54
+tweet_4995_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4995,How do I change my password?,conv_2497
+tweet_3429_resp,I'll help you track your order. Please provide your order number.,tweet_3429,When will my order arrive?,conv_1714
+tweet_2809_resp,I'll help you track your order. Please provide your order number.,tweet_2809,I want to cancel my order,conv_1404
+tweet_2594_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2594,I need a refund,conv_1297
+tweet_2836_resp,You can change your password in your account settings.,tweet_2836,I was charged twice,conv_1418
+tweet_2372_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2372,I want to cancel my order,conv_1186
+tweet_1235_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1235,When will my order arrive?,conv_617
+tweet_2146_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2146,I received the wrong item,conv_1073
+tweet_4975_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4975,I was charged twice,conv_2487
+tweet_599_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_599,My package is damaged,conv_299
+tweet_1434_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1434,What are your business hours?,conv_717
+tweet_4996_resp,I apologize for the delay. Let me check the status for you.,tweet_4996,How do I change my password?,conv_2498
+tweet_538_resp,I'll help you track your order. Please provide your order number.,tweet_538,My package is damaged,conv_269
+tweet_721_resp,I apologize for the delay. Let me check the status for you.,tweet_721,What are your business hours?,conv_360
+tweet_4410_resp,I'll help you track your order. Please provide your order number.,tweet_4410,How do I change my password?,conv_2205
+tweet_1872_resp,This product is currently in stock and available for shipping.,tweet_1872,I was charged twice,conv_936
+tweet_2845_resp,Your order is expected to arrive in 2-3 business days.,tweet_2845,Where is my order?,conv_1422
+tweet_2053_resp,You can change your password in your account settings.,tweet_2053,How do I change my password?,conv_1026
+tweet_2907_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2907,When will my order arrive?,conv_1453
+tweet_2254_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2254,I need a refund,conv_1127
+tweet_3912_resp,Your order is expected to arrive in 2-3 business days.,tweet_3912,The delivery is late,conv_1956
+tweet_177_resp,I'll investigate the duplicate charge and issue a refund.,tweet_177,I want to cancel my order,conv_88
+tweet_2890_resp,I can process your refund. Please confirm the order details.,tweet_2890,I can't log into my account,conv_1445
+tweet_3673_resp,I apologize for the delay. Let me check the status for you.,tweet_3673,Where is my order?,conv_1836
+tweet_80_resp,You can change your password in your account settings.,tweet_80,How do I change my password?,conv_40
+tweet_2561_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2561,Where is my order?,conv_1280
+tweet_1723_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1723,My package is damaged,conv_861
+tweet_1617_resp,This product is currently in stock and available for shipping.,tweet_1617,When will my order arrive?,conv_808
+tweet_1654_resp,You can change your password in your account settings.,tweet_1654,Where is my order?,conv_827
+tweet_2328_resp,Your order is expected to arrive in 2-3 business days.,tweet_2328,How do I change my password?,conv_1164
+tweet_4613_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4613,The delivery is late,conv_2306
+tweet_221_resp,You can change your password in your account settings.,tweet_221,I want to cancel my order,conv_110
+tweet_93_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_93,I need a refund,conv_46
+tweet_2609_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2609,How do I change my password?,conv_1304
+tweet_3382_resp,I'll help you track your order. Please provide your order number.,tweet_3382,When will my order arrive?,conv_1691
+tweet_4415_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4415,Where is my order?,conv_2207
+tweet_1397_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1397,When will my order arrive?,conv_698
+tweet_4686_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4686,I was charged twice,conv_2343
+tweet_1292_resp,I apologize for the delay. Let me check the status for you.,tweet_1292,Where is my order?,conv_646
+tweet_2164_resp,I'll help you track your order. Please provide your order number.,tweet_2164,My package is damaged,conv_1082
+tweet_2939_resp,Your order is expected to arrive in 2-3 business days.,tweet_2939,I received the wrong item,conv_1469
+tweet_3668_resp,You can change your password in your account settings.,tweet_3668,Is this product in stock?,conv_1834
+tweet_812_resp,I'll investigate the duplicate charge and issue a refund.,tweet_812,I can't log into my account,conv_406
+tweet_1258_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1258,What are your business hours?,conv_629
+tweet_889_resp,I'll help you track your order. Please provide your order number.,tweet_889,Is this product in stock?,conv_444
+tweet_1451_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1451,How do I change my password?,conv_725
+tweet_3316_resp,I apologize for the delay. Let me check the status for you.,tweet_3316,I can't log into my account,conv_1658
+tweet_2559_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2559,Is this product in stock?,conv_1279
+tweet_3574_resp,I can process your refund. Please confirm the order details.,tweet_3574,I need a refund,conv_1787
+tweet_2680_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2680,When will my order arrive?,conv_1340
+tweet_4651_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4651,The delivery is late,conv_2325
+tweet_4811_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4811,I can't log into my account,conv_2405
+tweet_4679_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4679,I need a refund,conv_2339
+tweet_2964_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2964,I was charged twice,conv_1482
+tweet_2672_resp,I'll help you track your order. Please provide your order number.,tweet_2672,The delivery is late,conv_1336
+tweet_561_resp,Your order is expected to arrive in 2-3 business days.,tweet_561,The delivery is late,conv_280
+tweet_2778_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2778,I can't log into my account,conv_1389
+tweet_2948_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2948,The delivery is late,conv_1474
+tweet_2817_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2817,When will my order arrive?,conv_1408
+tweet_2758_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2758,Is this product in stock?,conv_1379
+tweet_1756_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1756,My package is damaged,conv_878
+tweet_724_resp,I apologize for the delay. Let me check the status for you.,tweet_724,How do I change my password?,conv_362
+tweet_219_resp,I can process your refund. Please confirm the order details.,tweet_219,Where is my order?,conv_109
+tweet_4139_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4139,When will my order arrive?,conv_2069
+tweet_3957_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3957,I can't log into my account,conv_1978
+tweet_1588_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1588,How do I change my password?,conv_794
+tweet_3347_resp,I'll help you track your order. Please provide your order number.,tweet_3347,I received the wrong item,conv_1673
+tweet_3970_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3970,I was charged twice,conv_1985
+tweet_4707_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4707,I can't log into my account,conv_2353
+tweet_43_resp,I apologize for the delay. Let me check the status for you.,tweet_43,I want to cancel my order,conv_21
+tweet_3001_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3001,What are your business hours?,conv_1500
+tweet_210_resp,I apologize for the delay. Let me check the status for you.,tweet_210,My package is damaged,conv_105
+tweet_677_resp,I'll investigate the duplicate charge and issue a refund.,tweet_677,I was charged twice,conv_338
+tweet_354_resp,I can cancel your order. Please confirm you want to proceed.,tweet_354,I want to cancel my order,conv_177
+tweet_1433_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1433,How do I change my password?,conv_716
+tweet_949_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_949,I received the wrong item,conv_474
+tweet_2843_resp,I can process your refund. Please confirm the order details.,tweet_2843,Is this product in stock?,conv_1421
+tweet_577_resp,Let me help you reset your password. Please click the link I'll send.,tweet_577,Is this product in stock?,conv_288
+tweet_3928_resp,This product is currently in stock and available for shipping.,tweet_3928,When will my order arrive?,conv_1964
+tweet_544_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_544,I received the wrong item,conv_272
+tweet_367_resp,I apologize for the delay. Let me check the status for you.,tweet_367,I want to cancel my order,conv_183
+tweet_1612_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1612,I received the wrong item,conv_806
+tweet_3550_resp,Your order is expected to arrive in 2-3 business days.,tweet_3550,How do I change my password?,conv_1775
+tweet_3716_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3716,Is this product in stock?,conv_1858
+tweet_3779_resp,Your order is expected to arrive in 2-3 business days.,tweet_3779,I need a refund,conv_1889
+tweet_135_resp,This product is currently in stock and available for shipping.,tweet_135,When will my order arrive?,conv_67
+tweet_4480_resp,This product is currently in stock and available for shipping.,tweet_4480,I can't log into my account,conv_2240
+tweet_1437_resp,I can process your refund. Please confirm the order details.,tweet_1437,I received the wrong item,conv_718
+tweet_47_resp,I'll investigate the duplicate charge and issue a refund.,tweet_47,I was charged twice,conv_23
+tweet_1360_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1360,I was charged twice,conv_680
+tweet_734_resp,You can change your password in your account settings.,tweet_734,I need a refund,conv_367
+tweet_1534_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1534,I want to cancel my order,conv_767
+tweet_2004_resp,I'll help you track your order. Please provide your order number.,tweet_2004,What are your business hours?,conv_1002
+tweet_3795_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3795,I was charged twice,conv_1897
+tweet_2519_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2519,Is this product in stock?,conv_1259
+tweet_1972_resp,I apologize for the delay. Let me check the status for you.,tweet_1972,I received the wrong item,conv_986
+tweet_996_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_996,When will my order arrive?,conv_498
+tweet_61_resp,You can change your password in your account settings.,tweet_61,Where is my order?,conv_30
+tweet_1108_resp,I apologize for the delay. Let me check the status for you.,tweet_1108,I need a refund,conv_554
+tweet_2405_resp,You can change your password in your account settings.,tweet_2405,Is this product in stock?,conv_1202
+tweet_95_resp,I can cancel your order. Please confirm you want to proceed.,tweet_95,I can't log into my account,conv_47
+tweet_478_resp,I apologize for the delay. Let me check the status for you.,tweet_478,Where is my order?,conv_239
+tweet_4359_resp,I'll help you track your order. Please provide your order number.,tweet_4359,The delivery is late,conv_2179
+tweet_4112_resp,This product is currently in stock and available for shipping.,tweet_4112,How do I change my password?,conv_2056
+tweet_3707_resp,I'll help you track your order. Please provide your order number.,tweet_3707,My package is damaged,conv_1853
+tweet_1101_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1101,My package is damaged,conv_550
+tweet_2746_resp,I can process your refund. Please confirm the order details.,tweet_2746,How do I change my password?,conv_1373
+tweet_2170_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2170,Is this product in stock?,conv_1085
+tweet_322_resp,Let me help you reset your password. Please click the link I'll send.,tweet_322,I was charged twice,conv_161
+tweet_4254_resp,You can change your password in your account settings.,tweet_4254,I received the wrong item,conv_2127
+tweet_3142_resp,Your order is expected to arrive in 2-3 business days.,tweet_3142,My package is damaged,conv_1571
+tweet_3537_resp,I'll help you track your order. Please provide your order number.,tweet_3537,I want to cancel my order,conv_1768
+tweet_4925_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4925,I received the wrong item,conv_2462
+tweet_2924_resp,I'll help you track your order. Please provide your order number.,tweet_2924,I received the wrong item,conv_1462
+tweet_1149_resp,I'll help you track your order. Please provide your order number.,tweet_1149,The delivery is late,conv_574
+tweet_3617_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3617,I received the wrong item,conv_1808
+tweet_291_resp,This product is currently in stock and available for shipping.,tweet_291,The delivery is late,conv_145
+tweet_3749_resp,Your order is expected to arrive in 2-3 business days.,tweet_3749,Is this product in stock?,conv_1874
+tweet_3586_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3586,I need a refund,conv_1793
+tweet_533_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_533,Is this product in stock?,conv_266
+tweet_3607_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3607,The delivery is late,conv_1803
+tweet_2648_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2648,What are your business hours?,conv_1324
+tweet_4810_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4810,My package is damaged,conv_2405
+tweet_1983_resp,Your order is expected to arrive in 2-3 business days.,tweet_1983,Is this product in stock?,conv_991
+tweet_2932_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2932,I want to cancel my order,conv_1466
+tweet_1536_resp,This product is currently in stock and available for shipping.,tweet_1536,My package is damaged,conv_768
+tweet_4534_resp,You can change your password in your account settings.,tweet_4534,When will my order arrive?,conv_2267
+tweet_4172_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4172,How do I change my password?,conv_2086
+tweet_3360_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3360,I was charged twice,conv_1680
+tweet_3665_resp,I apologize for the delay. Let me check the status for you.,tweet_3665,Is this product in stock?,conv_1832
+tweet_4005_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4005,The delivery is late,conv_2002
+tweet_3626_resp,I'll help you track your order. Please provide your order number.,tweet_3626,I received the wrong item,conv_1813
+tweet_586_resp,This product is currently in stock and available for shipping.,tweet_586,When will my order arrive?,conv_293
+tweet_3256_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3256,My package is damaged,conv_1628
+tweet_2298_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2298,I want to cancel my order,conv_1149
+tweet_3988_resp,I'll help you track your order. Please provide your order number.,tweet_3988,I was charged twice,conv_1994
+tweet_584_resp,I'll investigate the duplicate charge and issue a refund.,tweet_584,When will my order arrive?,conv_292
+tweet_2423_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2423,I need a refund,conv_1211
+tweet_1391_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1391,The delivery is late,conv_695
+tweet_4525_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4525,Is this product in stock?,conv_2262
+tweet_4920_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4920,I was charged twice,conv_2460
+tweet_4800_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4800,I can't log into my account,conv_2400
+tweet_3240_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3240,The delivery is late,conv_1620
+tweet_4281_resp,You can change your password in your account settings.,tweet_4281,I received the wrong item,conv_2140
+tweet_3338_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3338,What are your business hours?,conv_1669
+tweet_3220_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3220,I received the wrong item,conv_1610
+tweet_2111_resp,I apologize for the delay. Let me check the status for you.,tweet_2111,I need a refund,conv_1055
+tweet_1174_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1174,Where is my order?,conv_587
+tweet_4862_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4862,I want to cancel my order,conv_2431
+tweet_3811_resp,You can change your password in your account settings.,tweet_3811,How do I change my password?,conv_1905
+tweet_1867_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1867,I want to cancel my order,conv_933
+tweet_2614_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2614,Is this product in stock?,conv_1307
+tweet_3866_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3866,I received the wrong item,conv_1933
+tweet_4885_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4885,Is this product in stock?,conv_2442
+tweet_3778_resp,I can process your refund. Please confirm the order details.,tweet_3778,The delivery is late,conv_1889
+tweet_3846_resp,This product is currently in stock and available for shipping.,tweet_3846,I need a refund,conv_1923
+tweet_2416_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2416,How do I change my password?,conv_1208
+tweet_70_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_70,I need a refund,conv_35
+tweet_4880_resp,Your order is expected to arrive in 2-3 business days.,tweet_4880,I was charged twice,conv_2440
+tweet_1126_resp,I'll help you track your order. Please provide your order number.,tweet_1126,Is this product in stock?,conv_563
+tweet_4024_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4024,I was charged twice,conv_2012
+tweet_3250_resp,I apologize for the delay. Let me check the status for you.,tweet_3250,Where is my order?,conv_1625
+tweet_3901_resp,I apologize for the delay. Let me check the status for you.,tweet_3901,My package is damaged,conv_1950
+tweet_1095_resp,I'll help you track your order. Please provide your order number.,tweet_1095,Is this product in stock?,conv_547
+tweet_4545_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4545,When will my order arrive?,conv_2272
+tweet_1212_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1212,Where is my order?,conv_606
+tweet_3921_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3921,I want to cancel my order,conv_1960
+tweet_1425_resp,Your order is expected to arrive in 2-3 business days.,tweet_1425,I need a refund,conv_712
+tweet_3066_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3066,My package is damaged,conv_1533
+tweet_4519_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4519,Where is my order?,conv_2259
+tweet_2100_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2100,What are your business hours?,conv_1050
+tweet_807_resp,I apologize for the delay. Let me check the status for you.,tweet_807,The delivery is late,conv_403
+tweet_4743_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4743,My package is damaged,conv_2371
+tweet_3750_resp,I can process your refund. Please confirm the order details.,tweet_3750,The delivery is late,conv_1875
+tweet_1362_resp,This product is currently in stock and available for shipping.,tweet_1362,I need a refund,conv_681
+tweet_2317_resp,Your order is expected to arrive in 2-3 business days.,tweet_2317,Where is my order?,conv_1158
+tweet_4581_resp,I'll help you track your order. Please provide your order number.,tweet_4581,How do I change my password?,conv_2290
+tweet_4741_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4741,The delivery is late,conv_2370
+tweet_1025_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1025,I can't log into my account,conv_512
+tweet_3109_resp,This product is currently in stock and available for shipping.,tweet_3109,Where is my order?,conv_1554
+tweet_2110_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2110,How do I change my password?,conv_1055
+tweet_1041_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1041,I need a refund,conv_520
+tweet_1876_resp,Your order is expected to arrive in 2-3 business days.,tweet_1876,What are your business hours?,conv_938
+tweet_881_resp,I'll help you track your order. Please provide your order number.,tweet_881,I need a refund,conv_440
+tweet_4299_resp,I apologize for the delay. Let me check the status for you.,tweet_4299,Is this product in stock?,conv_2149
+tweet_1192_resp,Your order is expected to arrive in 2-3 business days.,tweet_1192,How do I change my password?,conv_596
+tweet_4587_resp,This product is currently in stock and available for shipping.,tweet_4587,Where is my order?,conv_2293
+tweet_4510_resp,I apologize for the delay. Let me check the status for you.,tweet_4510,I received the wrong item,conv_2255
+tweet_3670_resp,I can process your refund. Please confirm the order details.,tweet_3670,Is this product in stock?,conv_1835
+tweet_624_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_624,When will my order arrive?,conv_312
+tweet_2796_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2796,I want to cancel my order,conv_1398
+tweet_4291_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4291,I need a refund,conv_2145
+tweet_4968_resp,I apologize for the delay. Let me check the status for you.,tweet_4968,I was charged twice,conv_2484
+tweet_233_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_233,My package is damaged,conv_116
+tweet_4566_resp,I'll help you track your order. Please provide your order number.,tweet_4566,What are your business hours?,conv_2283
+tweet_1662_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1662,I can't log into my account,conv_831
+tweet_415_resp,You can change your password in your account settings.,tweet_415,Where is my order?,conv_207
+tweet_4246_resp,You can change your password in your account settings.,tweet_4246,Is this product in stock?,conv_2123
+tweet_2173_resp,I apologize for the delay. Let me check the status for you.,tweet_2173,My package is damaged,conv_1086
+tweet_1456_resp,This product is currently in stock and available for shipping.,tweet_1456,The delivery is late,conv_728
+tweet_746_resp,This product is currently in stock and available for shipping.,tweet_746,I can't log into my account,conv_373
+tweet_17_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_17,What are your business hours?,conv_8
+tweet_1200_resp,You can change your password in your account settings.,tweet_1200,When will my order arrive?,conv_600
+tweet_1699_resp,I can process your refund. Please confirm the order details.,tweet_1699,I want to cancel my order,conv_849
+tweet_3253_resp,I apologize for the delay. Let me check the status for you.,tweet_3253,I was charged twice,conv_1626
+tweet_596_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_596,What are your business hours?,conv_298
+tweet_3226_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3226,I want to cancel my order,conv_1613
+tweet_4405_resp,You can change your password in your account settings.,tweet_4405,I want to cancel my order,conv_2202
+tweet_4719_resp,I'll help you track your order. Please provide your order number.,tweet_4719,What are your business hours?,conv_2359
+tweet_1505_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1505,I need a refund,conv_752
+tweet_1412_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1412,The delivery is late,conv_706
+tweet_1965_resp,I can process your refund. Please confirm the order details.,tweet_1965,When will my order arrive?,conv_982
+tweet_371_resp,I'll investigate the duplicate charge and issue a refund.,tweet_371,I received the wrong item,conv_185
+tweet_1340_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1340,I received the wrong item,conv_670
+tweet_598_resp,Your order is expected to arrive in 2-3 business days.,tweet_598,How do I change my password?,conv_299
+tweet_238_resp,Your order is expected to arrive in 2-3 business days.,tweet_238,I received the wrong item,conv_119
+tweet_3400_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3400,Where is my order?,conv_1700
+tweet_2067_resp,Your order is expected to arrive in 2-3 business days.,tweet_2067,I received the wrong item,conv_1033
+tweet_810_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_810,My package is damaged,conv_405
+tweet_1094_resp,This product is currently in stock and available for shipping.,tweet_1094,I need a refund,conv_547
+tweet_4324_resp,You can change your password in your account settings.,tweet_4324,How do I change my password?,conv_2162
+tweet_4760_resp,This product is currently in stock and available for shipping.,tweet_4760,My package is damaged,conv_2380
+tweet_3676_resp,I can process your refund. Please confirm the order details.,tweet_3676,How do I change my password?,conv_1838
+tweet_3464_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3464,I need a refund,conv_1732
+tweet_3103_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3103,The delivery is late,conv_1551
+tweet_2749_resp,I'll help you track your order. Please provide your order number.,tweet_2749,My package is damaged,conv_1374
+tweet_2295_resp,This product is currently in stock and available for shipping.,tweet_2295,I need a refund,conv_1147
+tweet_4192_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4192,What are your business hours?,conv_2096
+tweet_3708_resp,I'll help you track your order. Please provide your order number.,tweet_3708,When will my order arrive?,conv_1854
+tweet_3018_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3018,Is this product in stock?,conv_1509
+tweet_4252_resp,I'll help you track your order. Please provide your order number.,tweet_4252,I received the wrong item,conv_2126
+tweet_803_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_803,The delivery is late,conv_401
+tweet_4190_resp,You can change your password in your account settings.,tweet_4190,My package is damaged,conv_2095
+tweet_3705_resp,Your order is expected to arrive in 2-3 business days.,tweet_3705,I was charged twice,conv_1852
+tweet_751_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_751,The delivery is late,conv_375
+tweet_4644_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4644,I want to cancel my order,conv_2322
+tweet_2531_resp,This product is currently in stock and available for shipping.,tweet_2531,Where is my order?,conv_1265
+tweet_621_resp,I can cancel your order. Please confirm you want to proceed.,tweet_621,How do I change my password?,conv_310
+tweet_2297_resp,I can process your refund. Please confirm the order details.,tweet_2297,My package is damaged,conv_1148
+tweet_3828_resp,Your order is expected to arrive in 2-3 business days.,tweet_3828,I need a refund,conv_1914
+tweet_566_resp,You can change your password in your account settings.,tweet_566,I was charged twice,conv_283
+tweet_1135_resp,Your order is expected to arrive in 2-3 business days.,tweet_1135,Where is my order?,conv_567
+tweet_1204_resp,This product is currently in stock and available for shipping.,tweet_1204,I need a refund,conv_602
+tweet_1047_resp,This product is currently in stock and available for shipping.,tweet_1047,I was charged twice,conv_523
+tweet_51_resp,This product is currently in stock and available for shipping.,tweet_51,Where is my order?,conv_25
+tweet_3651_resp,You can change your password in your account settings.,tweet_3651,My package is damaged,conv_1825
+tweet_1044_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1044,What are your business hours?,conv_522
+tweet_2181_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2181,I was charged twice,conv_1090
+tweet_2688_resp,I can process your refund. Please confirm the order details.,tweet_2688,Where is my order?,conv_1344
+tweet_534_resp,I can process your refund. Please confirm the order details.,tweet_534,What are your business hours?,conv_267
+tweet_3184_resp,You can change your password in your account settings.,tweet_3184,I can't log into my account,conv_1592
+tweet_3857_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3857,My package is damaged,conv_1928
+tweet_443_resp,Your order is expected to arrive in 2-3 business days.,tweet_443,I want to cancel my order,conv_221
+tweet_3604_resp,I apologize for the delay. Let me check the status for you.,tweet_3604,I want to cancel my order,conv_1802
+tweet_195_resp,I'll investigate the duplicate charge and issue a refund.,tweet_195,I want to cancel my order,conv_97
+tweet_1115_resp,This product is currently in stock and available for shipping.,tweet_1115,What are your business hours?,conv_557
+tweet_765_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_765,I was charged twice,conv_382
+tweet_1945_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1945,I received the wrong item,conv_972
+tweet_3247_resp,I can process your refund. Please confirm the order details.,tweet_3247,I need a refund,conv_1623
+tweet_3002_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3002,My package is damaged,conv_1501
+tweet_1432_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1432,I received the wrong item,conv_716
+tweet_4200_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4200,When will my order arrive?,conv_2100
+tweet_3095_resp,I'll help you track your order. Please provide your order number.,tweet_3095,The delivery is late,conv_1547
+tweet_2922_resp,You can change your password in your account settings.,tweet_2922,When will my order arrive?,conv_1461
+tweet_644_resp,I'll help you track your order. Please provide your order number.,tweet_644,I received the wrong item,conv_322
+tweet_1049_resp,You can change your password in your account settings.,tweet_1049,I can't log into my account,conv_524
+tweet_3745_resp,This product is currently in stock and available for shipping.,tweet_3745,Is this product in stock?,conv_1872
+tweet_4093_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4093,What are your business hours?,conv_2046
+tweet_4403_resp,This product is currently in stock and available for shipping.,tweet_4403,My package is damaged,conv_2201
+tweet_120_resp,I can cancel your order. Please confirm you want to proceed.,tweet_120,I need a refund,conv_60
+tweet_2052_resp,Your order is expected to arrive in 2-3 business days.,tweet_2052,When will my order arrive?,conv_1026
+tweet_4258_resp,I can process your refund. Please confirm the order details.,tweet_4258,Where is my order?,conv_2129
+tweet_4888_resp,I can process your refund. Please confirm the order details.,tweet_4888,When will my order arrive?,conv_2444
+tweet_4334_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4334,Where is my order?,conv_2167
+tweet_4691_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4691,I can't log into my account,conv_2345
+tweet_134_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_134,Where is my order?,conv_67
+tweet_2460_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2460,When will my order arrive?,conv_1230
+tweet_1954_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1954,When will my order arrive?,conv_977
+tweet_2463_resp,I apologize for the delay. Let me check the status for you.,tweet_2463,How do I change my password?,conv_1231
+tweet_184_resp,Your order is expected to arrive in 2-3 business days.,tweet_184,I need a refund,conv_92
+tweet_1392_resp,I'll help you track your order. Please provide your order number.,tweet_1392,When will my order arrive?,conv_696
+tweet_2276_resp,I'll help you track your order. Please provide your order number.,tweet_2276,Is this product in stock?,conv_1138
+tweet_511_resp,Your order is expected to arrive in 2-3 business days.,tweet_511,When will my order arrive?,conv_255
+tweet_4729_resp,You can change your password in your account settings.,tweet_4729,Where is my order?,conv_2364
+tweet_4054_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4054,The delivery is late,conv_2027
+tweet_3137_resp,You can change your password in your account settings.,tweet_3137,How do I change my password?,conv_1568
+tweet_2669_resp,I'll help you track your order. Please provide your order number.,tweet_2669,My package is damaged,conv_1334
+tweet_4773_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4773,I received the wrong item,conv_2386
+tweet_4861_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4861,I want to cancel my order,conv_2430
+tweet_2117_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2117,I can't log into my account,conv_1058
+tweet_251_resp,Let me help you reset your password. Please click the link I'll send.,tweet_251,I want to cancel my order,conv_125
+tweet_3526_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3526,How do I change my password?,conv_1763
+tweet_3559_resp,You can change your password in your account settings.,tweet_3559,I want to cancel my order,conv_1779
+tweet_4011_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4011,How do I change my password?,conv_2005
+tweet_1507_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1507,I can't log into my account,conv_753
+tweet_122_resp,You can change your password in your account settings.,tweet_122,I can't log into my account,conv_61
+tweet_4259_resp,You can change your password in your account settings.,tweet_4259,Is this product in stock?,conv_2129
+tweet_3333_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3333,When will my order arrive?,conv_1666
+tweet_1871_resp,I can process your refund. Please confirm the order details.,tweet_1871,Where is my order?,conv_935
+tweet_3692_resp,I apologize for the delay. Let me check the status for you.,tweet_3692,The delivery is late,conv_1846
+tweet_567_resp,I can process your refund. Please confirm the order details.,tweet_567,I need a refund,conv_283
+tweet_1371_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1371,I can't log into my account,conv_685
+tweet_3185_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3185,The delivery is late,conv_1592
+tweet_3955_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3955,I can't log into my account,conv_1977
+tweet_1056_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1056,What are your business hours?,conv_528
+tweet_856_resp,You can change your password in your account settings.,tweet_856,I received the wrong item,conv_428
+tweet_3838_resp,I can process your refund. Please confirm the order details.,tweet_3838,When will my order arrive?,conv_1919
+tweet_2860_resp,You can change your password in your account settings.,tweet_2860,The delivery is late,conv_1430
+tweet_4769_resp,I can process your refund. Please confirm the order details.,tweet_4769,Is this product in stock?,conv_2384
+tweet_776_resp,I can cancel your order. Please confirm you want to proceed.,tweet_776,What are your business hours?,conv_388
+tweet_720_resp,I can cancel your order. Please confirm you want to proceed.,tweet_720,Is this product in stock?,conv_360
+tweet_2710_resp,This product is currently in stock and available for shipping.,tweet_2710,I received the wrong item,conv_1355
+tweet_2654_resp,This product is currently in stock and available for shipping.,tweet_2654,My package is damaged,conv_1327
+tweet_4877_resp,This product is currently in stock and available for shipping.,tweet_4877,My package is damaged,conv_2438
+tweet_602_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_602,I can't log into my account,conv_301
+tweet_3822_resp,I'll help you track your order. Please provide your order number.,tweet_3822,My package is damaged,conv_1911
+tweet_1244_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1244,The delivery is late,conv_622
+tweet_4845_resp,You can change your password in your account settings.,tweet_4845,Is this product in stock?,conv_2422
+tweet_4841_resp,Your order is expected to arrive in 2-3 business days.,tweet_4841,I want to cancel my order,conv_2420
+tweet_318_resp,Let me help you reset your password. Please click the link I'll send.,tweet_318,I can't log into my account,conv_159
+tweet_828_resp,I can process your refund. Please confirm the order details.,tweet_828,My package is damaged,conv_414
+tweet_3263_resp,Your order is expected to arrive in 2-3 business days.,tweet_3263,I can't log into my account,conv_1631
+tweet_274_resp,You can change your password in your account settings.,tweet_274,I was charged twice,conv_137
+tweet_2664_resp,Your order is expected to arrive in 2-3 business days.,tweet_2664,The delivery is late,conv_1332
+tweet_549_resp,I can process your refund. Please confirm the order details.,tweet_549,Is this product in stock?,conv_274
+tweet_3641_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_3641,Where is my order?,conv_1820
+tweet_4053_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4053,Is this product in stock?,conv_2026
+tweet_4892_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4892,I want to cancel my order,conv_2446
+tweet_2934_resp,I'll help you track your order. Please provide your order number.,tweet_2934,I need a refund,conv_1467
+tweet_605_resp,You can change your password in your account settings.,tweet_605,Where is my order?,conv_302
+tweet_896_resp,Let me help you reset your password. Please click the link I'll send.,tweet_896,What are your business hours?,conv_448
+tweet_527_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_527,I can't log into my account,conv_263
+tweet_4607_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4607,I was charged twice,conv_2303
+tweet_2347_resp,This product is currently in stock and available for shipping.,tweet_2347,Is this product in stock?,conv_1173
+tweet_3439_resp,You can change your password in your account settings.,tweet_3439,I want to cancel my order,conv_1719
+tweet_4998_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4998,I was charged twice,conv_2499
+tweet_4826_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4826,My package is damaged,conv_2413
+tweet_3922_resp,I apologize for the delay. Let me check the status for you.,tweet_3922,Is this product in stock?,conv_1961
+tweet_298_resp,I'll investigate the duplicate charge and issue a refund.,tweet_298,Is this product in stock?,conv_149
+tweet_2119_resp,I apologize for the delay. Let me check the status for you.,tweet_2119,Is this product in stock?,conv_1059
+tweet_2536_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2536,I can't log into my account,conv_1268
+tweet_4203_resp,I can process your refund. Please confirm the order details.,tweet_4203,Where is my order?,conv_2101
+tweet_3254_resp,I can process your refund. Please confirm the order details.,tweet_3254,I want to cancel my order,conv_1627
+tweet_3725_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3725,Where is my order?,conv_1862
+tweet_1260_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1260,What are your business hours?,conv_630
+tweet_1558_resp,You can change your password in your account settings.,tweet_1558,Where is my order?,conv_779
+tweet_3269_resp,I'll help you track your order. Please provide your order number.,tweet_3269,What are your business hours?,conv_1634
+tweet_4046_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4046,My package is damaged,conv_2023
+tweet_756_resp,You can change your password in your account settings.,tweet_756,I can't log into my account,conv_378
+tweet_1010_resp,I apologize for the delay. Let me check the status for you.,tweet_1010,I want to cancel my order,conv_505
+tweet_2794_resp,I can process your refund. Please confirm the order details.,tweet_2794,How do I change my password?,conv_1397
+tweet_2905_resp,This product is currently in stock and available for shipping.,tweet_2905,How do I change my password?,conv_1452
+tweet_1870_resp,I apologize for the delay. Let me check the status for you.,tweet_1870,The delivery is late,conv_935
+tweet_2229_resp,I'll help you track your order. Please provide your order number.,tweet_2229,The delivery is late,conv_1114
+tweet_1173_resp,You can change your password in your account settings.,tweet_1173,I was charged twice,conv_586
+tweet_1832_resp,You can change your password in your account settings.,tweet_1832,How do I change my password?,conv_916
+tweet_376_resp,I can process your refund. Please confirm the order details.,tweet_376,I need a refund,conv_188
+tweet_3853_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3853,I was charged twice,conv_1926
+tweet_3616_resp,This product is currently in stock and available for shipping.,tweet_3616,How do I change my password?,conv_1808
+tweet_798_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_798,I want to cancel my order,conv_399
+tweet_378_resp,Let me help you reset your password. Please click the link I'll send.,tweet_378,Is this product in stock?,conv_189
+tweet_1158_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1158,Where is my order?,conv_579
+tweet_3819_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3819,How do I change my password?,conv_1909
+tweet_2792_resp,I apologize for the delay. Let me check the status for you.,tweet_2792,How do I change my password?,conv_1396
+tweet_2240_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2240,I need a refund,conv_1120
+tweet_4035_resp,I'll help you track your order. Please provide your order number.,tweet_4035,My package is damaged,conv_2017
+tweet_2662_resp,This product is currently in stock and available for shipping.,tweet_2662,My package is damaged,conv_1331
+tweet_4012_resp,I apologize for the delay. Let me check the status for you.,tweet_4012,How do I change my password?,conv_2006
+tweet_2957_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2957,How do I change my password?,conv_1478
+tweet_3927_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3927,I was charged twice,conv_1963
+tweet_1038_resp,I can process your refund. Please confirm the order details.,tweet_1038,I need a refund,conv_519
+tweet_3259_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3259,What are your business hours?,conv_1629
+tweet_1344_resp,I'll investigate the duplicate charge and issue a refund.,tweet_1344,I received the wrong item,conv_672
+tweet_2505_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2505,My package is damaged,conv_1252
+tweet_1721_resp,I can process your refund. Please confirm the order details.,tweet_1721,When will my order arrive?,conv_860
+tweet_4663_resp,I'll help you track your order. Please provide your order number.,tweet_4663,I was charged twice,conv_2331
+tweet_175_resp,I apologize for the delay. Let me check the status for you.,tweet_175,The delivery is late,conv_87
+tweet_4893_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4893,When will my order arrive?,conv_2446
+tweet_1909_resp,I'll help you track your order. Please provide your order number.,tweet_1909,How do I change my password?,conv_954
+tweet_45_resp,I'll help you track your order. Please provide your order number.,tweet_45,I need a refund,conv_22
+tweet_3409_resp,This product is currently in stock and available for shipping.,tweet_3409,I want to cancel my order,conv_1704
+tweet_4674_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4674,When will my order arrive?,conv_2337
+tweet_1075_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1075,I can't log into my account,conv_537
+tweet_2829_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2829,The delivery is late,conv_1414
+tweet_1504_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1504,My package is damaged,conv_752
+tweet_2309_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2309,Is this product in stock?,conv_1154
+tweet_1436_resp,Your order is expected to arrive in 2-3 business days.,tweet_1436,The delivery is late,conv_718
+tweet_2418_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2418,I was charged twice,conv_1209
+tweet_3986_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3986,I want to cancel my order,conv_1993
+tweet_3098_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3098,What are your business hours?,conv_1549
+tweet_4588_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4588,I received the wrong item,conv_2294
+tweet_283_resp,Your order is expected to arrive in 2-3 business days.,tweet_283,How do I change my password?,conv_141
+tweet_4918_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4918,Is this product in stock?,conv_2459
+tweet_842_resp,Let me help you reset your password. Please click the link I'll send.,tweet_842,I was charged twice,conv_421
+tweet_1513_resp,This product is currently in stock and available for shipping.,tweet_1513,What are your business hours?,conv_756
+tweet_1168_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_1168,The delivery is late,conv_584
+tweet_1592_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1592,Is this product in stock?,conv_796
+tweet_3460_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_3460,How do I change my password?,conv_1730
+tweet_3165_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3165,I was charged twice,conv_1582
+tweet_2284_resp,Your order is expected to arrive in 2-3 business days.,tweet_2284,When will my order arrive?,conv_1142
+tweet_3575_resp,This product is currently in stock and available for shipping.,tweet_3575,What are your business hours?,conv_1787
+tweet_4870_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4870,The delivery is late,conv_2435
+tweet_2305_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2305,I received the wrong item,conv_1152
+tweet_952_resp,I'll investigate the duplicate charge and issue a refund.,tweet_952,My package is damaged,conv_476
+tweet_4942_resp,Your order is expected to arrive in 2-3 business days.,tweet_4942,I received the wrong item,conv_2471
+tweet_3053_resp,This product is currently in stock and available for shipping.,tweet_3053,What are your business hours?,conv_1526
+tweet_4559_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4559,When will my order arrive?,conv_2279
+tweet_2685_resp,You can change your password in your account settings.,tweet_2685,My package is damaged,conv_1342
+tweet_1489_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1489,Is this product in stock?,conv_744
+tweet_927_resp,I can process your refund. Please confirm the order details.,tweet_927,Is this product in stock?,conv_463
+tweet_1209_resp,You can change your password in your account settings.,tweet_1209,My package is damaged,conv_604
+tweet_3973_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3973,How do I change my password?,conv_1986
+tweet_3545_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3545,The delivery is late,conv_1772
+tweet_4361_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4361,I can't log into my account,conv_2180
+tweet_1921_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1921,My package is damaged,conv_960
+tweet_351_resp,You can change your password in your account settings.,tweet_351,What are your business hours?,conv_175
+tweet_4898_resp,I'll help you track your order. Please provide your order number.,tweet_4898,I need a refund,conv_2449
+tweet_3393_resp,I can process your refund. Please confirm the order details.,tweet_3393,I received the wrong item,conv_1696
+tweet_2721_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2721,My package is damaged,conv_1360
+tweet_4981_resp,I can process your refund. Please confirm the order details.,tweet_4981,When will my order arrive?,conv_2490
+tweet_718_resp,Let me help you reset your password. Please click the link I'll send.,tweet_718,The delivery is late,conv_359
+tweet_2702_resp,I can process your refund. Please confirm the order details.,tweet_2702,The delivery is late,conv_1351
+tweet_2722_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2722,I need a refund,conv_1361
+tweet_4561_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4561,I need a refund,conv_2280
+tweet_308_resp,I'll investigate the duplicate charge and issue a refund.,tweet_308,The delivery is late,conv_154
+tweet_1675_resp,I can process your refund. Please confirm the order details.,tweet_1675,When will my order arrive?,conv_837
+tweet_833_resp,I'll investigate the duplicate charge and issue a refund.,tweet_833,I received the wrong item,conv_416
+tweet_366_resp,I apologize for the delay. Let me check the status for you.,tweet_366,The delivery is late,conv_183
+tweet_4506_resp,I apologize for the delay. Let me check the status for you.,tweet_4506,I received the wrong item,conv_2253
+tweet_2078_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2078,I was charged twice,conv_1039
+tweet_4038_resp,This product is currently in stock and available for shipping.,tweet_4038,How do I change my password?,conv_2019
+tweet_4846_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4846,Is this product in stock?,conv_2423
+tweet_4479_resp,I can process your refund. Please confirm the order details.,tweet_4479,When will my order arrive?,conv_2239
+tweet_1746_resp,Your order is expected to arrive in 2-3 business days.,tweet_1746,When will my order arrive?,conv_873
+tweet_19_resp,Let me help you reset your password. Please click the link I'll send.,tweet_19,Where is my order?,conv_9
+tweet_1322_resp,I'll help you track your order. Please provide your order number.,tweet_1322,Is this product in stock?,conv_661
+tweet_3567_resp,I'll help you track your order. Please provide your order number.,tweet_3567,Is this product in stock?,conv_1783
+tweet_2521_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2521,How do I change my password?,conv_1260
+tweet_218_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_218,The delivery is late,conv_109
+tweet_1487_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1487,What are your business hours?,conv_743
+tweet_438_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_438,I want to cancel my order,conv_219
+tweet_4174_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4174,I was charged twice,conv_2087
+tweet_2750_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2750,I need a refund,conv_1375
+tweet_3288_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3288,How do I change my password?,conv_1644
+tweet_3433_resp,This product is currently in stock and available for shipping.,tweet_3433,When will my order arrive?,conv_1716
+tweet_2525_resp,I apologize for the delay. Let me check the status for you.,tweet_2525,What are your business hours?,conv_1262
+tweet_4650_resp,I apologize for the delay. Let me check the status for you.,tweet_4650,Is this product in stock?,conv_2325
+tweet_3688_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3688,Where is my order?,conv_1844
+tweet_2763_resp,You can change your password in your account settings.,tweet_2763,What are your business hours?,conv_1381
+tweet_802_resp,You can change your password in your account settings.,tweet_802,How do I change my password?,conv_401
+tweet_2997_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2997,When will my order arrive?,conv_1498
+tweet_2228_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2228,My package is damaged,conv_1114
+tweet_4785_resp,This product is currently in stock and available for shipping.,tweet_4785,Where is my order?,conv_2392
+tweet_2077_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2077,Where is my order?,conv_1038
+tweet_582_resp,I'll help you track your order. Please provide your order number.,tweet_582,I want to cancel my order,conv_291
+tweet_203_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_203,I need a refund,conv_101
+tweet_4346_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4346,My package is damaged,conv_2173
+tweet_3478_resp,You can change your password in your account settings.,tweet_3478,Where is my order?,conv_1739
+tweet_2929_resp,This product is currently in stock and available for shipping.,tweet_2929,When will my order arrive?,conv_1464
+tweet_3085_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3085,My package is damaged,conv_1542
+tweet_1018_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1018,I was charged twice,conv_509
+tweet_1583_resp,You can change your password in your account settings.,tweet_1583,I was charged twice,conv_791
+tweet_1032_resp,This product is currently in stock and available for shipping.,tweet_1032,I need a refund,conv_516
+tweet_1718_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1718,I received the wrong item,conv_859
+tweet_1281_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1281,My package is damaged,conv_640
+tweet_2498_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2498,I was charged twice,conv_1249
+tweet_3350_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3350,I want to cancel my order,conv_1675
+tweet_517_resp,I'll help you track your order. Please provide your order number.,tweet_517,I was charged twice,conv_258
+tweet_1747_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1747,When will my order arrive?,conv_873
+tweet_4652_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4652,The delivery is late,conv_2326
+tweet_3732_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3732,I was charged twice,conv_1866
+tweet_668_resp,You can change your password in your account settings.,tweet_668,Is this product in stock?,conv_334
+tweet_4059_resp,This product is currently in stock and available for shipping.,tweet_4059,When will my order arrive?,conv_2029
+tweet_3026_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3026,I was charged twice,conv_1513
+tweet_4932_resp,Your order is expected to arrive in 2-3 business days.,tweet_4932,I was charged twice,conv_2466
+tweet_3286_resp,This product is currently in stock and available for shipping.,tweet_3286,My package is damaged,conv_1643
+tweet_2650_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2650,Is this product in stock?,conv_1325
+tweet_4453_resp,You can change your password in your account settings.,tweet_4453,Where is my order?,conv_2226
+tweet_3192_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3192,I need a refund,conv_1596
+tweet_2124_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2124,I need a refund,conv_1062
+tweet_3375_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3375,The delivery is late,conv_1687
+tweet_3392_resp,You can change your password in your account settings.,tweet_3392,I was charged twice,conv_1696
+tweet_3485_resp,Your order is expected to arrive in 2-3 business days.,tweet_3485,I can't log into my account,conv_1742
+tweet_759_resp,I'll help you track your order. Please provide your order number.,tweet_759,I want to cancel my order,conv_379
+tweet_3379_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3379,How do I change my password?,conv_1689
+tweet_4440_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4440,When will my order arrive?,conv_2220
+tweet_2526_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2526,My package is damaged,conv_1263
+tweet_4858_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4858,I need a refund,conv_2429
+tweet_907_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_907,When will my order arrive?,conv_453
+tweet_2683_resp,I'll help you track your order. Please provide your order number.,tweet_2683,I was charged twice,conv_1341
+tweet_214_resp,I can process your refund. Please confirm the order details.,tweet_214,How do I change my password?,conv_107
+tweet_3331_resp,I can cancel your order. Please confirm you want to proceed.,tweet_3331,The delivery is late,conv_1665
+tweet_4458_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4458,I received the wrong item,conv_2229
+tweet_693_resp,Let me help you reset your password. Please click the link I'll send.,tweet_693,I need a refund,conv_346
+tweet_1503_resp,You can change your password in your account settings.,tweet_1503,How do I change my password?,conv_751
+tweet_2414_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2414,I received the wrong item,conv_1207
+tweet_2118_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2118,How do I change my password?,conv_1059
+tweet_3858_resp,You can change your password in your account settings.,tweet_3858,When will my order arrive?,conv_1929
+tweet_2462_resp,I apologize for the delay. Let me check the status for you.,tweet_2462,Where is my order?,conv_1231
+tweet_3635_resp,You can change your password in your account settings.,tweet_3635,I need a refund,conv_1817
+tweet_4105_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_4105,Is this product in stock?,conv_2052
+tweet_4478_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4478,I was charged twice,conv_2239
+tweet_196_resp,Your order is expected to arrive in 2-3 business days.,tweet_196,The delivery is late,conv_98
+tweet_4667_resp,Let me help you reset your password. Please click the link I'll send.,tweet_4667,How do I change my password?,conv_2333
+tweet_1543_resp,I apologize for the delay. Let me check the status for you.,tweet_1543,I received the wrong item,conv_771
+tweet_1330_resp,I'll help you track your order. Please provide your order number.,tweet_1330,What are your business hours?,conv_665
+tweet_879_resp,I can cancel your order. Please confirm you want to proceed.,tweet_879,My package is damaged,conv_439
+tweet_4502_resp,I apologize for the delay. Let me check the status for you.,tweet_4502,I received the wrong item,conv_2251
+tweet_3501_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3501,Where is my order?,conv_1750
+tweet_3894_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3894,My package is damaged,conv_1947
+tweet_4990_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4990,The delivery is late,conv_2495
+tweet_887_resp,I'll investigate the duplicate charge and issue a refund.,tweet_887,When will my order arrive?,conv_443
+tweet_1345_resp,This product is currently in stock and available for shipping.,tweet_1345,I received the wrong item,conv_672
+tweet_68_resp,You can change your password in your account settings.,tweet_68,I want to cancel my order,conv_34
+tweet_4210_resp,I can cancel your order. Please confirm you want to proceed.,tweet_4210,I was charged twice,conv_2105
+tweet_1815_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1815,My package is damaged,conv_907
+tweet_568_resp,This product is currently in stock and available for shipping.,tweet_568,I can't log into my account,conv_284
+tweet_2167_resp,Let me help you reset your password. Please click the link I'll send.,tweet_2167,My package is damaged,conv_1083
+tweet_96_resp,I apologize for the delay. Let me check the status for you.,tweet_96,When will my order arrive?,conv_48
+tweet_4181_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4181,I received the wrong item,conv_2090
+tweet_3353_resp,I'll help you track your order. Please provide your order number.,tweet_3353,I can't log into my account,conv_1676
+tweet_139_resp,I'll help you track your order. Please provide your order number.,tweet_139,When will my order arrive?,conv_69
+tweet_4954_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4954,What are your business hours?,conv_2477
+tweet_2602_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2602,I need a refund,conv_1301
+tweet_4023_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_4023,I was charged twice,conv_2011
+tweet_4772_resp,I'll investigate the duplicate charge and issue a refund.,tweet_4772,My package is damaged,conv_2386
+tweet_1606_resp,Your order is expected to arrive in 2-3 business days.,tweet_1606,I want to cancel my order,conv_803
+tweet_1629_resp,You can change your password in your account settings.,tweet_1629,I want to cancel my order,conv_814
+tweet_1539_resp,I apologize for the delay. Let me check the status for you.,tweet_1539,Where is my order?,conv_769
+tweet_1694_resp,Your order is expected to arrive in 2-3 business days.,tweet_1694,I received the wrong item,conv_847
+tweet_2059_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2059,My package is damaged,conv_1029
+tweet_463_resp,I'll investigate the duplicate charge and issue a refund.,tweet_463,Where is my order?,conv_231
+tweet_2330_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2330,Is this product in stock?,conv_1165
+tweet_3043_resp,I'll investigate the duplicate charge and issue a refund.,tweet_3043,My package is damaged,conv_1521
+tweet_4734_resp,I can process your refund. Please confirm the order details.,tweet_4734,What are your business hours?,conv_2367
+tweet_594_resp,This product is currently in stock and available for shipping.,tweet_594,I can't log into my account,conv_297
+tweet_3814_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3814,How do I change my password?,conv_1907
+tweet_625_resp,I'll help you track your order. Please provide your order number.,tweet_625,I need a refund,conv_312
+tweet_450_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_450,The delivery is late,conv_225
+tweet_1499_resp,Let me help you reset your password. Please click the link I'll send.,tweet_1499,The delivery is late,conv_749
+tweet_2456_resp,I can cancel your order. Please confirm you want to proceed.,tweet_2456,How do I change my password?,conv_1228
+tweet_4722_resp,You can change your password in your account settings.,tweet_4722,I need a refund,conv_2361
+tweet_2984_resp,I can process your refund. Please confirm the order details.,tweet_2984,I need a refund,conv_1492
+tweet_1569_resp,Your order is expected to arrive in 2-3 business days.,tweet_1569,My package is damaged,conv_784
+tweet_1034_resp,You can change your password in your account settings.,tweet_1034,I need a refund,conv_517
+tweet_3518_resp,I'll help you track your order. Please provide your order number.,tweet_3518,I can't log into my account,conv_1759
+tweet_1557_resp,I'll help you track your order. Please provide your order number.,tweet_1557,How do I change my password?,conv_778
+tweet_3624_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3624,I was charged twice,conv_1812
+tweet_4664_resp,This product is currently in stock and available for shipping.,tweet_4664,I want to cancel my order,conv_2332
+tweet_150_resp,I apologize for the delay. Let me check the status for you.,tweet_150,I want to cancel my order,conv_75
+tweet_1420_resp,I can process your refund. Please confirm the order details.,tweet_1420,I received the wrong item,conv_710
+tweet_2011_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_2011,Is this product in stock?,conv_1005
+tweet_2686_resp,I'll investigate the duplicate charge and issue a refund.,tweet_2686,What are your business hours?,conv_1343
+tweet_1786_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1786,My package is damaged,conv_893
+tweet_88_resp,You can change your password in your account settings.,tweet_88,My package is damaged,conv_44
+tweet_457_resp,Let me help you reset your password. Please click the link I'll send.,tweet_457,When will my order arrive?,conv_228
+tweet_1305_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_1305,The delivery is late,conv_652
+tweet_2925_resp,This product is currently in stock and available for shipping.,tweet_2925,I need a refund,conv_1462
+tweet_3270_resp,Let me help you reset your password. Please click the link I'll send.,tweet_3270,I can't log into my account,conv_1635
+tweet_3227_resp,I can process your refund. Please confirm the order details.,tweet_3227,Is this product in stock?,conv_1613
+tweet_1988_resp,You can change your password in your account settings.,tweet_1988,When will my order arrive?,conv_994
+tweet_3754_resp,This product is currently in stock and available for shipping.,tweet_3754,I need a refund,conv_1877
+tweet_3646_resp,Your order is expected to arrive in 2-3 business days.,tweet_3646,When will my order arrive?,conv_1823
+tweet_831_resp,This product is currently in stock and available for shipping.,tweet_831,Is this product in stock?,conv_415
+tweet_239_resp,Your order is expected to arrive in 2-3 business days.,tweet_239,Where is my order?,conv_119
+tweet_4681_resp,Your order is expected to arrive in 2-3 business days.,tweet_4681,I need a refund,conv_2340
+tweet_3022_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_3022,I want to cancel my order,conv_1511
+tweet_3148_resp,This product is currently in stock and available for shipping.,tweet_3148,My package is damaged,conv_1574
+tweet_1946_resp,"Our business hours are 9 AM to 5 PM EST, Monday through Friday.",tweet_1946,My package is damaged,conv_973
+tweet_2775_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_2775,I was charged twice,conv_1387
+tweet_192_resp,I'll investigate the duplicate charge and issue a refund.,tweet_192,I need a refund,conv_96
+tweet_4849_resp,Your order is expected to arrive in 2-3 business days.,tweet_4849,Where is my order?,conv_2424
+tweet_4939_resp,I'll help you track your order. Please provide your order number.,tweet_4939,I received the wrong item,conv_2469
+tweet_944_resp,I'll investigate the duplicate charge and issue a refund.,tweet_944,Is this product in stock?,conv_472
+tweet_1268_resp,I apologize for the delay. Let me check the status for you.,tweet_1268,What are your business hours?,conv_634
+tweet_4231_resp,I'm sorry to hear that. I'll arrange a replacement shipment.,tweet_4231,What are your business hours?,conv_2115
+tweet_2307_resp,I apologize for the mistake. Let me arrange a replacement for you.,tweet_2307,How do I change my password?,conv_1153
+tweet_4424_resp,You can change your password in your account settings.,tweet_4424,When will my order arrive?,conv_2212
+tweet_4711_resp,I apologize for the delay. Let me check the status for you.,tweet_4711,What are your business hours?,conv_2355
+tweet_2313_resp,You can change your password in your account settings.,tweet_2313,I received the wrong item,conv_1156
+tweet_3214_resp,Your order is expected to arrive in 2-3 business days.,tweet_3214,When will my order arrive?,conv_1607
+tweet_2732_resp,Your order is expected to arrive in 2-3 business days.,tweet_2732,I received the wrong item,conv_1366
+tweet_1926_resp,I can cancel your order. Please confirm you want to proceed.,tweet_1926,I want to cancel my order,conv_963
