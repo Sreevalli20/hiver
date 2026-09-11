@@ -11,7 +11,9 @@ This report documents the implementation of an AI customer support agent for the
 - Escalation Recall: 100%
 - Reply Quality: 4.40/5
 
-**Critical Note:** These results are based on real Twitter customer support data from AmazonHelp. However, the evaluation uses heuristically-labeled data (same keyword rules for training and testing), which creates circular evaluation and inflates metrics. With proper human-labeled evaluation, performance would likely be 30-40 percentage points lower. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis.
+**Critical Note:** These results are based on real Twitter customer support data from AmazonHelp. However, the evaluation uses heuristically-labeled data (same keyword rules for training and testing), which creates circular evaluation and inflates metrics. The previous 98.99% result was evaluated against heuristic labels and therefore is not a reliable estimate of generalization. Human-labeled evaluation is required.
+
+The system now includes a human annotation workflow at `/golden` in the UI. Once all 200 examples are human-labeled, the evaluation will use those labels to provide accurate performance metrics. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis.
 
 ## 1. Dataset and Brand Selection
 
@@ -64,12 +66,12 @@ This report documents the implementation of an AI customer support agent for the
 - **Training Data Distribution:** general_inquiry (58.9%), order_status (13.6%), account_issue (7.4%), others (<5% each)
 
 ### 3.2 Model Performance
-- **Accuracy:** 98.99%
-- **Macro F1:** 98.97%
-- **Weighted F1:** 98.99%
+- **Accuracy:** 98.99% (heuristic evaluation - not reliable)
+- **Macro F1:** 98.97% (heuristic evaluation - not reliable)
+- **Weighted F1:** 98.99% (heuristic evaluation - not reliable)
 - **Per-Intent Performance:** High performance due to circular evaluation (same heuristics for training and testing)
 
-**Critical Note:** These metrics are inflated due to circular evaluation. With independent human labels, estimated performance would be 60-75% accuracy and 50-65% macro F1.
+**Critical Note:** These metrics are inflated due to circular evaluation. The previous 98.99% result was evaluated against heuristic labels and therefore is not a reliable estimate of generalization. Human-labeled evaluation is required to measure actual performance.
 
 ### 3.3 Why This Approach
 - Deterministic and interpretable
@@ -139,21 +141,22 @@ The system decides AUTO_HANDLE or ESCALATE based on:
 
 ### 7.1 Golden Set
 - **Size:** 200 examples from real AmazonHelp conversations
-- **Labeling Method:** Heuristic keyword-based labeling (not manually labeled)
+- **Labeling Method:** Initially heuristic keyword-based labeling, now includes human annotation workflow
 - **Sampling:** Stratified by intent (20 examples per intent)
 - **Coverage:** All 10 intents equally represented
 - **Source:** Real Twitter customer support data
-- **Limitation:** Circular evaluation with training data (same heuristics used for both)
+- **Human Annotation:** Available at `/golden` in the UI for manual labeling
+- **Limitation:** Previous evaluation used heuristic labels (circular evaluation). Human-labeled evaluation is required for accurate metrics.
 
 ### 7.2 Evaluation Metrics
 
 #### Intent Classification
-- Accuracy: 98.99%
-- Macro F1: 98.97%
-- Weighted F1: 98.99%
+- Accuracy: 98.99% (heuristic evaluation - not reliable)
+- Macro F1: 98.97% (heuristic evaluation - not reliable)
+- Weighted F1: 98.99% (heuristic evaluation - not reliable)
 - Per-class precision/recall/F1
 
-**Critical Note:** These metrics are inflated due to circular evaluation (same heuristics for training and testing). Estimated real performance with human labels: 60-75% accuracy, 50-65% macro F1.
+**Critical Note:** The previous 98.99% result was evaluated against heuristic labels and therefore is not a reliable estimate of generalization. Human-labeled evaluation is required to measure actual performance.
 
 #### Escalation Decisions
 - Accuracy: 63.32%
@@ -188,11 +191,12 @@ The system decides AUTO_HANDLE or ESCALATE based on:
 - +88.94 percentage points accuracy vs trivial
 - +97.14 percentage points macro F1 vs trivial
 
-### 7.4 LLM-as-Judge
-- **Interface:** Deterministic rule-based fallback (no API required)
+### 7.4 Reply Quality Scorer
+- **Interface:** Deterministic rule-based scorer (no API required)
 - **Rubric:** 5-dimension scoring (groundedness, correctness, helpfulness, brand consistency, safety)
 - **Implementation:** Uses simple rules (length, keyword presence) rather than semantic understanding
 - **Limitations:** Less nuanced than true LLM evaluation, no human agreement measurement
+- **Note:** This is a deterministic scorer, not an LLM judge. The LLM judge interface/rubric is retained for future use with actual LLMs, but the current implementation is the reproducible fallback without API requirements.
 
 ## 8. Failure Analysis
 
@@ -236,24 +240,25 @@ The most dangerous failures are escalation mismatches where cases requiring huma
 See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis. Key points:
 
 - **Circular Evaluation:** Training and test data use same heuristic labeling rules, inflating metrics
-- **Estimated Real Performance:** 60-75% accuracy, 50-65% macro F1 (vs reported 98.99%, 98.97%)
+- **Previous Result Not Reliable:** The 98.99% accuracy and 98.97% macro F1 were evaluated against heuristic labels and are not reliable estimates of generalization
+- **Human Labels Required:** The system now includes a human annotation workflow at `/golden` in the UI. Once all 200 examples are human-labeled, accurate performance metrics can be calculated
 - **Escalation Metrics:** More meaningful (100% recall) but still based on heuristic ground truth
-- **Golden Set:** Not human-labeled, limited to single brand, no multi-turn context
-- **LLM Judge:** Deterministic rules, not true LLM, no human agreement measured
+- **Golden Set:** Initially heuristic-labeled, now includes human annotation workflow
+- **Reply Quality Scorer:** Deterministic rules, not true LLM, no human agreement measured
 
 ## 10. Decision Log
 
 1. **Brand Selection: AmazonHelp** - Highest volume (169K tweets), diverse conversation types, 99.67% response rate
 2. **Intent Taxonomy Size: 10 Intents** - Derived from real AmazonHelp conversations via keyword analysis
 3. **Golden Set Size: 200 Examples** - Stratified sample from real conversations (20 per intent)
-4. **Golden Set Labeling: Heuristic** - Keyword-based labeling (not human-labeled) for reproducibility
+4. **Golden Set Labeling: Initially Heuristic, Now Human Annotation Workflow** - Keyword-based labeling for initial setup, human annotation UI at `/golden` for accurate evaluation
 5. **Classifier: TF-IDF + LR** - Deterministic, interpretable, no external APIs
 6. **Retrieval: TF-IDF Fallback** - Windows compatibility, uses real historical conversations
 7. **Escalation Threshold: 0.6 Confidence** - Balances automation with safety
 8. **Response Generation: Template-Based** - No external AI APIs, deterministic
 9. **No External AI APIs** - Assignment requirement, reproducibility
 10. **Evaluation Metrics: Macro F1 for Intent, Recall for Escalation** - Honest metrics for rare intents and safety
-11. **LLM-as-Judge: Deterministic Fallback** - No API required, reproducible
+11. **Reply Quality Scorer: Deterministic** - No API required, reproducible. LLM judge interface retained for future use with actual LLMs
 12. **Real Data Source: Customer Support on Twitter** - Kaggle dataset via kagglehub
 13. **Python Version: 3.12** - Deployment compatibility with FAISS/sentence-transformers
 14. **What Was Not Built** - No Twitter integration, real accounts, billing systems (out of scope)
@@ -326,7 +331,7 @@ The Hiver AI Support Agent demonstrates that historical customer support data fr
 
 The system prioritizes safety through conservative escalation policies and provides transparent decision-making. However, the evaluation has critical limitations:
 
-**Most Important Insight:** The headline metrics (98.97% macro F1, 98.99% accuracy) are artifacts of circular evaluation—the classifier is tested against data labeled with the same keyword rules it was trained on. With proper human-labeled evaluation, performance would likely be 60-75% accuracy and 50-65% macro F1.
+**Most Important Insight:** The headline metrics (98.97% macro F1, 98.99% accuracy) are artifacts of circular evaluation—the classifier is tested against data labeled with the same keyword rules it was trained on. The previous 98.99% result was evaluated against heuristic labels and therefore is not a reliable estimate of generalization. Human-labeled evaluation is required to measure actual performance.
 
 The escalation metrics (73.26% F1, 100% recall) are more meaningful but still based on heuristically-derived ground truth. The system achieves perfect escalation recall by being conservative, but this comes at the cost of many false positives (63.32% escalation accuracy).
 

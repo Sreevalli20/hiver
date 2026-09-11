@@ -25,13 +25,13 @@ This means the classifier is essentially being tested on data labeled with the s
 
 **Concrete example:** If the heuristic rule says "contains 'refund' → refund_request", and both training and test data use this rule, the classifier will appear to perform perfectly on refund cases even if it's just learning the keyword pattern rather than true semantic understanding.
 
-## What the Real Performance Likely Is
+## What the Real Performance Is
 
-If we had truly independent human-labeled data (not heuristically labeled), the actual performance would likely be substantially lower:
+The previous 98.99% accuracy and 98.97% macro F1 results were evaluated against heuristic labels and therefore are not reliable estimates of generalization. Human-labeled evaluation is required to measure actual performance.
 
-- **Estimated real intent accuracy:** 60-75% (vs reported 98.99%)
-- **Estimated real macro F1:** 50-65% (vs reported 98.97%)
-- **Reason:** Real customer messages are ambiguous, contain slang, typos, and mixed intents that simple keyword rules cannot capture
+The system now includes a human annotation workflow at `/golden` in the UI. Once all 200 examples are human-labeled, the evaluation will use those labels to provide accurate performance metrics.
+
+Without human labels, we cannot make reliable claims about real-world performance. The heuristic evaluation only measures how well the classifier learns the keyword patterns used for labeling, not how well it understands customer messages.
 
 ## Escalation Metrics: More Honest but Still Limited
 

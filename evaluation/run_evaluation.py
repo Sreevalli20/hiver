@@ -286,8 +286,11 @@ class Evaluator:
         """Run complete evaluation."""
         print("Starting full evaluation...")
         
-        # Load golden set
-        golden_file = Path("golden/golden_200.csv")
+        # Load golden set - prefer human-annotated version
+        golden_file = Path("golden/golden_annotation.csv")
+        if not golden_file.exists():
+            golden_file = Path("golden/golden_200.csv")
+        
         if not golden_file.exists():
             print("Golden set not found. Skipping evaluation.")
             return None
@@ -297,8 +300,33 @@ class Evaluator:
         golden_df = golden_df.dropna(subset=['message'])
         print(f"Loaded {len(golden_df)} golden examples (after filtering NaN)")
         
+        # Determine which labels to use
+        using_human_labels = 'human_intent' in golden_df.columns and golden_df['human_intent'].notna().any()
+        
+        if using_human_labels:
+            # Use human labels where available, fall back to heuristic
+            golden_df['intent'] = golden_df['human_intent'].fillna(golden_df.get('heuristic_intent', golden_df.get('intent')))
+            golden_df['expected_action'] = golden_df['human_action'].fillna(golden_df.get('heuristic_action', golden_df.get('expected_action')))
+            human_labeled_count = golden_df['human_intent'].notna().sum()
+            print(f"Using human labels for {human_labeled_count} examples, heuristic for {len(golden_df) - human_labeled_count}")
+        else:
+            print("Using heuristic labels (human annotation not available)")
+        
+        # Filter out examples without labels
+        golden_df = golden_df.dropna(subset=['intent', 'expected_action'])
+        print(f"Evaluating on {len(golden_df)} labeled examples")
+        
         # Run evaluations
         results = {}
+        
+        # Add metadata about label source
+        results['metadata'] = {
+            'total_examples': len(golden_df),
+            'using_human_labels': using_human_labels,
+            'human_labeled_count': human_labeled_count if using_human_labels else 0,
+            'heuristic_labeled_count': len(golden_df) - (human_labeled_count if using_human_labels else len(golden_df)),
+            'label_source': 'human' if using_human_labels and human_labeled_count == len(golden_df) else 'mixed' if using_human_labels else 'heuristic'
+        }
         
         intent_results = self.evaluate_intent_classification(golden_df)
         if intent_results:

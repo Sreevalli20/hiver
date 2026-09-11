@@ -1,6 +1,8 @@
 """
-LLM-as-judge interface for evaluating reply quality.
+Reply quality scorer interface for evaluating reply quality.
 Designed to work with optional external LLM APIs or local models.
+Current implementation uses deterministic rules (no API required).
+The LLM judge interface/rubric is retained for future use with actual LLMs.
 """
 
 from typing import Dict, List, Optional, Callable
@@ -38,12 +40,16 @@ class JudgeEvaluation:
 
 class ReplyJudge:
     """
-    Judge for evaluating reply quality.
+    Reply quality scorer for evaluating reply quality.
     
     Can operate in multiple modes:
-    - Deterministic: Rule-based scoring (no API required)
-    - LLM API: Uses external LLM (requires API key, optional)
-    - Local Model: Uses local open-source model (optional)
+    - Deterministic: Rule-based scoring (no API required) - current implementation
+    - LLM API: Uses external LLM (requires API key, optional) - for future use
+    - Local Model: Uses local open-source model (optional) - for future use
+    
+    Note: The current implementation uses deterministic rules. The LLM judge interface
+    is retained for future use with actual LLMs, but the deterministic scorer is the
+    reproducible fallback without API requirements.
     """
     
     def __init__(self, mode: JudgeMode = JudgeMode.DETERMINISTIC, api_key: Optional[str] = None):

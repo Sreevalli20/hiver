@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { MessageSquare, BarChart3, AlertTriangle, Info } from 'lucide-react'
+import { MessageSquare, BarChart3, AlertTriangle, Info, CheckSquare } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -21,6 +21,9 @@ export default function Home() {
               </Link>
               <Link href="/evaluation" className="text-slate-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                 Evaluation
+              </Link>
+              <Link href="/golden" className="text-slate-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
+                Golden Set
               </Link>
               <Link href="/failures" className="text-slate-600 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium">
                 Failures
@@ -64,6 +67,22 @@ export default function Home() {
               </p>
               <div className="text-primary-600 text-sm font-medium group-hover:underline">
                 View metrics →
+              </div>
+            </div>
+          </Link>
+
+          {/* Golden Set Card */}
+          <Link href="/golden" className="group">
+            <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-6 hover:shadow-md transition-shadow">
+              <div className="flex items-center space-x-3 mb-4">
+                <CheckSquare className="h-8 w-8 text-primary-600" />
+                <h2 className="text-xl font-semibold text-slate-900">Golden Set Annotation</h2>
+              </div>
+              <p className="text-slate-600 mb-4">
+                Human-label the 200-example evaluation set with intent and action annotations.
+              </p>
+              <div className="text-primary-600 text-sm font-medium group-hover:underline">
+                Annotate examples →
               </div>
             </div>
           </Link>

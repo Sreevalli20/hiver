@@ -4,13 +4,15 @@ An AI-powered customer support agent that classifies intents, retrieves historic
 
 ## 🎯 Headline Results
 
-- **Intent Classification Macro F1:** 98.97%
-- **Intent Classification Accuracy:** 98.99%
+- **Intent Classification Macro F1:** 98.97% (heuristic evaluation - not reliable)
+- **Intent Classification Accuracy:** 98.99% (heuristic evaluation - not reliable)
 - **Escalation Decision F1:** 73.26%
 - **Escalation Recall:** 100%
 - **Reply Quality:** 4.40/5
 
-**Important:** These results are based on real Twitter customer support data from AmazonHelp. However, the evaluation uses heuristically-labeled data (same keyword rules for training and testing), which inflates metrics. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis of limitations.
+**Important:** These results are based on real Twitter customer support data from AmazonHelp. However, the evaluation uses heuristically-labeled data (same keyword rules for training and testing), which inflates metrics. The previous 98.99% result was evaluated against heuristic labels and therefore is not a reliable estimate of generalization. Human-labeled evaluation is required.
+
+The system now includes a human annotation workflow at `/golden` in the UI. Once all 200 examples are human-labeled, the evaluation will use those labels to provide accurate performance metrics. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis of limitations.
 
 ## 🏗️ Architecture
 
@@ -31,6 +33,7 @@ hiver/
 │   │   ├── page.tsx      # Home page
 │   │   ├── agent/        # Agent interface
 │   │   ├── evaluation/   # Evaluation dashboard
+│   │   ├── golden/       # Golden set annotation workflow
 │   │   ├── failures/     # Failure analysis
 │   │   └── about/        # Methodology
 │   └── package.json
@@ -41,10 +44,11 @@ hiver/
 │   └── train.py          # Model training
 ├── evaluation/           # Evaluation harness
 │   ├── run_evaluation.py # Main evaluation script
-│   ├── judge.py          # LLM-as-judge interface
+│   ├── judge.py          # Reply quality scorer interface
 │   └── human_judge_comparison.py # Human-judge agreement
 ├── golden/               # Golden evaluation set
-│   └── golden_200.csv    # 200 hand-labeled examples
+│   ├── golden_200.csv    # 200 heuristic-labeled examples
+│   └── golden_annotation.csv # Human annotation workflow file
 ├── tests/                # Automated tests
 │   ├── test_classifier.py
 │   ├── test_escalation.py
@@ -53,7 +57,8 @@ hiver/
 ├── docs/                 # Documentation
 │   ├── misleading_headline_number.md
 │   ├── failure_analysis.md
-│   └── decision_log.md
+│   ├── decision_log.md
+│   └── data_leakage_prevention.md
 ├── data/                 # Data directory
 │   ├── raw/             # Raw dataset
 │   └── processed/       # Processed data
@@ -146,6 +151,8 @@ python scripts/create_golden_set.py
 
 This creates `golden/golden_200.csv` with 200 real customer messages, stratified across 10 intents.
 
+**Important:** The golden set initially uses heuristic labels. To get accurate evaluation metrics, you must manually label the examples using the human annotation workflow at `/golden` in the UI. This creates `golden/golden_annotation.csv` with human-verified labels.
+
 ### Step 4: Train Models
 
 ```bash
@@ -168,7 +175,7 @@ cat evaluation/results/evaluation_results.json
 
 **Expected runtime:** ~5-10 minutes for full pipeline on modern hardware.
 
-**Important:** The evaluation uses heuristically-labeled data (same keyword rules for training and testing), which inflates metrics. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis.
+**Important:** The evaluation uses heuristically-labeled data (same keyword rules for training and testing), which inflates metrics. The previous 98.99% result was evaluated against heuristic labels and therefore is not a reliable estimate of generalization. Human-labeled evaluation is required. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis.
 
 ## 🔧 API Endpoints
 
@@ -240,10 +247,11 @@ python evaluation/run_evaluation.py
 
 This will:
 - Load the golden evaluation set (200 examples)
+- Prefer human-labeled data from `golden/golden_annotation.csv` if available
 - Evaluate intent classification metrics
 - Evaluate escalation decision metrics
 - Compare against baselines (majority class, TF-IDF + LR)
-- Run LLM-as-judge evaluation
+- Run deterministic reply quality scorer
 - Save results to `evaluation/results/evaluation_results.json`
 
 ## 🚢 Deployment
@@ -286,6 +294,7 @@ The frontend will be available at your Vercel domain.
 - **Home** (`/`) - Navigation to all features
 - **Agent** (`/agent`) - Interactive agent interface
 - **Evaluation** (`/evaluation`) - Metrics dashboard
+- **Golden Set** (`/golden`) - Human annotation workflow for evaluation set
 - **Failures** (`/failures`) - Failure analysis display
 - **About** (`/about`) - Methodology documentation
 
@@ -342,14 +351,15 @@ The frontend will be available at your Vercel domain.
 
 ## ⚠️ Limitations
 
-- **Heuristic Labels:** Training labels and golden set are generated via keyword heuristics, not human-labeled. This creates circular evaluation that inflates metrics. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis.
-- **Circular Evaluation:** The classifier is tested against data labeled with the same rules it was trained on, inflating performance metrics. Real performance with human labels would likely be 30-40 percentage points lower.
+- **Heuristic Labels:** Training labels are generated via keyword heuristics, not human-labeled. The golden set initially uses heuristic labels but includes a human annotation workflow. See [docs/misleading_headline_number.md](docs/misleading_headline_number.md) for detailed analysis.
+- **Circular Evaluation:** The previous evaluation tested the classifier against data labeled with the same rules it was trained on, inflating performance metrics. The previous 98.99% result was evaluated against heuristic labels and therefore is not a reliable estimate of generalization. Human-labeled evaluation is required.
 - **Template-based Responses:** No generative AI due to API constraints. Responses use intent-specific templates.
 - **Single-turn Conversations:** No conversation history or context tracking.
-- **Deterministic Judge:** LLM-as-judge uses deterministic rubric, not a true LLM. No human agreement measurement.
+- **Deterministic Scorer:** Reply quality scorer uses deterministic rules, not a true LLM. The LLM judge interface/rubric is retained for future use with actual LLMs, but the current implementation is the reproducible fallback without API requirements.
 - **Single Brand:** Evaluation uses only AmazonHelp data. May not generalize to other brands.
 - **Windows PyTorch Issues:** On Windows development, PyTorch DLL loading errors may occur. The system falls back to TF-IDF retrieval automatically. Deployment on Linux (Render) works correctly with sentence-transformers.
 - **Class Imbalance:** Training data is heavily imbalanced (59% general_inquiry), which affects classifier behavior.
+- **Data Separation:** The golden set is sampled from the same dataset but from different conversations than training data. See [docs/data_leakage_prevention.md](docs/data_leakage_prevention.md) for details on train/test separation.
 
 ## 🤝 Contributing
 
