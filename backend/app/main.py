@@ -156,8 +156,14 @@ async def health_check():
         "classifier_loaded": classifier is not None,
         "retrieval_loaded": retrieval_system is not None,
         "model_files": model_files,
-        "models_dir_contents": models_dir_contents
+        "models_dir_contents": models_dir_contents,
+        "version": "v2"
     }
+
+@app.get("/version")
+async def version_check():
+    """Version check endpoint to verify deployment."""
+    return {"version": "v2", "deployed": True}
 
 @app.post("/predict", response_model=PredictResponse)
 async def predict(request: PredictRequest):
