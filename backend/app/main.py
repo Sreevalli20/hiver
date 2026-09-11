@@ -79,11 +79,21 @@ def load_models():
     global classifier, retrieval_system, response_generator, escalation_policy, models_loaded
     
     try:
-        # Backend now runs from repository root, models are in models/
-        model_dir = Path("models")
+        # Determine model directory based on current working directory
+        # If running from backend/, look in ../models/
+        # If running from repository root, look in models/
+        cwd = Path.cwd()
+        if cwd.name == 'backend' or (cwd / 'app').exists():
+            model_dir = Path("../models")
+        else:
+            model_dir = Path("models")
+        
+        # Resolve to absolute path
+        model_dir = model_dir.resolve()
+        
         print(f"Looking for models in: {model_dir}")
         print(f"Model directory exists: {model_dir.exists()}")
-        print(f"Current working directory: {Path.cwd()}")
+        print(f"Current working directory: {cwd}")
         
         # Load classifier
         if (model_dir / 'training_data.csv').exists():
@@ -149,7 +159,16 @@ async def startup_event():
 @app.get("/health")
 async def health_check():
     """Health check endpoint."""
-    model_dir = Path("models")
+    # Determine model directory based on current working directory
+    cwd = Path.cwd()
+    if cwd.name == 'backend' or (cwd / 'app').exists():
+        model_dir = Path("../models")
+    else:
+        model_dir = Path("models")
+    
+    # Resolve to absolute path
+    model_dir = model_dir.resolve()
+    
     model_files = {
         "models_dir_exists": model_dir.exists(),
         "classifier_joblib": (model_dir / 'classifier.joblib').exists(),
@@ -159,6 +178,7 @@ async def health_check():
         "tfidf_vectorizer_joblib": (model_dir / 'tfidf_vectorizer.joblib').exists(),
         "tfidf_matrix_joblib": (model_dir / 'tfidf_matrix.joblib').exists(),
         "retrieval_config_pkl": (model_dir / 'retrieval_config.pkl').exists(),
+        "training_data_csv": (model_dir / 'training_data.csv').exists(),
     }
     # List all files in models directory if it exists
     models_dir_contents = []
