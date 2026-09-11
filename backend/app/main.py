@@ -81,21 +81,25 @@ def load_models():
     try:
         # Models are in repository root, backend runs from backend/ directory
         model_dir = Path(__file__).parent.parent.parent / "models"
+        print(f"Looking for models in: {model_dir}")
+        print(f"Model directory exists: {model_dir.exists()}")
         
         # Load classifier
         if (model_dir / 'classifier.joblib').exists():
+            print("Found classifier.joblib, loading...")
             classifier = IntentClassifier(model_dir)
-            print("Classifier loaded")
+            print("Classifier loaded successfully")
         else:
-            print("Warning: Classifier not found. Models need to be trained.")
+            print(f"Warning: Classifier not found at {model_dir / 'classifier.joblib'}. Models need to be trained.")
         
         # Load retrieval system
         if (model_dir / 'retrieval_corpus.csv').exists():
+            print("Found retrieval_corpus.csv, loading...")
             retrieval_system = RetrievalSystem()
             retrieval_system.load(model_dir)
-            print("Retrieval system loaded")
+            print("Retrieval system loaded successfully")
         else:
-            print("Warning: Retrieval system not found. Models need to be trained.")
+            print(f"Warning: Retrieval system not found at {model_dir / 'retrieval_corpus.csv'}. Models need to be trained.")
         
         # Initialize response generator
         response_generator = ResponseGenerator()
@@ -103,11 +107,17 @@ def load_models():
         # Initialize escalation policy
         escalation_policy = EscalationPolicy()
         
-        models_loaded = True
-        print("All models loaded successfully")
+        # Only set models_loaded to true if both classifier and retrieval are loaded
+        models_loaded = classifier is not None and retrieval_system is not None
+        if models_loaded:
+            print("All models loaded successfully")
+        else:
+            print(f"Models partially loaded: classifier={classifier is not None}, retrieval={retrieval_system is not None}")
         
     except Exception as e:
         print(f"Error loading models: {e}")
+        import traceback
+        traceback.print_exc()
         models_loaded = False
 
 @app.on_event("startup")
