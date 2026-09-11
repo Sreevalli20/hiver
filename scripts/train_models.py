@@ -235,16 +235,36 @@ def main():
     print("="*50)
     print("LIGHTWEIGHT MODEL TRAINING FOR RENDER")
     print("="*50)
+    print(f"Current working directory: {Path.cwd()}")
     
-    # Train classifier
-    train_classifier()
-    
-    # Build retrieval index
-    build_retrieval()
-    
-    print("\n" + "="*50)
-    print("ALL MODELS TRAINED SUCCESSFULLY")
-    print("="*50)
+    try:
+        # Train classifier
+        train_classifier()
+        
+        # Build retrieval index
+        build_retrieval()
+        
+        print("\n" + "="*50)
+        print("ALL MODELS TRAINED SUCCESSFULLY")
+        print("="*50)
+        
+        # Verify models were created
+        model_dir = Path("models")
+        print(f"\nVerifying models in {model_dir}:")
+        if model_dir.exists():
+            for item in model_dir.iterdir():
+                print(f"  - {item.name} ({item.stat().st_size} bytes)")
+        else:
+            print(f"  ERROR: Models directory not found at {model_dir}")
+            raise FileNotFoundError("Models directory not created")
+            
+    except Exception as e:
+        print(f"\n" + "="*50)
+        print(f"ERROR: Training failed with exception: {e}")
+        print("="*50)
+        import traceback
+        traceback.print_exc()
+        raise
 
 if __name__ == "__main__":
     main()
