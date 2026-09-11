@@ -75,13 +75,13 @@ class MetadataResponse(BaseModel):
     dataset_size: Optional[int] = None
 
 def train_models_if_needed(model_dir):
-    """Train models if they don't exist."""
-    import subprocess
+    """Train models if they don't exist - inlined for reliability."""
     import sys
+    import os
     
-    print("Models not found, training...")
+    print("Models not found, training inlined...")
     
-    # Change to repository root to run training script
+    # Change to repository root
     original_cwd = Path.cwd()
     if model_dir.name == 'models':
         repo_root = model_dir.parent
@@ -89,40 +89,48 @@ def train_models_if_needed(model_dir):
         repo_root = model_dir.parent.parent
     
     print(f"Changing to repository root: {repo_root}")
-    import os
     os.chdir(repo_root)
     
     try:
-        # Run training script
-        result = subprocess.run(
-            [sys.executable, "scripts/train_models.py"],
-            capture_output=True,
-            text=True,
-            timeout=300  # 5 minute timeout
-        )
+        # Import and run training functions directly
+        sys.path.insert(0, str(repo_root))
+        from scripts.train_models import load_training_data, load_retrieval_corpus, train_classifier, build_retrieval
         
-        print("Training script output:")
-        print(result.stdout)
-        if result.stderr:
-            print("Training script errors:")
-            print(result.stderr)
+        # Create models directory
+        model_dir.mkdir(parents=True, exist_ok=True)
         
-        if result.returncode != 0:
-            print(f"Training script failed with return code {result.returncode}")
-            return False
+        # Train classifier
+        print("Training classifier...")
+        train_df = load_training_data(max_samples=10000)
+        train_df = train_df.dropna(subset=['text'])
+        texts = train_df['text'].tolist()
+        labels = train_df['label'].tolist()
+        
+        classifier = IntentClassifier()
+        classifier.train(texts, labels)
+        classifier.save(model_dir)
+        train_df.to_csv(model_dir / 'training_data.csv', index=False)
+        print("Classifier trained and saved")
+        
+        # Build retrieval
+        print("Building retrieval index...")
+        corpus_df = load_retrieval_corpus(max_samples=10000)
+        retrieval = RetrievalSystem(use_semantic=False)
+        retrieval.build_index(corpus_df)
+        corpus_df.to_csv(model_dir / 'retrieval_corpus.csv', index=False)
+        import pickle
+        with open(model_dir / 'retrieval_config.pkl', 'wb') as f:
+            pickle.dump({'use_semantic': False}, f)
+        print("Retrieval index built and saved")
         
         print("Training completed successfully")
         return True
-    except subprocess.TimeoutExpired:
-        print("Training script timed out")
-        return False
     except Exception as e:
-        print(f"Error running training script: {e}")
+        print(f"Error training models: {e}")
         import traceback
         traceback.print_exc()
         return False
     finally:
-        # Change back to original directory
         os.chdir(original_cwd)
 
 def load_models():
