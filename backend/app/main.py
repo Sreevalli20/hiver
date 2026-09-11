@@ -79,7 +79,8 @@ def load_models():
     global classifier, retrieval_system, response_generator, escalation_policy, models_loaded
     
     try:
-        model_dir = Path("models")
+        # Models are in repository root, backend runs from backend/ directory
+        model_dir = Path(__file__).parent.parent.parent / "models"
         
         # Load classifier
         if (model_dir / 'classifier.joblib').exists():
@@ -243,3 +244,38 @@ async def run_evaluation(background_tasks: BackgroundTasks):
     """Trigger evaluation run in background."""
     # In a real implementation, this would trigger the evaluation script
     return {"status": "Evaluation triggered", "message": "Check evaluation/results/ for output"}
+
+@app.get("/api/golden")
+async def get_golden_data():
+    """Get golden set annotation data."""
+    annotation_file = Path("golden/golden_annotation.csv")
+    
+    if not annotation_file.exists():
+        # Fall back to original golden_200.csv if annotation file doesn't exist
+        annotation_file = Path("golden/golden_200.csv")
+    
+    if not annotation_file.exists():
+        return []
+    
+    df = pd.read_csv(annotation_file)
+    
+    # Map column names if using original file
+    if 'heuristic_intent' not in df.columns and 'intent' in df.columns:
+        df = df.rename(columns={'intent': 'heuristic_intent', 'expected_action': 'heuristic_action'})
+        df['human_intent'] = ''
+        df['human_action'] = ''
+        df['annotation_notes'] = ''
+    
+    return df.to_dict(orient='records')
+
+@app.post("/api/golden")
+async def save_golden_data(data: dict):
+    """Save golden set annotation data."""
+    annotation_file = Path("golden/golden_annotation.csv")
+    
+    try:
+        df = pd.DataFrame(data['data'])
+        df.to_csv(annotation_file, index=False)
+        return {"status": "success", "message": "Annotation data saved"}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
