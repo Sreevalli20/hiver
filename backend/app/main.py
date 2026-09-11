@@ -79,10 +79,11 @@ def load_models():
     global classifier, retrieval_system, response_generator, escalation_policy, models_loaded
     
     try:
-        # Models are in repository root, backend runs from backend/ directory
-        model_dir = Path(__file__).parent.parent.parent / "models"
+        # Backend now runs from repository root, models are in models/
+        model_dir = Path("models")
         print(f"Looking for models in: {model_dir}")
         print(f"Model directory exists: {model_dir.exists()}")
+        print(f"Current working directory: {Path.cwd()}")
         
         # Load classifier
         if (model_dir / 'classifier.joblib').exists():
