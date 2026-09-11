@@ -26,11 +26,26 @@ export default function AgentPage() {
     
     try {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+      
+      // First check health to see if models are loaded
+      const healthResponse = await axios.get(`${apiUrl}/health`)
+      if (!healthResponse.data.models_loaded) {
+        setResult({ 
+          error: 'Backend models are not loaded. The classifier and retrieval system need to be trained before predictions can be made.' 
+        })
+        setLoading(false)
+        return
+      }
+      
       const response = await axios.post(`${apiUrl}/predict`, { message })
       setResult(response.data)
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error:', error)
-      setResult({ error: 'Failed to analyze message. Make sure the backend is running.' })
+      if (error.response?.status === 503) {
+        setResult({ error: 'Backend models are not loaded. The classifier and retrieval system need to be trained before predictions can be made.' })
+      } else {
+        setResult({ error: 'Failed to analyze message. Make sure the backend is running.' })
+      }
     } finally {
       setLoading(false)
     }
