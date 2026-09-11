@@ -10,7 +10,3 @@ services:
         value: "3.12"
       - key: PORT
         value: "8000"
-    disk:
-      name: data
-      mountPath: /opt/render/project/data
-      sizeGB: 1
