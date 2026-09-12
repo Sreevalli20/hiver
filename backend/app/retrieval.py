@@ -11,6 +11,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pickle
 
+# Get repository root (parent of backend directory)
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+MODELS_DIR = REPO_ROOT / "models"
+
 try:
     from sentence_transformers import SentenceTransformer
     import faiss
@@ -28,7 +32,7 @@ class RetrievalSystem:
         
         Args:
             use_semantic: Whether to use sentence-transformers (falls back to TF-IDF if unavailable)
-            model_path: Path to saved retrieval models
+            model_path: Path to saved retrieval models (defaults to MODELS_DIR)
         """
         self.use_semantic = use_semantic and SENTENCE_TRANSFORMERS_AVAILABLE
         self.corpus_df = None
@@ -37,6 +41,9 @@ class RetrievalSystem:
         self.tfidf_vectorizer = None
         self.tfidf_matrix = None
         self.is_loaded = False
+        
+        if model_path is None:
+            model_path = MODELS_DIR
         
         if model_path:
             self.load(model_path)
@@ -92,10 +99,22 @@ class RetrievalSystem:
             stop_words='english'
         )
         
-        texts = self.corpus_df['customer_text'].fillna('').tolist()
+        # Handle different possible column names
+        if 'customer_text' in self.corpus_df.columns:
+            texts = self.corpus_df['customer_text'].fillna('').tolist()
+        elif 'customer_message' in self.corpus_df.columns:
+            texts = self.corpus_df['customer_message'].fillna('').tolist()
+        else:
+            # Use first string column as fallback
+            text_col = self.corpus_df.select_dtypes(include=['object']).columns[0]
+            texts = self.corpus_df[text_col].fillna('').tolist()
+            print(f"Using column '{text_col}' for TF-IDF indexing")
+        
         self.tfidf_matrix = self.tfidf_vectorizer.fit_transform(texts)
         
         print(f"TF-IDF index built with {self.tfidf_matrix.shape[0]} documents")
+        print(f"TF-IDF vectorizer fitted: {hasattr(self.tfidf_vectorizer, 'idf_')}")
+        print(f"TF-IDF matrix shape: {self.tfidf_matrix.shape}")
     
     def retrieve(self, query, k=5):
         """
@@ -110,6 +129,14 @@ class RetrievalSystem:
         """
         if not self.is_loaded:
             raise ValueError("Retrieval system not loaded. Call build_index() or load() first.")
+        
+        # Ensure TF-IDF is properly fitted before retrieval
+        if not self.use_semantic and (self.tfidf_vectorizer is None or not hasattr(self.tfidf_vectorizer, 'idf_')):
+            print("TF-IDF vectorizer not fitted, rebuilding index...")
+            self._build_tfidf_index()
+            # Double-check after rebuild
+            if self.tfidf_vectorizer is None or not hasattr(self.tfidf_vectorizer, 'idf_'):
+                raise ValueError("Failed to fit TF-IDF vectorizer during retrieval")
         
         if self.use_semantic:
             return self._retrieve_semantic(query, k)
@@ -143,10 +170,17 @@ class RetrievalSystem:
     
     def _retrieve_tfidf(self, query, k):
         """Retrieve using TF-IDF cosine similarity."""
-        # Ensure vectorizer is fitted
-        if not hasattr(self.tfidf_vectorizer, 'idf_'):
-            print("Vectorizer not fitted, refitting...")
+        # Ensure TF-IDF is properly fitted before retrieval
+        if self.tfidf_vectorizer is None or not hasattr(self.tfidf_vectorizer, 'idf_'):
+            print("TF-IDF vectorizer not fitted, rebuilding index...")
             self._build_tfidf_index()
+        
+        # Verify it's fitted
+        if self.tfidf_vectorizer is None or not hasattr(self.tfidf_vectorizer, 'idf_'):
+            raise ValueError("TF-IDF vectorizer still not fitted after rebuild")
+        
+        if self.tfidf_matrix is None:
+            raise ValueError("TF-IDF matrix is None after rebuild")
         
         # Transform query
         query_tfidf = self.tfidf_vectorizer.transform([query])
@@ -157,13 +191,29 @@ class RetrievalSystem:
         # Get top-k
         top_indices = similarities.argsort()[-k:][::-1]
         
-        # Build results
+        # Build results - handle different column names
         results = []
         for idx in top_indices:
             row = self.corpus_df.iloc[idx]
+            # Get customer message from various possible column names
+            if 'customer_text' in row:
+                customer_msg = row['customer_text']
+            elif 'customer_message' in row:
+                customer_msg = row['customer_message']
+            else:
+                customer_msg = str(row.iloc[0]) if len(row) > 0 else ""
+            
+            # Get brand response from various possible column names
+            if 'brand_text' in row:
+                brand_resp = row['brand_text']
+            elif 'brand_response' in row:
+                brand_resp = row['brand_response']
+            else:
+                brand_resp = ""
+            
             results.append({
-                'customer_message': row['customer_text'],
-                'brand_response': row['brand_text'],
+                'customer_message': customer_msg,
+                'brand_response': brand_resp,
                 'similarity': float(similarities[idx]),
                 'conversation_id': row.get('conversation_id', f"conv_{idx}")
             })
@@ -212,6 +262,14 @@ class RetrievalSystem:
         # Load corpus
         self.corpus_df = pd.read_csv(model_dir / 'retrieval_corpus.csv')
         
+        # Ensure corpus has required columns
+        if 'customer_text' not in self.corpus_df.columns:
+            # Try to rename columns if they exist with different names
+            if 'customer_message' in self.corpus_df.columns:
+                self.corpus_df = self.corpus_df.rename(columns={'customer_message': 'customer_text'})
+            if 'brand_response' in self.corpus_df.columns:
+                self.corpus_df = self.corpus_df.rename(columns={'brand_response': 'brand_text'})
+        
         # Load config
         with open(model_dir / 'retrieval_config.pkl', 'rb') as f:
             config = pickle.load(f)
@@ -222,10 +280,11 @@ class RetrievalSystem:
             self.embeddings = np.load(model_dir / 'embeddings.npy')
             self.index = faiss.read_index(str(model_dir / 'faiss.index'))
             self.model = SentenceTransformer('all-MiniLM-L6-v2')
+            self.is_loaded = True
         else:
-            # Always rebuild TF-IDF index to avoid sklearn version compatibility issues
-            print("Rebuilding TF-IDF index from corpus to ensure compatibility...")
+            # Rebuild TF-IDF index on load to avoid sklearn version compatibility issues
+            print("Rebuilding TF-IDF index from corpus for compatibility")
             self._build_tfidf_index()
+            self.is_loaded = True
         
-        self.is_loaded = True
-        print(f"Retrieval models loaded from {model_dir}")
+        print(f"Retrieval models loaded from {model_dir}, is_loaded={self.is_loaded}")

@@ -79,57 +79,26 @@ def load_models():
     global classifier, retrieval_system, response_generator, escalation_policy, models_loaded
     
     try:
-        # Determine model directory based on current working directory
-        # If running from backend/, look in ../models/
-        # If running from repository root, look in models/
-        cwd = Path.cwd()
-        if cwd.name == 'backend' or (cwd / 'app').exists():
-            model_dir = Path("../models")
+        # Models are loaded from absolute path defined in classifier.py and retrieval.py
+        # No need to determine model directory based on CWD
+        
+        print("Loading models...")
+        
+        # Load classifier (uses MODELS_DIR from classifier.py)
+        classifier = IntentClassifier()
+        if not classifier.is_trained:
+            print("Classifier failed to load, will not be available")
+            classifier = None
         else:
-            model_dir = Path("models")
+            print("Classifier loaded successfully")
         
-        # Resolve to absolute path
-        model_dir = model_dir.resolve()
-        
-        print(f"Looking for models in: {model_dir}")
-        print(f"Model directory exists: {model_dir.exists()}")
-        print(f"Current working directory: {cwd}")
-        
-        # Load classifier
-        if (model_dir / 'training_data.csv').exists():
-            print("Found training_data.csv, retraining classifier to ensure compatibility...")
-            classifier = IntentClassifier()
-            classifier.load_and_retrain(model_dir)
-            if not classifier.is_trained:
-                print("Classifier failed to retrain, will not be available")
-                classifier = None
-            else:
-                print("Classifier retrained successfully")
-        elif (model_dir / 'classifier.joblib').exists():
-            print("Found classifier.joblib, loading...")
-            classifier = IntentClassifier(model_dir)
-            # Check if classifier is actually trained
-            if not classifier.is_trained:
-                print("Classifier failed to load properly, will not be available")
-                classifier = None
-            else:
-                print("Classifier loaded successfully")
+        # Load retrieval system (uses MODELS_DIR from retrieval.py)
+        retrieval_system = RetrievalSystem(use_semantic=False)
+        if not retrieval_system.is_loaded:
+            print("Retrieval system failed to load, will not be available")
+            retrieval_system = None
         else:
-            print(f"Warning: Classifier not found at {model_dir / 'classifier.joblib'}. Models need to be trained.")
-        
-        # Load retrieval system
-        if (model_dir / 'retrieval_corpus.csv').exists():
-            print("Found retrieval_corpus.csv, loading...")
-            retrieval_system = RetrievalSystem(use_semantic=False)
-            retrieval_system.load(model_dir)
-            # Verify retrieval is actually loaded
-            if not retrieval_system.is_loaded:
-                print("Retrieval system failed to load properly, will not be available")
-                retrieval_system = None
-            else:
-                print("Retrieval system loaded successfully")
-        else:
-            print(f"Warning: Retrieval system not found at {model_dir / 'retrieval_corpus.csv'}. Models need to be trained.")
+            print("Retrieval system loaded successfully")
         
         # Initialize response generator
         response_generator = ResponseGenerator()
@@ -159,31 +128,21 @@ async def startup_event():
 @app.get("/health")
 async def health_check():
     """Health check endpoint."""
-    # Determine model directory based on current working directory
-    cwd = Path.cwd()
-    if cwd.name == 'backend' or (cwd / 'app').exists():
-        model_dir = Path("../models")
-    else:
-        model_dir = Path("models")
-    
-    # Resolve to absolute path
-    model_dir = model_dir.resolve()
+    # Use absolute model path from classifier.py
+    from app.classifier import MODELS_DIR
     
     model_files = {
-        "models_dir_exists": model_dir.exists(),
-        "classifier_joblib": (model_dir / 'classifier.joblib').exists(),
-        "label_encoder_joblib": (model_dir / 'label_encoder.joblib').exists(),
-        "vectorizer_joblib": (model_dir / 'vectorizer.joblib').exists(),
-        "retrieval_corpus_csv": (model_dir / 'retrieval_corpus.csv').exists(),
-        "tfidf_vectorizer_joblib": (model_dir / 'tfidf_vectorizer.joblib').exists(),
-        "tfidf_matrix_joblib": (model_dir / 'tfidf_matrix.joblib').exists(),
-        "retrieval_config_pkl": (model_dir / 'retrieval_config.pkl').exists(),
-        "training_data_csv": (model_dir / 'training_data.csv').exists(),
+        "models_dir_exists": MODELS_DIR.exists(),
+        "classifier_joblib": (MODELS_DIR / 'classifier.joblib').exists(),
+        "label_encoder_joblib": (MODELS_DIR / 'label_encoder.joblib').exists(),
+        "vectorizer_joblib": (MODELS_DIR / 'vectorizer.joblib').exists(),
+        "retrieval_corpus_csv": (MODELS_DIR / 'retrieval_corpus.csv').exists(),
+        "retrieval_config_pkl": (MODELS_DIR / 'retrieval_config.pkl').exists(),
     }
     # List all files in models directory if it exists
     models_dir_contents = []
-    if model_dir.exists():
-        for item in model_dir.iterdir():
+    if MODELS_DIR.exists():
+        for item in MODELS_DIR.iterdir():
             models_dir_contents.append({
                 "name": item.name,
                 "is_file": item.is_file(),
@@ -221,8 +180,12 @@ async def predict(request: PredictRequest):
         intent = classification['intent']
         confidence = classification['confidence']
         
-        # Retrieve historical evidence
-        evidence = retrieval_system.retrieve(request.message, k=5)
+        # Retrieve historical evidence (with error handling)
+        try:
+            evidence = retrieval_system.retrieve(request.message, k=5)
+        except Exception as e:
+            print(f"Retrieval failed: {e}")
+            evidence = []
         
         # Generate response
         reply, evidence_summary = response_generator.generate_with_evidence(

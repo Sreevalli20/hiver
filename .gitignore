@@ -37,8 +37,6 @@ models/*.joblib
 !models/classifier.joblib
 !models/label_encoder.joblib
 !models/vectorizer.joblib
-!models/tfidf_vectorizer.joblib
-!models/tfidf_matrix.joblib
 !models/*.txt
 !models/retrieval_corpus.csv
 

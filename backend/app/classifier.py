@@ -10,6 +10,10 @@ from sklearn.preprocessing import LabelEncoder
 from pathlib import Path
 import pickle
 
+# Get repository root (parent of backend directory)
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
+MODELS_DIR = REPO_ROOT / "models"
+
 class IntentClassifier:
     """TF-IDF + Logistic Regression intent classifier."""
     
@@ -18,12 +22,15 @@ class IntentClassifier:
         Initialize classifier.
         
         Args:
-            model_path: Path to saved model files
+            model_path: Path to saved model files (defaults to MODELS_DIR)
         """
         self.vectorizer = None
         self.classifier = None
         self.label_encoder = None
         self.is_trained = False
+        
+        if model_path is None:
+            model_path = MODELS_DIR
         
         if model_path:
             self.load(model_path)
@@ -170,33 +177,3 @@ class IntentClassifier:
             print("Classifier not loaded - will need to be trained")
             self.is_trained = False
     
-    def load_and_retrain(self, model_dir):
-        """
-        Load training data and retrain to avoid sklearn version compatibility issues.
-        
-        Args:
-            model_dir: Directory containing model files and training data
-        """
-        model_dir = Path(model_dir)
-        
-        # Check if training data exists
-        training_data_file = model_dir / 'training_data.csv'
-        if not training_data_file.exists():
-            print("Training data not found, cannot retrain")
-            self.is_trained = False
-            return
-        
-        # Load training data
-        import pandas as pd
-        train_df = pd.read_csv(training_data_file)
-        print(f"Loaded {len(train_df)} training examples for retraining")
-        
-        # Extract texts and labels
-        train_df = train_df.dropna(subset=['text'])
-        texts = train_df['text'].tolist()
-        labels = train_df['label'].tolist()
-        
-        # Retrain
-        self.train(texts, labels)
-        
-        print(f"Classifier retrained from training data")
