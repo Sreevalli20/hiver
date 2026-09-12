@@ -31,6 +31,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+async def root():
+    """Root endpoint."""
+    return {
+        "status": "ok",
+        "service": "Hiver AI Support Agent"
+    }
+
 # Global model instances
 classifier = None
 retrieval_system = None
