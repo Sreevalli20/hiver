@@ -19,7 +19,7 @@ import seaborn as sns
 # Add backend to path
 sys.path.insert(0, str(Path(__file__).parent.parent / 'backend'))
 
-from app.classifier import IntentClassifier
+from app.classifier import IntentClassifier, REPO_ROOT
 from app.retrieval import RetrievalSystem
 from app.response_generator import ResponseGenerator
 from app.escalation import EscalationPolicy
@@ -28,9 +28,13 @@ from app.intents import INTENT_LABELS
 class Evaluator:
     """Evaluate the support agent system."""
     
-    def __init__(self, model_dir="models"):
+    def __init__(self, model_dir=None):
         """Initialize evaluator."""
-        self.model_dir = Path(model_dir)
+        if model_dir is None:
+            model_dir = REPO_ROOT / "models"
+        else:
+            model_dir = Path(model_dir)
+        self.model_dir = model_dir
         self.classifier = None
         self.retrieval = None
         self.response_gen = None
@@ -287,9 +291,9 @@ class Evaluator:
         print("Starting full evaluation...")
         
         # Load golden set - prefer human-annotated version
-        golden_file = Path("golden/golden_annotation.csv")
+        golden_file = REPO_ROOT / "golden" / "golden_annotation.csv"
         if not golden_file.exists():
-            golden_file = Path("golden/golden_200.csv")
+            golden_file = REPO_ROOT / "golden" / "golden_200.csv"
         
         if not golden_file.exists():
             print("Golden set not found. Skipping evaluation.")
@@ -344,7 +348,7 @@ class Evaluator:
         results['baselines'] = baseline_results
         
         # Save results
-        results_dir = Path("evaluation/results")
+        results_dir = REPO_ROOT / "evaluation" / "results"
         results_dir.mkdir(parents=True, exist_ok=True)
         
         # Convert numpy types to Python native types for JSON serialization

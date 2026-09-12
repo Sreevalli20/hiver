@@ -9,7 +9,7 @@ from typing import List, Optional
 from pathlib import Path
 import pandas as pd
 
-from app.classifier import IntentClassifier
+from app.classifier import IntentClassifier, REPO_ROOT
 from app.retrieval import RetrievalSystem
 from app.response_generator import ResponseGenerator
 from app.escalation import EscalationPolicy
@@ -163,7 +163,8 @@ async def health_check():
         "retrieval_loaded": retrieval_system is not None,
         "model_files": model_files,
         "models_dir_contents": models_dir_contents,
-        "version": "v2"
+        "version": "v2",
+        "repo_root": str(REPO_ROOT)
     }
 
 @app.get("/version")
@@ -220,20 +221,34 @@ async def predict(request: PredictRequest):
 async def get_metrics():
     """Get evaluation metrics."""
     # Load metrics from evaluation results if available
-    metrics_file = Path("evaluation/results/metrics.json")
+    metrics_file = REPO_ROOT / "evaluation" / "results" / "evaluation_results.json"
     
     if metrics_file.exists():
         import json
         with open(metrics_file, 'r') as f:
             metrics_data = json.load(f)
         
+        # Map evaluation results to metrics response format
+        baseline_comparison = None
+        if 'baselines' in metrics_data:
+            baseline_comparison = {
+                'majority_class_f1': metrics_data['baselines'].get('majority_class', {}).get('macro_f1'),
+                'majority_class_accuracy': metrics_data['baselines'].get('majority_class', {}).get('accuracy'),
+                'tfidf_lr_f1': metrics_data['baselines'].get('tfidf_lr', {}).get('macro_f1'),
+                'tfidf_lr_accuracy': metrics_data['baselines'].get('tfidf_lr', {}).get('accuracy')
+            }
+        
+        reply_quality = None
+        if 'reply_quality' in metrics_data:
+            reply_quality = metrics_data['reply_quality'].get('overall')
+        
         return MetricsResponse(
             intent_macro_f1=metrics_data.get('intent', {}).get('macro_f1'),
             intent_accuracy=metrics_data.get('intent', {}).get('accuracy'),
             escalation_f1=metrics_data.get('escalation', {}).get('f1'),
             escalation_recall=metrics_data.get('escalation', {}).get('recall'),
-            reply_quality=metrics_data.get('reply_quality'),
-            baseline_comparison=metrics_data.get('baseline_comparison')
+            reply_quality=reply_quality,
+            baseline_comparison=baseline_comparison
         )
     
     return MetricsResponse(
@@ -248,7 +263,7 @@ async def get_metrics():
 @app.get("/examples", response_model=List[ExampleResponse])
 async def get_examples():
     """Get example messages from golden set."""
-    golden_file = Path("golden/golden_200.csv")
+    golden_file = REPO_ROOT / "golden" / "golden_200.csv"
     
     if not golden_file.exists():
         return []
@@ -270,13 +285,13 @@ async def get_examples():
 @app.get("/metadata", response_model=MetadataResponse)
 async def get_metadata():
     """Get system metadata."""
-    brand_file = Path("data/selected_brand.txt")
+    brand_file = REPO_ROOT / "data" / "selected_brand.txt"
     brand = "Unknown"
     if brand_file.exists():
         brand = brand_file.read_text().strip()
     
     dataset_size = None
-    corpus_file = Path("models/retrieval_corpus.csv")
+    corpus_file = REPO_ROOT / "models" / "retrieval_corpus.csv"
     if corpus_file.exists():
         df = pd.read_csv(corpus_file)
         dataset_size = len(df)
@@ -298,11 +313,12 @@ async def run_evaluation(background_tasks: BackgroundTasks):
 @app.get("/api/golden")
 async def get_golden_data():
     """Get golden set annotation data."""
-    annotation_file = Path("golden/golden_annotation.csv")
+    # Use absolute path from repository root
+    annotation_file = REPO_ROOT / "golden" / "golden_annotation.csv"
     
     if not annotation_file.exists():
         # Fall back to original golden_200.csv if annotation file doesn't exist
-        annotation_file = Path("golden/golden_200.csv")
+        annotation_file = REPO_ROOT / "golden" / "golden_200.csv"
     
     if not annotation_file.exists():
         return []
@@ -316,12 +332,15 @@ async def get_golden_data():
         df['human_action'] = ''
         df['annotation_notes'] = ''
     
+    # Replace NaN values with empty strings to avoid JSON serialization issues
+    df = df.fillna('')
+    
     return df.to_dict(orient='records')
 
 @app.post("/api/golden")
 async def save_golden_data(data: dict):
     """Save golden set annotation data."""
-    annotation_file = Path("golden/golden_annotation.csv")
+    annotation_file = REPO_ROOT / "golden" / "golden_annotation.csv"
     
     try:
         df = pd.DataFrame(data['data'])

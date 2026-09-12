@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ChevronLeft, ChevronRight, Save, Download, Upload, CheckCircle, AlertCircle } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Save, Download, Upload, CheckCircle, AlertCircle, Info } from 'lucide-react'
 import Link from 'next/link'
 
 const INTENTS = [
@@ -62,7 +62,10 @@ export default function GoldenSetAnnotation() {
       const response = await fetch(`${apiUrl}/api/golden`)
       if (response.ok) {
         const jsonData = await response.json()
+        console.log('Loaded golden data:', jsonData.length, 'examples')
         setData(jsonData)
+      } else {
+        console.error('Failed to load golden data:', response.status)
       }
     } catch (error) {
       console.error('Failed to load annotation data:', error)
@@ -150,12 +153,25 @@ export default function GoldenSetAnnotation() {
   }
 
   const annotatedCount = data.filter(d => d.human_intent).length
+  const remainingCount = data.length - annotatedCount
   const progress = data.length > 0 ? (annotatedCount / data.length) * 100 : 0
 
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
         <div className="text-slate-600">Loading annotation data...</div>
+      </div>
+    )
+  }
+
+  if (data.length === 0) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
+        <div className="text-center">
+          <AlertCircle className="h-12 w-12 text-slate-400 mx-auto mb-4" />
+          <div className="text-slate-600">No golden set data available</div>
+          <p className="text-sm text-slate-500 mt-2">Please ensure the backend is running and golden set files exist</p>
+        </div>
       </div>
     )
   }
@@ -179,7 +195,8 @@ export default function GoldenSetAnnotation() {
             </div>
             <div className="flex items-center space-x-4">
               <div className="text-sm text-slate-600">
-                Progress: {annotatedCount}/{data.length} ({progress.toFixed(1)}%)
+                <span className="font-medium">{annotatedCount}</span>/{data.length} annotated 
+                <span className="text-slate-400 ml-2">({remainingCount} remaining)</span>
               </div>
               <button
                 onClick={exportAnnotations}
@@ -207,6 +224,17 @@ export default function GoldenSetAnnotation() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Info Banner */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <div className="flex items-start space-x-3">
+            <Info className="h-5 w-5 text-blue-600 mt-0.5" />
+            <div className="text-sm text-blue-800">
+              <strong>Heuristic Labels:</strong> The suggested intents and actions shown below are heuristic predictions, 
+              not ground truth labels. Please verify independently and provide your own human annotation for accurate evaluation.
+            </div>
+          </div>
+        </div>
+
         {currentItem && (
           <div className="space-y-6">
             {/* Navigation */}
