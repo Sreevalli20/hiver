@@ -163,8 +163,7 @@ async def health_check():
         "retrieval_loaded": retrieval_system is not None,
         "model_files": model_files,
         "models_dir_contents": models_dir_contents,
-        "version": "v2",
-        "repo_root": str(REPO_ROOT)
+        "version": "v2"
     }
 
 @app.get("/version")
